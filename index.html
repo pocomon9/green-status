@@ -67,9 +67,9 @@
 
 <script>
 const RUNNERS = [
-  { label: "1", status: "https://raw.githubusercontent.com/pocomon9/green/main/status.json" },
-  { label: "2", status: "https://raw.githubusercontent.com/sifihub/green/main/status.json" },
-  { label: "3", status: "https://raw.githubusercontent.com/analyse99km/green/main/status.json" },
+  { label: "1", api: "https://api.github.com/repos/pocomon9/green/contents/status.json" },
+  { label: "2", api: "https://api.github.com/repos/sifihub/green/contents/status.json" },
+  { label: "3", api: "https://api.github.com/repos/analyse99km/green/contents/status.json" },
 ];
 const HEALTH    = "/api/health";
 const STALE_MS  = 30 * 60 * 1000;
@@ -88,12 +88,18 @@ let activeUrl = null, recheckId = null, cdId = null;
 const setLed = c => led.className = c;
 const slotEl = i => document.getElementById("s"+(i+1));
 
-async function fetchStatus(url) {
+async function fetchStatus(runner) {
   try {
-    const r = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+    const r = await fetch(runner.api + "?t=" + Date.now(), { cache: "no-store", headers: { "Accept": "application/vnd.github+json" } });
     if (!r.ok) return null;
-    return await r.json();
-  } catch { return null; }
+    const data = await r.json();
+    if (!data || !data.content) return null;
+    const decoded = atob(data.content.replace(/\s/g, ''));
+    return JSON.parse(decoded);
+  } catch(e) {
+    console.warn("Status fetch failed:", e);
+    return null;
+  }
 }
 
 async function ping(url) {
@@ -115,7 +121,7 @@ async function check() {
   smsg.textContent = "Routing request through Green cloud cluster...";
   RUNNERS.forEach((_,i) => slotEl(i).className = "slot check");
 
-  const statuses = await Promise.all(RUNNERS.map(r => fetchStatus(r.status)));
+  const statuses = await Promise.all(RUNNERS.map(r => fetchStatus(r)));
 
   const now = Date.now();
   const results = await Promise.all(
