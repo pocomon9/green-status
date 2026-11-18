@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795018342032,
+    "lastLoginAt": 1795018401334,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -673,14 +673,14 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 115,
+      "hospitalTimeRemainingSeconds": 114,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795018342907,
+      "lastSaveTimestamp": 1795018402225,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -688,7 +688,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795018341923
+    "lastSaveAt": 1795018401334
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
