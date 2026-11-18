@@ -1,1 +1,13 @@
-{}
+{
+  "d8r21v@gmail.com": {
+    "userId": "usr_44861f741ad920d4",
+    "email": "d8r21v@gmail.com",
+    "name": "Dhruv",
+    "salt": "293a8e5ffb3b4e9818031c082e86538a",
+    "passwordHash": "61a89a9d8685a6f07851c69776933b152a220b125c27e095f173a1bcac2d7210ce8c23a582e403c4b332bed47c3c0e61f66fd3b3238ac8efeb334b9d9169739c",
+    "userReferralCode": "NEON-44861F74",
+    "referredBy": null,
+    "createdAt": 1794996362058,
+    "lastLoginAt": 1794996362058
+  }
+}
