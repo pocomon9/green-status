@@ -749,27 +749,6 @@
       "icon": "👑"
     },
     {
-      "id": "item_1795012964286",
-      "name": "box",
-      "description": "throw box",
-      "category": "WEAPON",
-      "price": 500,
-      "marketValue": 400,
-      "shopliftDifficulty": 40,
-      "icon": "📦",
-      "damage": 60,
-      "accuracy": 20,
-      "statBonus": {
-        "strength": 10,
-        "speed": 5,
-        "dexterity": 5
-      },
-      "forgePrice": 250,
-      "forgeSparksPrice": 40,
-      "forgeDamageBonus": 6.5,
-      "forgeAccuracyBonus": 2.5
-    },
-    {
       "id": "wpn_ghost_pistol",
       "name": "Ghost Pistol",
       "category": "WEAPON",
