@@ -716,7 +716,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 43,
+      "food": 35,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -1330,7 +1330,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "GENESIS_METROPOLIS_HASH",
-      "lastSaveTimestamp": 1794998601986,
+      "lastSaveTimestamp": 1794998965862,
       "hasUnsavedActions": false,
       "isAwakened": false
     }
