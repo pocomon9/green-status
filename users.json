@@ -8,14 +8,14 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1794996484968,
+    "lastLoginAt": 1794996474543,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
       "xid": "2941332",
       "role": "CITIZEN",
       "rank": "#1 Neon Operative",
-      "level": 1,
+      "level": 10,
       "xp": 0,
       "xpNeeded": 100,
       "unallocatedStatPoints": 0,
@@ -646,15 +646,15 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "5ae5508a755f4bdd7f9242b4319cf0f2e731644932ac7bc94e8324033e23ee20",
-      "lastSaveTimestamp": 1794996484328,
+      "stateHash": "7766c5626130b6cf783004a8b7808ca60b438dbad23e66cfcf98a1c619564941",
+      "lastSaveTimestamp": 1794996482808,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
+    "level": 10,
     "money": 500,
     "sparks": 377,
-    "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1794996484968
+    "lastSaveAt": 1794996474543
   }
 }
