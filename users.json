@@ -1,1 +1,13 @@
-{}
+{
+  "pioneer01@metropolis.city": {
+    "userId": "usr_f395581534f98c4f",
+    "email": "pioneer01@metropolis.city",
+    "name": "Pioneer01",
+    "salt": "79160554f944acdc1c9f07dbb4bb1ae8",
+    "passwordHash": "7fe21f80b445f4542704fcd66c5183873e90d58e9de941281059a6b974723341a9b4dd544fdb7c987ff378c77e8029c96305c0502430fc896ec1163c874bc2a7",
+    "userReferralCode": "NEON-F3955815",
+    "referredBy": null,
+    "createdAt": 1794931485548,
+    "lastLoginAt": 1794931485548
+  }
+}
