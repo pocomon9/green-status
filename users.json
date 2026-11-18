@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795013042951,
+    "lastLoginAt": 1795013103363,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 51,
+      "food": 49,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -680,7 +680,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795013043794,
+      "lastSaveTimestamp": 1795013103785,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -1356,7 +1356,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795013009408,
+    "lastLoginAt": 1795013103370,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1382,7 +1382,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 55,
+      "food": 51,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -1936,14 +1936,15 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 92,
+      "dreamPoints": 41,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
       "maxTapStamina": 100,
       "dreamCards": {
         "card_photosynthesis": 1,
-        "card_mycelium": 1
+        "card_mycelium": 1,
+        "card_mycelial_network": 1
       },
       "activeTapperSkinId": "tree_sprout",
       "unlockedTapperSkins": [
@@ -2000,14 +2001,14 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
-      "lastSaveTimestamp": 1795013009750,
+      "lastSaveTimestamp": 1795013103821,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
     "money": 495,
-    "sparks": 92,
+    "sparks": 41,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795013009408
+    "lastSaveAt": 1795013103370
   }
 }
