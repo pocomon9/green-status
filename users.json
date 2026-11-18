@@ -617,14 +617,15 @@
         "lifetimeCommissionGreen": 16,
         "recruits": [
           {
-            "id": "rec_mwlz1h0w_sxh2",
-            "name": "AeroKnight_88_42",
-            "joinedAt": 1794997289840,
+            "id": "usr_e7cc880df8118651",
+            "name": "Dhruv (dhruv2424@outlook.com)",
+            "email": "dhruv2424@outlook.com",
+            "joinedAt": 1794997114345,
             "level": 1,
             "tier": 1,
-            "dailyGameplayEarned": 157,
-            "totalGeneratedGreen": 16,
-            "lastActive": "Active today (Gameplay logged)"
+            "dailyGameplayEarned": 100,
+            "totalGeneratedGreen": 10,
+            "lastActive": "Active Operative"
           }
         ],
         "claimedMilestones": [
