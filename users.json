@@ -1356,7 +1356,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795012894446,
+    "lastLoginAt": 1795012949675,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1382,7 +1382,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 61,
+      "food": 57,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -1936,7 +1936,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 68,
+      "dreamPoints": 84,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
@@ -2000,14 +2000,14 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
-      "lastSaveTimestamp": 1795012895395,
+      "lastSaveTimestamp": 1795012949834,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
     "money": 495,
-    "sparks": 68,
+    "sparks": 84,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795012894366
+    "lastSaveAt": 1795012949675
   }
 }
