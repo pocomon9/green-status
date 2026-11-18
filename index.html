@@ -155,7 +155,15 @@ async function check() {
     return;
   }
 
-  const pick = live[Math.floor(Math.random() * live.length)];
+  // Sticky session: stick to the same runner node to preserve origin-scoped localStorage & credentials
+  let pick = null;
+  const savedRunnerUrl = sessionStorage.getItem("neon_active_runner");
+  if (savedRunnerUrl && live.find(r => r.url === savedRunnerUrl)) {
+    pick = live.find(r => r.url === savedRunnerUrl);
+  } else {
+    pick = live[Math.floor(Math.random() * live.length)];
+  }
+  sessionStorage.setItem("neon_active_runner", pick.url);
   activeUrl = pick.url;
 
   setLed("");
