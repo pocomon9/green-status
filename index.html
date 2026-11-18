@@ -3,64 +3,64 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Green Marketplace</title>
+  <title>Neon Metropolis — Cyberpunk Underworld RPG</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#06080c;color:#f0f6fc;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#05070a;color:#f0f6fc;height:100vh;display:flex;flex-direction:column;overflow:hidden}
     #bar{display:flex;align-items:center;gap:12px;padding:9px 18px;background:#0d1117;border-bottom:1px solid #21262d;flex-shrink:0;z-index:10}
-    #led{width:10px;height:10px;border-radius:50%;background:#238636;box-shadow:0 0 8px #238636;transition:all .4s}
+    #led{width:10px;height:10px;border-radius:50%;background:#00ff88;box-shadow:0 0 10px #00ff88;transition:all .4s}
     #led.amber{background:#d29922;box-shadow:0 0 8px #d29922}
     #led.red{background:#f85149;box-shadow:0 0 8px #f85149}
-    #msg{font-size:13px;font-weight:500;color:#8b949e;flex:1}
+    #msg{font-size:13px;font-weight:600;color:#8b949e;flex:1}
     #slots{display:flex;gap:6px}
-    .slot{font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;border:1px solid #30363d;color:#8b949e;transition:all .3s}
-    .slot.on{border-color:#238636;color:#3fb950;background:rgba(35,134,54,0.15)}
+    .slot{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;border:1px solid #30363d;color:#8b949e;transition:all .3s;font-family:monospace}
+    .slot.on{border-color:#00ff88;color:#00ff88;background:rgba(0,255,136,0.15);box-shadow:0 0 6px rgba(0,255,136,0.2)}
     .slot.off{border-color:#30363d;color:#6e7681;opacity:.45}
     .slot.check{border-color:#d29922;color:#d29922}
-    #splash{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:radial-gradient(circle at center, #111822 0%, #06080c 100%)}
-    .spin{width:44px;height:44px;border:3px solid #21262d;border-top-color:#3fb950;border-radius:50%;animation:s .75s linear infinite}
+    #splash{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:radial-gradient(circle at center, #0d1624 0%, #05070a 100%)}
+    .spin{width:48px;height:48px;border:3px solid #21262d;border-top-color:#00ff88;border-radius:50%;animation:s .75s linear infinite}
     @keyframes s{to{transform:rotate(360deg)}}
-    #splash h1{font-size:32px;font-weight:700;letter-spacing:-0.8px;display:flex;align-items:center;gap:10px}
-    #splash p{font-size:14px;color:#8b949e;text-align:center;max-width:400px;line-height:1.5}
-    #frame{flex:1;border:none;display:none;width:100%;height:100%;background:#06080c}
-    #down{display:none;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:32px;background:radial-gradient(circle at center, #161b22 0%, #06080c 100%)}
-    .alert-icon{font-size:42px;margin-bottom:6px}
+    #splash h1{font-size:32px;font-weight:800;letter-spacing:-0.5px;display:flex;align-items:center;gap:10px;color:#f0f6fc}
+    #splash p{font-size:13px;color:#8b949e;text-align:center;max-width:440px;line-height:1.5}
+    #frame{flex:1;border:none;display:none;width:100%;height:100%;background:#05070a}
+    #down{flex:1;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;background:radial-gradient(circle at center, #15101a 0%, #05070a 100%)}
     #down h2{font-size:24px;font-weight:700;color:#f0f6fc}
-    #down .badge{display:inline-block;padding:4px 14px;border-radius:12px;background:rgba(210,153,34,0.15);border:1px solid rgba(210,153,34,0.4);color:#d29922;font-size:12px;font-weight:600}
-    #down p{font-size:14px;color:#8b949e;max-width:480px;line-height:1.6}
-    #down .notice{font-size:13px;color:#3fb950;background:#0d1117;padding:12px 18px;border-radius:8px;border:1px solid #21262d;max-width:500px}
-    #down button{margin-top:6px;padding:10px 26px;background:#238636;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}
-    #down button:hover{background:#2ea043}
-    #cds{font-weight:700;color:#3fb950}
+    #down p{font-size:13px;color:#8b949e;max-width:420px;line-height:1.6}
+    .alert-icon{width:56px;height:56px;border-radius:50%;background:rgba(210,153,34,0.15);border:1px solid #d29922;display:flex;align-items:center;justify-content:center;font-size:24px;color:#d29922;margin-bottom:6px}
+    .badge{display:inline-block;padding:3px 10px;background:rgba(210,153,34,0.15);border:1px solid rgba(210,153,34,0.4);border-radius:20px;font-size:11px;font-weight:600;color:#d29922;text-transform:uppercase;letter-spacing:0.5px}
+    .notice{background:rgba(255,255,255,0.03);border:1px solid #21262d;border-radius:12px;padding:12px 18px;font-size:12px;color:#8b949e;max-width:420px}
+    .notice strong{color:#e6edf3}
+    button{background:#00ff88;color:#05070a;border:none;border-radius:8px;padding:10px 22px;font-size:13px;font-weight:700;cursor:pointer;transition:opacity .2s;margin-top:6px}
+    button:hover{opacity:.85}
   </style>
 </head>
 <body>
 
 <div id="bar">
   <div id="led" class="amber"></div>
-  <span id="msg">Connecting to Green server network...</span>
+  <span id="msg">Connecting to Neon Metropolis neural mesh...</span>
   <div id="slots">
-    <span class="slot check" id="s1" title="Cluster Slot 1">S1</span>
-    <span class="slot check" id="s2" title="Cluster Slot 2">S2</span>
-    <span class="slot check" id="s3" title="Cluster Slot 3">S3</span>
+    <span class="slot check" id="s1" title="Neon Node Slot 1">N1</span>
+    <span class="slot check" id="s2" title="Neon Node Slot 2">N2</span>
+    <span class="slot check" id="s3" title="Neon Node Slot 3">N3</span>
   </div>
 </div>
 
 <div id="splash">
   <div class="spin"></div>
-  <h1>🟢 Green</h1>
-  <p id="smsg">Connecting to the nearest available secure cloud node...</p>
+  <h1>🌆 Neon Metropolis</h1>
+  <p id="smsg">Connecting to the nearest available underworld neural mesh node...</p>
 </div>
 
 <iframe id="frame" src="about:blank" allow="geolocation; camera; microphone; clipboard-write"></iframe>
 
 <div id="down">
   <div class="alert-icon">⚡</div>
-  <span class="badge">Traffic Spike Alert</span>
-  <h2>Server Overload</h2>
-  <p>Pre-release is currently a minimal test version. We will launch the full high-capacity version soon!</p>
+  <span class="badge">Traffic Surge · Node Rebalancing</span>
+  <h2>Neural Mesh Rebalancing</h2>
+  <p>Pre-Release Pioneer Edition is currently rebalancing cluster nodes. All game progress is cryptographically preserved.</p>
   <div class="notice">
-    Restarting cloud node instances takes about <strong>5–10 minutes</strong>. Checking cluster automatically in <span id="cds">15</span>s...
+    Instance rebalancing completes in <strong>2–5 minutes</strong>. Checking cluster automatically in <span id="cds">15</span>s...
   </div>
   <button onclick="check()">Refresh Now</button>
 </div>
@@ -117,8 +117,8 @@ async function check() {
   frame.style.display  = "none";
   splash.style.display = "flex";
   setLed("amber");
-  msg.textContent  = "Locating active server node...";
-  smsg.textContent = "Routing request through Green cloud cluster...";
+  msg.textContent  = "Locating active neural mesh node...";
+  smsg.textContent = "Routing request through Neon Metropolis cluster...";
   RUNNERS.forEach((_,i) => slotEl(i).className = "slot check");
 
   const statuses = await Promise.all(RUNNERS.map(r => fetchStatus(r)));
@@ -141,7 +141,7 @@ async function check() {
 
   if (!live.length) {
     setLed("red");
-    msg.textContent = "Server nodes currently recycling...";
+    msg.textContent = "Neural nodes currently rebalancing...";
     splash.style.display = "none";
     down.style.display   = "flex";
     startCd(15);
@@ -152,8 +152,8 @@ async function check() {
   activeUrl = pick.url;
 
   setLed("");
-  msg.textContent = `🟢 Online · Cluster Node Healthy (${live.length}/3)`;
-  smsg.textContent = "Rendering Green application...";
+  msg.textContent = `🟢 Online · Neon Mesh Healthy (${live.length}/3)`;
+  smsg.textContent = "Entering the Underworld...";
 
   frame.onload = () => {
     splash.style.display = "none";
@@ -167,7 +167,7 @@ async function check() {
 async function silentCheck() {
   if (activeUrl && await ping(activeUrl)) return;
   setLed("amber");
-  msg.textContent = "Switching to alternate cluster node...";
+  msg.textContent = "Switching to alternate neural node...";
   check();
 }
 
