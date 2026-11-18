@@ -1,11 +1,5 @@
 [
   {
-    "id": "notif_1794990243053",
-    "title": "? Test Alert",
-    "message": "Broadcast test from console",
-    "timestamp": 1794990243053
-  },
-  {
     "id": "notif_1794991152077",
     "title": "🚨 Neural Mesh Sync",
     "message": "Admin console is fully connected to live cluster mesh!",
