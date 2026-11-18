@@ -73,17 +73,7 @@
       "requiredCardLevel": 3
     }
   ],
-  "customItems": [
-    {
-      "id": "item_1794994315494",
-      "name": "candy",
-      "description": "toffie",
-      "category": "WEAPON",
-      "price": 500,
-      "marketValue": 500,
-      "icon": "jh"
-    }
-  ],
+  "customItems": [],
   "dailyComboOverride": {
     "date": "2026-11-18",
     "cardIds": [
