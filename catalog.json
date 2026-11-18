@@ -1561,6 +1561,27 @@
       "forgeSparksPrice": 40,
       "forgeDamageBonus": 6.5,
       "forgeAccuracyBonus": 2.5
+    },
+    {
+      "id": "item_1795020779945",
+      "name": "box",
+      "description": "used to throw",
+      "category": "WEAPON",
+      "price": 500,
+      "marketValue": 450,
+      "shopliftDifficulty": 35,
+      "icon": "📦",
+      "damage": 45,
+      "accuracy": 50,
+      "statBonus": {
+        "strength": 10,
+        "speed": 5,
+        "dexterity": 5
+      },
+      "forgePrice": 250,
+      "forgeSparksPrice": 40,
+      "forgeDamageBonus": 6.5,
+      "forgeAccuracyBonus": 2.5
     }
   ],
   "dailyComboOverride": {
