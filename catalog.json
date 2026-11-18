@@ -91,6 +91,15 @@
       "price": 500,
       "marketValue": 500,
       "icon": "📦"
+    },
+    {
+      "id": "item_1795010098612",
+      "name": "one",
+      "description": "use this to revive!",
+      "category": "WEAPON",
+      "price": 500,
+      "marketValue": 500,
+      "icon": "📦"
     }
   ],
   "dailyComboOverride": {
