@@ -8,6 +8,13 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794992017534,
-    "lastLoginAt": 1794992017534
+    "lastLoginAt": 1794992212956,
+    "playerState": {
+      "name": "Dhruv",
+      "money": 10000,
+      "dreamPoints": 500000,
+      "level": 2,
+      "lastSaveTimestamp": 1794992380318
+    }
   }
 }
