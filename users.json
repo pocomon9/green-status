@@ -1345,7 +1345,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1794998902812,
+    "lastLoginAt": 1795004948786,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1950,7 +1950,8 @@
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 1794998792414
+        "lastDailyStipendClaimTimestamp": 1794998792414,
+        "networkTotalCitizens": 0
       },
       "arsonStats": {
         "breaches": 1,
@@ -1993,6 +1994,6 @@
     "sparks": 174,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1794998902812
+    "lastSaveAt": 1795004948786
   }
 }
