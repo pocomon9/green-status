@@ -2,92 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>Neon Metropolis — Cyberpunk Underworld RPG</title>
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#05070a;color:#f0f6fc;height:100vh;display:flex;flex-direction:column;overflow:hidden}
-    #bar{display:flex;align-items:center;gap:12px;padding:9px 18px;background:#0d1117;border-bottom:1px solid #21262d;flex-shrink:0;z-index:10}
-    #led{width:10px;height:10px;border-radius:50%;background:#00ff88;box-shadow:0 0 10px #00ff88;transition:all .4s}
-    #led.amber{background:#d29922;box-shadow:0 0 8px #d29922}
-    #led.red{background:#f85149;box-shadow:0 0 8px #f85149}
-    #msg{font-size:13px;font-weight:600;color:#8b949e;flex:1}
-    #slots{display:flex;gap:6px}
-    .slot{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;border:1px solid #30363d;color:#8b949e;transition:all .3s;font-family:monospace}
-    .slot.on{border-color:#00ff88;color:#00ff88;background:rgba(0,255,136,0.15);box-shadow:0 0 6px rgba(0,255,136,0.2)}
-    .slot.off{border-color:#30363d;color:#6e7681;opacity:.45}
-    .slot.check{border-color:#d29922;color:#d29922}
-    #splash{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:radial-gradient(circle at center, #0d1624 0%, #05070a 100%)}
-    .spin{width:48px;height:48px;border:3px solid #21262d;border-top-color:#00ff88;border-radius:50%;animation:s .75s linear infinite}
-    @keyframes s{to{transform:rotate(360deg)}}
-    #splash h1{font-size:32px;font-weight:800;letter-spacing:-0.5px;display:flex;align-items:center;gap:10px;color:#f0f6fc}
-    #splash p{font-size:13px;color:#8b949e;text-align:center;max-width:440px;line-height:1.5}
-    #frame{flex:1;border:none;display:none;width:100%;height:100%;background:#05070a}
-    #down{flex:1;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;background:radial-gradient(circle at center, #15101a 0%, #05070a 100%)}
-    #down h2{font-size:24px;font-weight:700;color:#f0f6fc}
-    #down p{font-size:13px;color:#8b949e;max-width:420px;line-height:1.6}
-    .alert-icon{width:56px;height:56px;border-radius:50%;background:rgba(210,153,34,0.15);border:1px solid #d29922;display:flex;align-items:center;justify-content:center;font-size:24px;color:#d29922;margin-bottom:6px}
-    .badge{display:inline-block;padding:3px 10px;background:rgba(210,153,34,0.15);border:1px solid rgba(210,153,34,0.4);border-radius:20px;font-size:11px;font-weight:600;color:#d29922;text-transform:uppercase;letter-spacing:0.5px}
-    .notice{background:rgba(255,255,255,0.03);border:1px solid #21262d;border-radius:12px;padding:12px 18px;font-size:12px;color:#8b949e;max-width:420px}
-    .notice strong{color:#e6edf3}
-    button{background:#00ff88;color:#05070a;border:none;border-radius:8px;padding:10px 22px;font-size:13px;font-weight:700;cursor:pointer;transition:opacity .2s;margin-top:6px}
-    button:hover{opacity:.85}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #05070a;
+      color: #f0f6fc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    #splash {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1626 0%, #05070a 100%);
+      z-index: 100;
+      transition: opacity 0.5s ease-out;
+    }
+    .spin {
+      width: 52px;
+      height: 52px;
+      border: 3px solid #1f2937;
+      border-top-color: #10b981;
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    #splash h1 {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #f0fdf4;
+      text-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+    }
+    #smsg {
+      font-size: 14px;
+      color: #94a3b8;
+      text-align: center;
+      max-width: 440px;
+      line-height: 1.5;
+    }
+    #frame {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: none;
+      background: #05070a;
+      z-index: 10;
+    }
+    #down {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 24px;
+      text-align: center;
+      background: radial-gradient(circle at center, #171520 0%, #05070a 100%);
+      z-index: 90;
+    }
+    .alert-icon {
+      font-size: 40px;
+      margin-bottom: 4px;
+    }
+    #down h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #f0f6fc;
+    }
+    #down p {
+      font-size: 14px;
+      color: #94a3b8;
+      max-width: 420px;
+      line-height: 1.6;
+    }
+    .notice {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid #1f2937;
+      border-radius: 14px;
+      padding: 12px 20px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .notice strong { color: #f0fdf4; }
+    button {
+      background: #10b981;
+      color: #05070a;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 26px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.1s;
+      margin-top: 8px;
+    }
+    button:hover { opacity: 0.9; transform: scale(1.02); }
+    button:active { transform: scale(0.98); }
   </style>
 </head>
 <body>
 
-<div id="bar">
-  <div id="led" class="amber"></div>
-  <span id="msg">Connecting to Neon Metropolis neural mesh...</span>
-  <a id="directLink" href="#" target="_blank" style="display:none;color:#00ff88;font-size:11px;font-weight:700;text-decoration:none;border:1px solid rgba(0,255,136,0.4);padding:3px 10px;border-radius:6px;background:rgba(0,255,136,0.1);font-family:monospace;margin-right:6px">Direct Play ↗</a>
-    <div id="slots">
-    <span class="slot check" id="s1" title="Neon Node Slot 1">N1</span>
-    <span class="slot check" id="s2" title="Neon Node Slot 2">N2</span>
-    <span class="slot check" id="s3" title="Neon Node Slot 3">N3</span>
-  </div>
-</div>
-
+<!-- Player Splash Screen (No Developer Mesh Stats) -->
 <div id="splash">
   <div class="spin"></div>
-  <h1>🌆 Neon Metropolis</h1>
-  <p id="smsg">Connecting to the nearest available underworld neural mesh node...</p>
+  <h1>🌿 Neon Metropolis</h1>
+  <p id="smsg">Entering the Underworld...</p>
 </div>
 
-<iframe id="frame" src="about:blank" allow="geolocation; camera; microphone; clipboard-write"></iframe>
+<!-- Main Game Viewport (100% Fullscreen) -->
+<iframe id="frame" src="about:blank" allow="geolocation; camera; microphone; clipboard-write; autoplay"></iframe>
 
+<!-- Temporary Maintenance Screen -->
 <div id="down">
-  <div class="alert-icon">⚡</div>
-  <span class="badge">Traffic Surge · Node Rebalancing</span>
-  <h2>Neural Mesh Rebalancing</h2>
-  <p>Pre-Release Pioneer Edition is currently rebalancing cluster nodes. All game progress is cryptographically preserved.</p>
+  <div class="alert-icon">🌆</div>
+  <h2>Entering Underworld...</h2>
+  <p>Connecting to Neon Metropolis game servers. All player progress is securely saved.</p>
   <div class="notice">
-    Instance rebalancing completes in <strong>2–5 minutes</strong>. Checking cluster automatically in <span id="cds">15</span>s...
+    Reconnecting automatically in <strong id="cds">10</strong>s...
   </div>
-  <button onclick="check()">Refresh Now</button>
+  <button onclick="check()">Enter Game Now</button>
 </div>
 
 <script>
 const RUNNERS = [
-  { label: "1", raw: "https://raw.githubusercontent.com/pocomon9/green/main/status.json", api: "https://api.github.com/repos/pocomon9/green/contents/status.json" },
-  { label: "2", raw: "https://raw.githubusercontent.com/sifihub/green/main/status.json", api: "https://api.github.com/repos/sifihub/green/contents/status.json" },
-  { label: "3", raw: "https://raw.githubusercontent.com/analyse99km/green/main/status.json", api: "https://api.github.com/repos/analyse99km/green/contents/status.json" },
+  { raw: "https://raw.githubusercontent.com/pocomon9/green/main/status.json", api: "https://api.github.com/repos/pocomon9/green/contents/status.json" },
+  { raw: "https://raw.githubusercontent.com/sifihub/green/main/status.json", api: "https://api.github.com/repos/sifihub/green/contents/status.json" },
+  { raw: "https://raw.githubusercontent.com/analyse99km/green/main/status.json", api: "https://api.github.com/repos/analyse99km/green/contents/status.json" },
 ];
-const HEALTH    = "/api/health";
-const STALE_MS  = 30 * 60 * 1000;
-const RECHECK   = 4 * 60 * 1000;
+const HEALTH   = "/api/health";
+const STALE_MS = 30 * 60 * 1000;
+const RECHECK  = 4 * 60 * 1000;
 
-const led    = document.getElementById("led");
-const msg    = document.getElementById("msg");
-const smsg   = document.getElementById("smsg");
 const splash = document.getElementById("splash");
+const smsg   = document.getElementById("smsg");
 const frame  = document.getElementById("frame");
 const down   = document.getElementById("down");
 const cdsEl  = document.getElementById("cds");
 
 let activeUrl = null, recheckId = null, cdId = null;
-
-const setLed = c => led.className = c;
-const slotEl = i => document.getElementById("s"+(i+1));
 
 async function fetchStatus(runner) {
   try {
@@ -105,7 +178,6 @@ async function fetchStatus(runner) {
     const decoded = atob(data.content.replace(/\s/g, ''));
     return JSON.parse(decoded);
   } catch(e) {
-    console.warn("Status fetch failed:", e);
     return null;
   }
 }
@@ -124,23 +196,16 @@ async function check() {
   down.style.display   = "none";
   frame.style.display  = "none";
   splash.style.display = "flex";
-  setLed("amber");
-  msg.textContent  = "Locating active neural mesh node...";
-  smsg.textContent = "Routing request through Neon Metropolis cluster...";
-  RUNNERS.forEach((_,i) => slotEl(i).className = "slot check");
+  splash.style.opacity = "1";
+  smsg.textContent     = "Connecting to Neon Metropolis...";
 
   const statuses = await Promise.all(RUNNERS.map(r => fetchStatus(r)));
-
   const now = Date.now();
   const results = await Promise.all(
-    statuses.map(async (s, i) => {
-      if (!s || s.url === "offline" || !s.url) {
-        slotEl(i).className = "slot off";
-        return { alive: false, url: null };
-      }
+    statuses.map(async (s) => {
+      if (!s || s.url === "offline" || !s.url) return { alive: false, url: null };
       const fresh = (now - s.ts * 1000) < STALE_MS;
       const alive = fresh && await ping(s.url);
-      slotEl(i).className = "slot " + (alive ? "on" : "off");
       return { alive, url: s.url };
     })
   );
@@ -148,15 +213,13 @@ async function check() {
   const live = results.filter(r => r.alive);
 
   if (!live.length) {
-    setLed("red");
-    msg.textContent = "Neural nodes currently rebalancing...";
     splash.style.display = "none";
     down.style.display   = "flex";
-    startCd(15);
+    startCd(10);
     return;
   }
 
-  // Sticky session: stick to the same runner node to preserve origin-scoped localStorage & credentials
+  // Sticky session: stick to same runner node for consistent local storage & session
   let pick = null;
   const savedRunnerUrl = sessionStorage.getItem("neon_active_runner");
   if (savedRunnerUrl && live.find(r => r.url === savedRunnerUrl)) {
@@ -167,27 +230,19 @@ async function check() {
   sessionStorage.setItem("neon_active_runner", pick.url);
   activeUrl = pick.url;
 
-  setLed("");
-  msg.textContent = `🟢 Online · Neon Mesh Healthy (${live.length}/3)`;
   smsg.textContent = "Entering the Underworld...";
-
-  // Immediate display & fallback to prevent display:none iframe hanging
-  const directLink = document.getElementById("directLink");
-  if (directLink) {
-    directLink.href = activeUrl;
-    directLink.style.display = "inline-block";
-  }
-
   frame.src = activeUrl;
   frame.style.display = "block";
-  
-  // Transition splash out smoothly
+
+  // Hide splash smoothly
   setTimeout(() => {
-    splash.style.display = "none";
-  }, 1200);
+    splash.style.opacity = "0";
+    setTimeout(() => { splash.style.display = "none"; }, 500);
+  }, 1000);
 
   frame.onload = () => {
-    splash.style.display = "none";
+    splash.style.opacity = "0";
+    setTimeout(() => { splash.style.display = "none"; }, 500);
   };
 
   recheckId = setInterval(silentCheck, RECHECK);
@@ -195,8 +250,6 @@ async function check() {
 
 async function silentCheck() {
   if (activeUrl && await ping(activeUrl)) return;
-  setLed("amber");
-  msg.textContent = "Switching to alternate neural node...";
   check();
 }
 
