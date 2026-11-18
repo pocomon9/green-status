@@ -11,9 +11,9 @@
     "lastLoginAt": 1794992212956,
     "playerState": {
       "name": "Dhruv",
-      "money": 0,
-      "dreamPoints": 0,
-      "level": 1,
+      "money": 10000,
+      "dreamPoints": 500000,
+      "level": 2,
       "lastSaveTimestamp": 1794992380318
     },
     "money": 0,
