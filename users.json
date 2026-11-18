@@ -1,1 +1,57 @@
-{}
+{
+  "d8r21v@gmail.com": {
+    "email": "d8r21v@gmail.com",
+    "name": "Dhruv",
+    "userId": "usr_44861f741ad920d4",
+    "userReferralCode": "NEON-44861F74",
+    "referredBy": "None (Direct)",
+    "createdAt": 1794994531046,
+    "lastLoginAt": 1794995040242,
+    "passwordHash": "6dbf9741ff4e1495...",
+    "salt": "3e60564b01...",
+    "money": 10000,
+    "sparks": 500000,
+    "level": 2,
+    "rank": "#1 Neon Operative",
+    "playerState": {
+      "id": "usr_44861f741ad920d4",
+      "name": "Dhruv",
+      "xid": "4486100",
+      "role": "CITIZEN",
+      "rank": "#1 Neon Operative",
+      "level": 2,
+      "xp": 150,
+      "xpNeeded": 250,
+      "money": 10000,
+      "bankMoney": 5000,
+      "points": 10,
+      "energy": 100,
+      "maxEnergy": 100,
+      "nerve": 10,
+      "maxNerve": 10,
+      "happy": 100,
+      "maxHappy": 100,
+      "life": 100,
+      "maxLife": 100,
+      "food": 100,
+      "maxFood": 100,
+      "dreamPoints": 500000,
+      "tapStamina": 100,
+      "maxTapStamina": 100,
+      "isAwakened": true,
+      "inventory": [],
+      "dreamCards": {},
+      "referrals": {
+        "referralCode": "NEON-44861F74",
+        "totalRecruits": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
+        "recruits": [],
+        "claimedMilestones": [],
+        "referredBy": "None (Direct)",
+        "hasClaimedWelcomeBonus": true
+      },
+      "lastSaveTimestamp": 1794995040242
+    }
+  }
+}
