@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795020740676,
+    "lastLoginAt": 1795020856519,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -26,7 +26,7 @@
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 0,
-      "life": 15,
+      "life": 100,
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 0,
+      "food": 93,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -582,7 +582,27 @@
         }
       ],
       "currentPropertyId": "prop_apt",
-      "inventory": [],
+      "inventory": [
+        {
+          "id": "item_1795012964286",
+          "name": "box",
+          "category": "WEAPON",
+          "price": 500,
+          "marketValue": 400,
+          "description": "throw box",
+          "icon": "📦",
+          "damage": 60,
+          "accuracy": 20,
+          "shopliftDifficulty": 40,
+          "forgePrice": 250,
+          "forgeSparksPrice": 40,
+          "forgeDamageBonus": 6.5,
+          "forgeAccuracyBonus": 2.5,
+          "quantity": 2,
+          "upgradeLevel": 0,
+          "isCloudItem": true
+        }
+      ],
       "bazaarListings": [],
       "bazaarTillCash": 0,
       "dailyWheelSpinsAvailable": 1,
@@ -617,7 +637,7 @@
       ],
       "bodyAugmentations": [],
       "settledReceiptIds": [],
-      "greenTokens": 5,
+      "greenTokens": 35,
       "dailyStreak": 2,
       "lastStreakClaimTimestamp": 1794996367122,
       "canClaimDailyStreak": false,
@@ -673,14 +693,14 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 110,
+      "hospitalTimeRemainingSeconds": 0,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795018642764,
+      "lastSaveTimestamp": 1795020856766,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -688,7 +708,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795020740676
+    "lastSaveAt": 1795020856510
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
