@@ -73,7 +73,17 @@
       "requiredCardLevel": 3
     }
   ],
-  "customItems": [],
+  "customItems": [
+    {
+      "id": "item_1795010094407",
+      "name": "one",
+      "description": "use this to revive!",
+      "category": "WEAPON",
+      "price": 500,
+      "marketValue": 500,
+      "icon": "📦"
+    }
+  ],
   "dailyComboOverride": {
     "date": "2026-11-18",
     "cardIds": [
