@@ -677,5 +677,16 @@
     "level": 10,
     "rank": "#1 Neon Operative",
     "lastSaveAt": 1794998422572
+  },
+  "dhruv19240@gmail.com": {
+    "userId": "usr_71f63e2038a30959",
+    "email": "dhruv19240@gmail.com",
+    "name": "Dhruv11",
+    "salt": "346f6edf06c434a485e448c90810bf67",
+    "passwordHash": "522fdecf260839adc41b6fed88e6868d49ca3f704682b2020015018639f072dc53b69bbb4f2ab24b43f92729a5401aa6965a4698907aa127fb3b5b2e6d011e4c",
+    "userReferralCode": "NEON-71F63E20",
+    "referredBy": "NEON-E7CC880D",
+    "createdAt": 1794998780043,
+    "lastLoginAt": 1794998780043
   }
 }
