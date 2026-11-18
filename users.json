@@ -15,14 +15,14 @@
       "xid": "2941332",
       "role": "CITIZEN",
       "rank": "#1 Neon Operative",
-      "level": 10,
+      "level": 99,
       "xp": 0,
       "xpNeeded": 100,
       "unallocatedStatPoints": 0,
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 50100131,
+      "money": 9.999999999e+259,
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 0,
@@ -588,7 +588,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 3779926455,
+      "dreamPoints": 1e+171,
       "dreamMultiplier": 1,
       "totalTaps": 100,
       "tapStamina": 100,
@@ -613,19 +613,18 @@
       "referrals": {
         "referralCode": "NEON-44861F74",
         "totalRecruits": 1,
-        "unclaimedCommissionGreen": 100,
-        "lifetimeCommissionGreen": 100,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 32,
         "recruits": [
           {
-            "id": "usr_e7cc880df8118651",
-            "name": "Dhruv (dhruv2424@outlook.com)",
-            "email": "dhruv2424@outlook.com",
-            "joinedAt": 1794997114345,
+            "id": "rec_mwlz1h0w_sxh2",
+            "name": "AeroKnight_88_42",
+            "joinedAt": 1794997289840,
             "level": 1,
             "tier": 1,
-            "dailyGameplayEarned": 150,
-            "totalGeneratedGreen": 15,
-            "lastActive": "Active today (Syndicate recruit)"
+            "dailyGameplayEarned": 107,
+            "totalGeneratedGreen": 32,
+            "lastActive": "Active today (Daily gameplay verified)"
           }
         ],
         "claimedMilestones": [
@@ -673,9 +672,9 @@
       "hasUnsavedActions": false,
       "isAwakened": false
     },
-    "level": 10,
-    "money": 50100131,
-    "sparks": 3779926455,
+    "level": 99,
+    "money": 9.999999999e+259,
+    "sparks": 1e+171,
     "rank": "#1 Neon Operative",
     "lastSaveAt": 1794998422572
   },
