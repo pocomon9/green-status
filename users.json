@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 55,
+      "food": 14,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -597,18 +597,7 @@
         "card_photosynthesis": 15,
         "card_mycelium": 11,
         "card_spore_chamber": 6,
-        "card_bioluminescent_algae": 9,
-        "card_greenhouse": 2,
-        "card_hydroponic_array": 3,
-        "card_ginseng": 4,
-        "card_ayahuasca": 4,
-        "card_mango": 2,
-        "card_coconut": 3,
-        "card_sacred_grove": 3,
-        "card_baobab": 6,
-        "card_genetic_synthesizer": 5,
-        "card_redwood": 2,
-        "card_quantum_chloroplast": 7
+        "card_bioluminescent_algae": 9
       },
       "activeTapperSkinId": "tree_oak",
       "unlockedTapperSkins": [
@@ -680,7 +669,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795012962777,
+      "lastSaveTimestamp": 1795012043950,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -1382,7 +1371,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 57,
+      "food": 70,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -1936,15 +1925,12 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 84,
+      "dreamPoints": 175,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
       "maxTapStamina": 100,
-      "dreamCards": {
-        "card_photosynthesis": 1,
-        "card_mycelium": 1
-      },
+      "dreamCards": {},
       "activeTapperSkinId": "tree_sprout",
       "unlockedTapperSkins": [
         "tree_sprout"
@@ -1999,13 +1985,13 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
-      "lastSaveTimestamp": 1795012949834,
+      "stateHash": "bc384044d2cb3b590f917e94d1ccdf02a47197c69e0276cbb8847bafa5d4b5c6",
+      "lastSaveTimestamp": 1795005308796,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
     "money": 495,
-    "sparks": 84,
+    "sparks": 175,
     "level": 1,
     "rank": "#1 Neon Operative",
     "lastSaveAt": 1795012949675
