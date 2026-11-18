@@ -613,18 +613,19 @@
       "referrals": {
         "referralCode": "NEON-44861F74",
         "totalRecruits": 1,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 32,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
         "recruits": [
           {
-            "id": "rec_mwlz1h0w_sxh2",
-            "name": "AeroKnight_88_42",
-            "joinedAt": 1794997289840,
+            "id": "usr_e7cc880df8118651",
+            "name": "Dhruv (dhruv2424@outlook.com)",
+            "email": "dhruv2424@outlook.com",
+            "joinedAt": 1794997114345,
             "level": 1,
             "tier": 1,
-            "dailyGameplayEarned": 107,
-            "totalGeneratedGreen": 32,
-            "lastActive": "Active today (Daily gameplay verified)"
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 15,
+            "lastActive": "Active today (Syndicate recruit)"
           }
         ],
         "claimedMilestones": [
