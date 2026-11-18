@@ -67,9 +67,9 @@
 
 <script>
 const RUNNERS = [
-  { label: "1", api: "https://api.github.com/repos/pocomon9/green/contents/status.json" },
-  { label: "2", api: "https://api.github.com/repos/sifihub/green/contents/status.json" },
-  { label: "3", api: "https://api.github.com/repos/analyse99km/green/contents/status.json" },
+  { label: "1", raw: "https://raw.githubusercontent.com/pocomon9/green/main/status.json", api: "https://api.github.com/repos/pocomon9/green/contents/status.json" },
+  { label: "2", raw: "https://raw.githubusercontent.com/sifihub/green/main/status.json", api: "https://api.github.com/repos/sifihub/green/contents/status.json" },
+  { label: "3", raw: "https://raw.githubusercontent.com/analyse99km/green/main/status.json", api: "https://api.github.com/repos/analyse99km/green/contents/status.json" },
 ];
 const HEALTH    = "/api/health";
 const STALE_MS  = 30 * 60 * 1000;
@@ -89,6 +89,13 @@ const setLed = c => led.className = c;
 const slotEl = i => document.getElementById("s"+(i+1));
 
 async function fetchStatus(runner) {
+  try {
+    const rawRes = await fetch(runner.raw + "?t=" + Date.now(), { cache: "no-store" });
+    if (rawRes.ok) {
+      const parsed = await rawRes.json();
+      if (parsed && parsed.url) return parsed;
+    }
+  } catch(e) {}
   try {
     const r = await fetch(runner.api + "?t=" + Date.now(), { cache: "no-store", headers: { "Accept": "application/vnd.github+json" } });
     if (!r.ok) return null;
