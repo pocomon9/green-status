@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1794996502298,
+    "lastLoginAt": 1794996474543,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -22,7 +22,7 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 500,
+      "money": 50099999,
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 0,
@@ -588,7 +588,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 377,
+      "dreamPoints": 3779999999,
       "dreamMultiplier": 1,
       "totalTaps": 100,
       "tapStamina": 77,
@@ -651,10 +651,10 @@
       "hasUnsavedActions": false,
       "isAwakened": false
     },
-    "money": 500,
-    "sparks": 377,
     "level": 10,
+    "money": 50099999,
+    "sparks": 3779999999,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1794996484968
+    "lastSaveAt": 1794996474543
   }
 }
