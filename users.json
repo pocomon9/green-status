@@ -2092,5 +2092,42 @@
     "money": 200,
     "lastSaveAt": 1795089030705,
     "lastLoginAt": 1795089030705
+  },
+  "tg_2120649706@telegram.neon": {
+    "userId": "usr_tg_2120649706",
+    "email": "tg_2120649706@telegram.neon",
+    "telegramId": 2120649706,
+    "name": "Shailesh Thakur",
+    "username": null,
+    "userReferralCode": "NEON-TG-2120649706",
+    "referredBy": null,
+    "createdAt": 1795089663036,
+    "lastLoginAt": 1795089663036,
+    "playerState": {
+      "name": "Shailesh Thakur",
+      "money": 100,
+      "dreamPoints": 500,
+      "energy": 100,
+      "maxEnergy": 100,
+      "nerve": 15,
+      "maxNerve": 15,
+      "happy": 100,
+      "maxHappy": 100,
+      "life": 100,
+      "maxLife": 100,
+      "food": 100,
+      "level": 1,
+      "referrals": {
+        "referralCode": "NEON-TG-2120649706",
+        "referredBy": null,
+        "hasClaimedWelcomeBonus": true,
+        "recruits": [],
+        "totalRecruits": 0,
+        "networkTotalCitizens": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
+        "claimedMilestones": []
+      }
+    }
   }
 }
