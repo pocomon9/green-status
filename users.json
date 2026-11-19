@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795072321525,
+    "lastLoginAt": 1795072380344,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 73,
+      "food": 69,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -716,7 +716,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "77847bbb628421e060d9b80a7d04d815aa70318f00deb8915b07c58804b772c0",
-      "lastSaveTimestamp": 1795072320237,
+      "lastSaveTimestamp": 1795072379645,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -724,7 +724,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795072321525
+    "lastSaveAt": 1795072380344
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
@@ -1392,7 +1392,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795072367447,
+    "lastLoginAt": 1795072367488,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
