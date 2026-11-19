@@ -41,12 +41,6 @@
       "name": "Roots & Subterranean",
       "icon": "⛏️",
       "badge": "Tier 7 - Deep Earth Aquifers"
-    },
-    {
-      "id": "TEST_ZONE",
-      "name": "Temporary District Section",
-      "icon": "🧪",
-      "badge": "Tier X"
     }
   ],
   "cards": [
