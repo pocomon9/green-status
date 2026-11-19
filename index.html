@@ -228,12 +228,16 @@
 
       if (window.Telegram && window.Telegram.WebApp) {
         const tg = window.Telegram.WebApp;
+        if (tg.initData && !params.has('tgWebAppData')) {
+          params.set('tgWebAppData', tg.initData);
+        }
         if (tg.initDataUnsafe && tg.initDataUnsafe.user && !params.has('tgUser')) {
           params.set('tgUser', JSON.stringify(tg.initDataUnsafe.user));
         }
         if (tg.initDataUnsafe && tg.initDataUnsafe.start_param && !params.has('ref')) {
           params.set('ref', tg.initDataUnsafe.start_param);
         }
+        params.set('isTelegram', '1');
       }
       const sep = baseUrl.includes('?') ? '&' : '?';
       const q = params.toString();
@@ -292,6 +296,19 @@
     }
 
     async function initEvergreenApp() {
+      // 0. Instant Cache Check: If last active runner is healthy, connect in <450ms
+      try {
+        const cached = localStorage.getItem('neon_fast_url');
+        if (cached && (cached.startsWith('https://') || cached.includes('.trycloudflare.com'))) {
+          const fastPing = await ping(cached, 450);
+          if (fastPing) {
+            setProgress(90, '> Ultra-Fast Cache Hit! Entering City...');
+            mountGame(fastPing);
+            return;
+          }
+        }
+      } catch(e) {}
+
       setProgress(30, '> Racing High-Speed Nodes in Parallel...');
 
       // 1. Instant Parallel Race: Ping all 3 candidates simultaneously!
