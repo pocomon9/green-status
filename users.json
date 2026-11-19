@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795069329880,
+    "lastLoginAt": 1795069329904,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -26,7 +26,7 @@
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 0,
-      "life": 15,
+      "life": 100,
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 0,
+      "food": 73,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -582,7 +582,42 @@
         }
       ],
       "currentPropertyId": "prop_apt",
-      "inventory": [],
+      "inventory": [
+        {
+          "id": "item_1795012964286",
+          "name": "box",
+          "category": "WEAPON",
+          "price": 500,
+          "marketValue": 400,
+          "description": "throw box",
+          "icon": "📦",
+          "damage": 60,
+          "accuracy": 20,
+          "shopliftDifficulty": 40,
+          "forgePrice": 250,
+          "forgeSparksPrice": 40,
+          "forgeDamageBonus": 6.5,
+          "forgeAccuracyBonus": 2.5,
+          "quantity": 2,
+          "upgradeLevel": 0,
+          "isCloudItem": true
+        },
+        {
+          "id": "inv_sub_referral_mwn5vg5t",
+          "name": "Syndicate Welcome Baguette",
+          "description": "Handcrafted welcome meal: +30 Food, +10 Energy, +10 Happy.",
+          "category": "FOOD",
+          "rarity": "COMMON",
+          "price": 25,
+          "marketValue": 25,
+          "shopliftDifficulty": 10,
+          "foodRestore": 30,
+          "energyRestore": 10,
+          "happyRestore": 10,
+          "icon": "🥪",
+          "quantity": 1
+        }
+      ],
       "bazaarListings": [],
       "bazaarTillCash": 0,
       "dailyWheelSpinsAvailable": 1,
@@ -617,7 +652,7 @@
       ],
       "bodyAugmentations": [],
       "settledReceiptIds": [],
-      "greenTokens": 5,
+      "greenTokens": 35,
       "dailyStreak": 2,
       "lastStreakClaimTimestamp": 1794996367122,
       "canClaimDailyStreak": false,
@@ -643,9 +678,10 @@
           1
         ],
         "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyStipendClaimTimestamp": 1795069235788,
         "networkTotalCitizens": 1,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493
+        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
+        "referredBy": "NEON-71F63E20"
       },
       "arsonStats": {
         "breaches": 1,
@@ -673,14 +709,14 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 110,
+      "hospitalTimeRemainingSeconds": 0,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795018642764,
+      "stateHash": "61f16820799901ae6f40193389ea9713c499509b09378980d73aff3b3edd2cda",
+      "lastSaveTimestamp": 1795069329219,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -1958,15 +1994,27 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "totalRecruits": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "recruits": [],
+        "totalRecruits": 1,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "recruits": [
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "",
+            "joinedAt": 1795069232884,
+            "level": 1,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 15,
+            "lastActive": "Active today (Redeemed invite code)"
+          }
+        ],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 0
+        "networkTotalCitizens": 1
       },
       "arsonStats": {
         "breaches": 1,
