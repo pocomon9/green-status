@@ -1978,15 +1978,27 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "totalRecruits": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "recruits": [],
+        "totalRecruits": 1,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "recruits": [
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "",
+            "joinedAt": 1795069232884,
+            "level": 1,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 15,
+            "lastActive": "Active today (Redeemed invite code)"
+          }
+        ],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 0
+        "networkTotalCitizens": 1
       },
       "arsonStats": {
         "breaches": 1,
