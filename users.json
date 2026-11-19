@@ -26,7 +26,7 @@
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 0,
-      "life": 15,
+      "life": 100,
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 0,
+      "food": 81,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -582,7 +582,27 @@
         }
       ],
       "currentPropertyId": "prop_apt",
-      "inventory": [],
+      "inventory": [
+        {
+          "id": "item_1795012964286",
+          "name": "box",
+          "category": "WEAPON",
+          "price": 500,
+          "marketValue": 400,
+          "description": "throw box",
+          "icon": "📦",
+          "damage": 60,
+          "accuracy": 20,
+          "shopliftDifficulty": 40,
+          "forgePrice": 250,
+          "forgeSparksPrice": 40,
+          "forgeDamageBonus": 6.5,
+          "forgeAccuracyBonus": 2.5,
+          "quantity": 2,
+          "upgradeLevel": 0,
+          "isCloudItem": true
+        }
+      ],
       "bazaarListings": [],
       "bazaarTillCash": 0,
       "dailyWheelSpinsAvailable": 1,
@@ -617,7 +637,7 @@
       ],
       "bodyAugmentations": [],
       "settledReceiptIds": [],
-      "greenTokens": 5,
+      "greenTokens": 35,
       "dailyStreak": 2,
       "lastStreakClaimTimestamp": 1794996367122,
       "canClaimDailyStreak": false,
@@ -673,14 +693,14 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 110,
+      "hospitalTimeRemainingSeconds": 0,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795018642764,
+      "lastSaveTimestamp": 1795021103105,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -2012,18 +2032,12 @@
     "lastSaveAt": 1795018642297
   },
   "recruiter_omega@neon.city": {
+    "userId": "usr_omega_777",
     "email": "recruiter_omega@neon.city",
     "name": "Commander Omega",
-    "userId": "usr_omega_777",
     "userReferralCode": "NEON-OMEGA-777",
-    "referredBy": "None (Direct)",
+    "referredBy": null,
     "createdAt": 1795089029401,
-    "lastLoginAt": 1795089029401,
-    "passwordHash": "N/A",
-    "salt": "N/A",
-    "money": 0,
-    "sparks": 0,
-    "level": 1,
     "playerState": {
       "id": "usr_omega_777",
       "name": "Commander Omega",
@@ -2048,21 +2062,17 @@
         "lifetimeCommissionGreen": 100,
         "claimedMilestones": []
       }
-    }
+    },
+    "lastSaveAt": 1795089029401,
+    "lastLoginAt": 1795089029401
   },
   "recruit_beta@neon.city": {
+    "userId": "usr_beta_888",
     "email": "recruit_beta@neon.city",
     "name": "Agent Beta",
-    "userId": "usr_beta_888",
     "userReferralCode": "NEON-MWNHNS8U",
     "referredBy": "NEON-OMEGA-777",
     "createdAt": 1795089030078,
-    "lastLoginAt": 1795089030705,
-    "passwordHash": "N/A",
-    "salt": "N/A",
-    "money": 200,
-    "sparks": 0,
-    "level": 1,
     "playerState": {
       "id": "usr_beta_888",
       "name": "Agent Beta",
@@ -2078,6 +2088,9 @@
         "lifetimeCommissionGreen": 0,
         "claimedMilestones": []
       }
-    }
+    },
+    "money": 200,
+    "lastSaveAt": 1795089030705,
+    "lastLoginAt": 1795089030705
   }
 }
