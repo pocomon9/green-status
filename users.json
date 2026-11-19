@@ -26,7 +26,7 @@
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 0,
-      "life": 100,
+      "life": 15,
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 81,
+      "food": 0,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -584,23 +584,19 @@
       "currentPropertyId": "prop_apt",
       "inventory": [
         {
-          "id": "item_1795012964286",
-          "name": "box",
-          "category": "WEAPON",
-          "price": 500,
-          "marketValue": 400,
-          "description": "throw box",
-          "icon": "📦",
-          "damage": 60,
-          "accuracy": 20,
-          "shopliftDifficulty": 40,
-          "forgePrice": 250,
-          "forgeSparksPrice": 40,
-          "forgeDamageBonus": 6.5,
-          "forgeAccuracyBonus": 2.5,
-          "quantity": 2,
-          "upgradeLevel": 0,
-          "isCloudItem": true
+          "id": "inv_sub_referral_mwnhw5th",
+          "name": "Syndicate Welcome Baguette",
+          "description": "Handcrafted welcome meal: +30 Food, +10 Energy, +10 Happy.",
+          "category": "FOOD",
+          "rarity": "COMMON",
+          "price": 25,
+          "marketValue": 25,
+          "shopliftDifficulty": 10,
+          "foodRestore": 30,
+          "energyRestore": 10,
+          "happyRestore": 10,
+          "icon": "🥪",
+          "quantity": 1
         }
       ],
       "bazaarListings": [],
@@ -637,15 +633,22 @@
       ],
       "bodyAugmentations": [],
       "settledReceiptIds": [],
-      "greenTokens": 35,
+      "greenTokens": 5,
       "dailyStreak": 2,
       "lastStreakClaimTimestamp": 1794996367122,
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-44861F74",
+        "referredBy": "Dhruv11",
+        "hasClaimedWelcomeBonus": true,
+        "lastDailyStipendClaimTimestamp": 1795089423413,
+        "lastDailyRoyaltyClaimTimestamp": 1795089427938,
+        "dailyGameplayContribution": 0,
+        "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 1,
-        "unclaimedCommissionGreen": 100,
-        "lifetimeCommissionGreen": 100,
+        "networkTotalCitizens": 1,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 115,
         "recruits": [
           {
             "id": "usr_e7cc880df8118651",
@@ -654,18 +657,14 @@
             "joinedAt": 1794997114345,
             "level": 1,
             "tier": 1,
-            "dailyGameplayEarned": 150,
-            "totalGeneratedGreen": 15,
-            "lastActive": "Active today (Syndicate recruit)"
+            "dailyGameplayEarned": 158,
+            "totalGeneratedGreen": 30,
+            "lastActive": "Active today (Daily gameplay verified)"
           }
         ],
         "claimedMilestones": [
           1
-        ],
-        "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 0,
-        "networkTotalCitizens": 1,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493
+        ]
       },
       "arsonStats": {
         "breaches": 1,
@@ -693,14 +692,14 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 0,
+      "hospitalTimeRemainingSeconds": 48,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795021103105,
+      "stateHash": "f7f80f05635a0c9093858f8248db8af55df01f92190973409cac32d8694a41fd",
+      "lastSaveTimestamp": 1795089472908,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -1978,15 +1977,27 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "totalRecruits": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "recruits": [],
+        "totalRecruits": 1,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "recruits": [
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "d8r21v@gmail.com",
+            "joinedAt": 1795089421514,
+            "level": 1,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 50,
+            "lastActive": "Active today (Code Redeem)"
+          }
+        ],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 0
+        "networkTotalCitizens": 1
       },
       "arsonStats": {
         "breaches": 1,
@@ -2032,12 +2043,18 @@
     "lastSaveAt": 1795018642297
   },
   "recruiter_omega@neon.city": {
-    "userId": "usr_omega_777",
     "email": "recruiter_omega@neon.city",
     "name": "Commander Omega",
+    "userId": "usr_omega_777",
     "userReferralCode": "NEON-OMEGA-777",
     "referredBy": null,
     "createdAt": 1795089029401,
+    "lastLoginAt": 1795089029401,
+    "passwordHash": "N/A",
+    "salt": "N/A",
+    "money": 0,
+    "sparks": 0,
+    "level": 1,
     "playerState": {
       "id": "usr_omega_777",
       "name": "Commander Omega",
@@ -2061,18 +2078,24 @@
         "unclaimedCommissionGreen": 100,
         "lifetimeCommissionGreen": 100,
         "claimedMilestones": []
-      }
+      },
+      "level": 1
     },
-    "lastSaveAt": 1795089029401,
-    "lastLoginAt": 1795089029401
+    "lastSaveAt": 1795089029401
   },
   "recruit_beta@neon.city": {
-    "userId": "usr_beta_888",
     "email": "recruit_beta@neon.city",
     "name": "Agent Beta",
+    "userId": "usr_beta_888",
     "userReferralCode": "NEON-MWNHNS8U",
     "referredBy": "NEON-OMEGA-777",
     "createdAt": 1795089030078,
+    "lastLoginAt": 1795089030705,
+    "passwordHash": "N/A",
+    "salt": "N/A",
+    "money": 200,
+    "sparks": 0,
+    "level": 1,
     "playerState": {
       "id": "usr_beta_888",
       "name": "Agent Beta",
@@ -2087,11 +2110,10 @@
         "unclaimedCommissionGreen": 0,
         "lifetimeCommissionGreen": 0,
         "claimedMilestones": []
-      }
+      },
+      "level": 1
     },
-    "money": 200,
-    "lastSaveAt": 1795089030705,
-    "lastLoginAt": 1795089030705
+    "lastSaveAt": 1795089030705
   },
   "tg_2120649706@telegram.neon": {
     "userId": "usr_tg_2120649706",
