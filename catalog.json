@@ -1625,29 +1625,29 @@
     }
   ],
   "referralRewards": {
-    "recruiterInstantBounty": 150,
+    "recruiterInstantBounty": 100,
     "recruitWelcomeBonus": 100,
     "dailyRecruitStipend": 50,
     "tiers": [
       {
         "tier": 1,
         "jumpLabel": "Direct Link (0 Jumps)",
-        "percent": 12
+        "percent": 10
       },
       {
         "tier": 2,
         "jumpLabel": "1 Jump (2nd Generation)",
-        "percent": 5
+        "percent": 4
       },
       {
         "tier": 3,
         "jumpLabel": "2 Jumps (3rd Generation)",
-        "percent": 2.5
+        "percent": 2
       },
       {
         "tier": 4,
         "jumpLabel": "3 Jumps (4th Generation)",
-        "percent": 1.5
+        "percent": 1
       },
       {
         "tier": 5,
@@ -1658,32 +1658,32 @@
     "milestones": [
       {
         "recruits": 3,
-        "rewardGreen": 600,
+        "rewardGreen": 500,
         "label": "Street Crew"
       },
       {
         "recruits": 5,
-        "rewardGreen": 1500,
+        "rewardGreen": 1200,
         "label": "District Cell"
       },
       {
         "recruits": 10,
-        "rewardGreen": 3500,
+        "rewardGreen": 3000,
         "label": "Underworld Syndicate"
       },
       {
         "recruits": 25,
-        "rewardGreen": 12000,
+        "rewardGreen": 10000,
         "label": "City Cartel"
       },
       {
         "recruits": 50,
-        "rewardGreen": 30000,
+        "rewardGreen": 25000,
         "label": "Metropolis Mafia"
       },
       {
         "recruits": 100,
-        "rewardGreen": 75000,
+        "rewardGreen": 60000,
         "label": "Underworld Kingpin"
       }
     ]
