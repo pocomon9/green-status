@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795069208693,
+    "lastLoginAt": 1795069245131,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 81,
+      "food": 79,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -601,6 +601,21 @@
           "quantity": 2,
           "upgradeLevel": 0,
           "isCloudItem": true
+        },
+        {
+          "id": "inv_sub_referral_mwn5vg5t",
+          "name": "Syndicate Welcome Baguette",
+          "description": "Handcrafted welcome meal: +30 Food, +10 Energy, +10 Happy.",
+          "category": "FOOD",
+          "rarity": "COMMON",
+          "price": 25,
+          "marketValue": 25,
+          "shopliftDifficulty": 10,
+          "foodRestore": 30,
+          "energyRestore": 10,
+          "happyRestore": 10,
+          "icon": "🥪",
+          "quantity": 1
         }
       ],
       "bazaarListings": [],
@@ -663,9 +678,10 @@
           1
         ],
         "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyStipendClaimTimestamp": 1795069235788,
         "networkTotalCitizens": 1,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493
+        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
+        "referredBy": "NEON-71F63E20"
       },
       "arsonStats": {
         "breaches": 1,
@@ -699,8 +715,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795021103105,
+      "stateHash": "fd8b418c169370fd684b65e18a91a7ecf89702351e2e33c11b793927732f38b7",
+      "lastSaveTimestamp": 1795069244466,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -708,7 +724,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795069208693
+    "lastSaveAt": 1795069245131
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
