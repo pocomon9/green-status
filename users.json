@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795085597787,
+    "lastLoginAt": 1795085657423,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 54,
+      "food": 53,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -703,7 +703,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "90344c421e046755e5334168f30ea6e8ba9e58c6f538478a432d170fd2070da1",
-      "lastSaveTimestamp": 1795085599387,
+      "lastSaveTimestamp": 1795085658753,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -711,7 +711,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795085597787
+    "lastSaveAt": 1795085657423
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
@@ -1379,7 +1379,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795085597758,
+    "lastLoginAt": 1795085657414,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1959,7 +1959,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 449,
+      "dreamPoints": 455,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
@@ -1989,8 +1989,8 @@
         "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 1,
         "networkTotalCitizens": 1,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
         "recruits": [
           {
             "id": "usr_44861f741ad920d4",
@@ -2032,21 +2032,21 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 52,
+      "hospitalTimeRemainingSeconds": 51,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
-      "lastSaveTimestamp": 1795085599387,
+      "lastSaveTimestamp": 1795085658731,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
     "money": 495,
-    "sparks": 449,
+    "sparks": 455,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795085597758
+    "lastSaveAt": 1795085657414
   }
 }
