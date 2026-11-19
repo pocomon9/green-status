@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795084634089,
+    "lastLoginAt": 1795084695668,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 81,
+      "food": 77,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -643,7 +643,14 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-44861F74",
+        "referredBy": null,
+        "hasClaimedWelcomeBonus": false,
+        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
+        "dailyGameplayContribution": 0,
+        "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 1,
+        "networkTotalCitizens": 1,
         "unclaimedCommissionGreen": 100,
         "lifetimeCommissionGreen": 100,
         "recruits": [
@@ -661,11 +668,7 @@
         ],
         "claimedMilestones": [
           1
-        ],
-        "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 0,
-        "networkTotalCitizens": 1,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493
+        ]
       },
       "arsonStats": {
         "breaches": 1,
@@ -700,7 +703,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795021103105,
+      "lastSaveTimestamp": 1795084697458,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -708,7 +711,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795084634089
+    "lastSaveAt": 1795084695668
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
