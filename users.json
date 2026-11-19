@@ -6,9 +6,9 @@
     "salt": "293a8e5ffb3b4e9818031c082e86538a",
     "passwordHash": "61a89a9d8685a6f07851c69776933b152a220b125c27e095f173a1bcac2d7210ce8c23a582e403c4b332bed47c3c0e61f66fd3b3238ac8efeb334b9d9169739c",
     "userReferralCode": "NEON-44861F74",
-    "referredBy": null,
+    "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795084756075,
+    "lastLoginAt": 1795084756173,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -643,8 +643,8 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-44861F74",
-        "referredBy": null,
-        "hasClaimedWelcomeBonus": false,
+        "referredBy": "NEON-71F63E20",
+        "hasClaimedWelcomeBonus": true,
         "lastDailyStipendClaimTimestamp": 0,
         "lastDailyRoyaltyClaimTimestamp": 1794997340493,
         "dailyGameplayContribution": 0,
@@ -1981,15 +1981,27 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "totalRecruits": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "recruits": [],
+        "totalRecruits": 1,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "recruits": [
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "d8r21v@gmail.com",
+            "joinedAt": 1795084776614,
+            "level": 1,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 50,
+            "lastActive": "Active today (Code Redeem)"
+          }
+        ],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 0
+        "networkTotalCitizens": 1
       },
       "arsonStats": {
         "breaches": 1,
