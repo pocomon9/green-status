@@ -193,9 +193,9 @@
     }
 
     const CANDIDATES = [
-      "https://comparable-airlines-phrases-answered.trycloudflare.com",
-      "https://aurora-filled-offer-exercises.trycloudflare.com",
-      "https://rebates-shanghai-dragon-findarticles.trycloudflare.com"
+      "https://efficient-neighbor-behind-attached.trycloudflare.com",
+      "https://brave-referenced-recognize-sunrise.trycloudflare.com",
+      "https://galleries-formatting-opposed-toys.trycloudflare.com"
     ];
 
     const STATUS_FEEDS = [
@@ -292,7 +292,12 @@
     function mountGame(runnerUrl) {
       try { localStorage.setItem('neon_fast_url', runnerUrl); } catch(e) {}
       const targetUrl = buildGameUrl(runnerUrl);
-      window.location.replace(targetUrl);
+      if (frame) {
+        frame.src = targetUrl;
+        setTimeout(dismissSplash, 2000);
+      } else {
+        window.location.replace(targetUrl);
+      }
     }
 
     async function initEvergreenApp() {
