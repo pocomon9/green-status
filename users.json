@@ -1376,7 +1376,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795091090434,
+    "lastLoginAt": 1795018642302,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1394,7 +1394,7 @@
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 0,
-      "life": 15,
+      "life": 100,
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
@@ -1402,7 +1402,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 0,
+      "food": 3,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -1956,9 +1956,9 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 387,
+      "dreamPoints": 329,
       "dreamMultiplier": 1,
-      "totalTaps": 57,
+      "totalTaps": 49,
       "tapStamina": 100,
       "maxTapStamina": 100,
       "dreamCards": {
@@ -1978,18 +1978,15 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "referredBy": "NEON-E7CC880D",
-        "hasClaimedWelcomeBonus": true,
-        "lastDailyStipendClaimTimestamp": 1794998792414,
-        "lastDailyRoyaltyClaimTimestamp": 0,
-        "dailyGameplayContribution": 0,
-        "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 0,
-        "networkTotalCitizens": 0,
         "unclaimedCommissionGreen": 0,
         "lifetimeCommissionGreen": 0,
         "recruits": [],
-        "claimedMilestones": []
+        "claimedMilestones": [],
+        "referredBy": "NEON-E7CC880D",
+        "hasClaimedWelcomeBonus": false,
+        "lastDailyStipendClaimTimestamp": 1794998792414,
+        "networkTotalCitizens": 0
       },
       "arsonStats": {
         "breaches": 1,
@@ -2017,21 +2014,21 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 45,
+      "hospitalTimeRemainingSeconds": 0,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
-      "lastSaveTimestamp": 1795091089423,
+      "lastSaveTimestamp": 1795018642846,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
     "money": 495,
-    "sparks": 387,
+    "sparks": 329,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795091090434
+    "lastSaveAt": 1795018642297
   }
 }
