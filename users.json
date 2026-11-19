@@ -26,7 +26,7 @@
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 0,
-      "life": 100,
+      "life": 50,
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 81,
+      "food": 25,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -582,27 +582,7 @@
         }
       ],
       "currentPropertyId": "prop_apt",
-      "inventory": [
-        {
-          "id": "item_1795012964286",
-          "name": "box",
-          "category": "WEAPON",
-          "price": 500,
-          "marketValue": 400,
-          "description": "throw box",
-          "icon": "📦",
-          "damage": 60,
-          "accuracy": 20,
-          "shopliftDifficulty": 40,
-          "forgePrice": 250,
-          "forgeSparksPrice": 40,
-          "forgeDamageBonus": 6.5,
-          "forgeAccuracyBonus": 2.5,
-          "quantity": 2,
-          "upgradeLevel": 0,
-          "isCloudItem": true
-        }
-      ],
+      "inventory": [],
       "bazaarListings": [],
       "bazaarTillCash": 0,
       "dailyWheelSpinsAvailable": 1,
@@ -637,13 +617,20 @@
       ],
       "bodyAugmentations": [],
       "settledReceiptIds": [],
-      "greenTokens": 35,
+      "greenTokens": 5,
       "dailyStreak": 2,
       "lastStreakClaimTimestamp": 1794996367122,
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-44861F74",
+        "referredBy": "NEON-71F63E20",
+        "hasClaimedWelcomeBonus": false,
+        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
+        "dailyGameplayContribution": 0,
+        "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 1,
+        "networkTotalCitizens": 1,
         "unclaimedCommissionGreen": 100,
         "lifetimeCommissionGreen": 100,
         "recruits": [
@@ -661,11 +648,7 @@
         ],
         "claimedMilestones": [
           1
-        ],
-        "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 0,
-        "networkTotalCitizens": 1,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493
+        ]
       },
       "arsonStats": {
         "breaches": 1,
@@ -699,8 +682,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795021103105,
+      "stateHash": "9f8a47bce8ed6742b65aafbca52e4157d58d67faa8e1fb881ee6d47570796757",
+      "lastSaveTimestamp": 1795088338424,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -1978,15 +1961,27 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "totalRecruits": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "recruits": [],
+        "totalRecruits": 1,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "recruits": [
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "d8r21v@gmail.com",
+            "joinedAt": 1795088178587,
+            "level": 1,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 50,
+            "lastActive": "Active today (Code Redeem)"
+          }
+        ],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 0
+        "networkTotalCitizens": 1
       },
       "arsonStats": {
         "breaches": 1,
@@ -2030,28 +2025,5 @@
     "level": 1,
     "rank": "#1 Neon Operative",
     "lastSaveAt": 1795018642297
-  },
-  "recruiter_omega@neon.city": {
-    "userId": "usr_omega_777",
-    "email": "recruiter_omega@neon.city",
-    "name": "Commander Omega",
-    "userReferralCode": "NEON-OMEGA-777",
-    "referredBy": null,
-    "createdAt": 1795089029401,
-    "playerState": {
-      "id": "usr_omega_777",
-      "name": "Commander Omega",
-      "referrals": {
-        "referralCode": "NEON-OMEGA-777",
-        "recruits": [],
-        "totalRecruits": 0,
-        "networkTotalCitizens": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "claimedMilestones": []
-      }
-    },
-    "lastSaveAt": 1795089029401,
-    "lastLoginAt": 1795089029401
   }
 }
