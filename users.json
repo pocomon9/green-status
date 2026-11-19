@@ -2040,7 +2040,7 @@
     "userReferralCode": "NEON-TG-2120649706",
     "referredBy": null,
     "createdAt": 1795089663036,
-    "lastLoginAt": 1795090005359,
+    "lastLoginAt": 1795090031722,
     "playerState": {
       "id": "usr_green_init",
       "name": "GreenNovice",
@@ -2702,13 +2702,13 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "adfd45c595a080bae77eb376b0daf43ca41a755e5e8bb6eefe4bcffb4cb7f280",
-      "lastSaveTimestamp": 1795089970736,
+      "lastSaveTimestamp": 1795090030421,
       "hasUnsavedActions": false
     },
     "money": 500,
     "sparks": 15,
     "level": 1,
     "rank": "#1 Green Recruit",
-    "lastSaveAt": 1795090005359
+    "lastSaveAt": 1795090031722
   }
 }
