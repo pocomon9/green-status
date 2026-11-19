@@ -1,267 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>Neon Metropolis — Cyberpunk Underworld RPG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Neon Metropolis | High-Speed Gateway</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: #05070a;
-      color: #f0f6fc;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-    #splash {
-      position: fixed;
-      inset: 0;
-      width: 100vw;
+    body {
+      background: #040806;
+      color: #10b981;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 20px;
-      background: radial-gradient(circle at center, #0e1626 0%, #05070a 100%);
-      z-index: 100;
-      transition: opacity 0.5s ease-out;
+      text-align: center;
+      padding: 20px;
     }
-    .spin {
-      width: 52px;
-      height: 52px;
-      border: 3px solid #1f2937;
+    .core {
+      width: 60px;
+      height: 60px;
+      border: 3px solid rgba(16, 185, 129, 0.15);
       border-top-color: #10b981;
       border-radius: 50%;
-      animation: spin 0.75s linear infinite;
+      animation: spin 0.6s linear infinite;
+      margin-bottom: 20px;
     }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    #splash h1 {
-      font-size: 32px;
+    @keyframes spin { to { transform: rotate(360deg); } }
+    h1 {
+      font-size: 22px;
       font-weight: 900;
       letter-spacing: -0.5px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #f0fdf4;
-      text-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+      color: #ffffff;
+      margin-bottom: 8px;
     }
-    #smsg {
-      font-size: 14px;
-      color: #94a3b8;
-      text-align: center;
-      max-width: 440px;
-      line-height: 1.5;
-    }
-    #frame {
-      position: fixed;
-      inset: 0;
-      width: 100vw;
-      height: 100vh;
-      border: none;
-      display: none;
-      background: #05070a;
-      z-index: 10;
-    }
-    #down {
-      position: fixed;
-      inset: 0;
-      width: 100vw;
-      height: 100vh;
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      padding: 24px;
-      text-align: center;
-      background: radial-gradient(circle at center, #171520 0%, #05070a 100%);
-      z-index: 90;
-    }
-    .alert-icon {
-      font-size: 40px;
-      margin-bottom: 4px;
-    }
-    #down h2 {
-      font-size: 26px;
-      font-weight: 800;
-      color: #f0f6fc;
-    }
-    #down p {
-      font-size: 14px;
-      color: #94a3b8;
-      max-width: 420px;
-      line-height: 1.6;
-    }
-    .notice {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid #1f2937;
-      border-radius: 14px;
-      padding: 12px 20px;
+    p {
       font-size: 13px;
-      color: #94a3b8;
+      color: #6ee7b7;
+      font-family: monospace;
     }
-    .notice strong { color: #f0fdf4; }
-    button {
-      background: #10b981;
-      color: #05070a;
-      border: none;
-      border-radius: 10px;
-      padding: 12px 26px;
-      font-size: 14px;
-      font-weight: 800;
-      cursor: pointer;
-      transition: opacity 0.2s, transform 0.1s;
-      margin-top: 8px;
-    }
-    button:hover { opacity: 0.9; transform: scale(1.02); }
-    button:active { transform: scale(0.98); }
   </style>
 </head>
 <body>
+  <div class="core"></div>
+  <h1>NEON METROPOLIS</h1>
+  <p id="status-text">Entering high-speed cluster...</p>
 
-<!-- Player Splash Screen (No Developer Mesh Stats) -->
-<div id="splash">
-  <div class="spin"></div>
-  <h1>🌿 Neon Metropolis</h1>
-  <p id="smsg">Entering the Underworld...</p>
-</div>
+  <script>
+    const CANDIDATES = [
+      "https://meaning-gallery-establishment-volunteer.trycloudflare.com",
+      "https://printable-therapy-servers-nerve.trycloudflare.com",
+      "https://romantic-moscow-investigators-funeral.trycloudflare.com"
+    ];
+    const STATUS_REPOS = [
+      "https://raw.githubusercontent.com/pocomon9/green/main/status.json",
+      "https://raw.githubusercontent.com/sifihub/green/main/status.json"
+    ];
 
-<!-- Main Game Viewport (100% Fullscreen) -->
-<iframe id="frame" src="about:blank" allow="geolocation; camera; microphone; clipboard-write; autoplay"></iframe>
-
-<!-- Temporary Maintenance Screen -->
-<div id="down">
-  <div class="alert-icon">🌆</div>
-  <h2>Entering Underworld...</h2>
-  <p>Connecting to Neon Metropolis game servers. All player progress is securely saved.</p>
-  <div class="notice">
-    Reconnecting automatically in <strong id="cds">10</strong>s...
-  </div>
-  <button onclick="check()">Enter Game Now</button>
-</div>
-
-<script>
-const RUNNERS = [
-  { raw: "https://raw.githubusercontent.com/pocomon9/green/main/status.json", api: "https://api.github.com/repos/pocomon9/green/contents/status.json" },
-  { raw: "https://raw.githubusercontent.com/sifihub/green/main/status.json", api: "https://api.github.com/repos/sifihub/green/contents/status.json" },
-  { raw: "https://raw.githubusercontent.com/analyse99km/green/main/status.json", api: "https://api.github.com/repos/analyse99km/green/contents/status.json" },
-];
-const HEALTH   = "/api/health";
-const STALE_MS = 30 * 60 * 1000;
-const RECHECK  = 4 * 60 * 1000;
-
-const splash = document.getElementById("splash");
-const smsg   = document.getElementById("smsg");
-const frame  = document.getElementById("frame");
-const down   = document.getElementById("down");
-const cdsEl  = document.getElementById("cds");
-
-let activeUrl = null, recheckId = null, cdId = null;
-
-async function fetchStatus(runner) {
-  try {
-    const rawRes = await fetch(runner.raw + "?t=" + Date.now(), { cache: "no-store" });
-    if (rawRes.ok) {
-      const parsed = await rawRes.json();
-      if (parsed && parsed.url) return parsed;
+    function redirect(url) {
+      try { localStorage.setItem('neon_fast_url', url); } catch(e) {}
+      const target = url + window.location.search;
+      window.location.replace(target);
     }
-  } catch(e) {}
-  try {
-    const r = await fetch(runner.api + "?t=" + Date.now(), { cache: "no-store", headers: { "Accept": "application/vnd.github+json" } });
-    if (!r.ok) return null;
-    const data = await r.json();
-    if (!data || !data.content) return null;
-    const decoded = atob(data.content.replace(/\s/g, ''));
-    return JSON.parse(decoded);
-  } catch(e) {
-    return null;
-  }
-}
 
-async function ping(url) {
-  if (!url || url === "offline") return false;
-  try {
-    const r = await fetch(url + HEALTH, { signal: AbortSignal.timeout(6000) });
-    return r.ok;
-  } catch { return false; }
-}
+    async function ping(url) {
+      if (!url || !url.startsWith('https://')) return null;
+      try {
+        const ctrl = new AbortController();
+        const tid = setTimeout(() => ctrl.abort(), 1600);
+        const res = await fetch(url + '/api/health', { signal: ctrl.signal });
+        clearTimeout(tid);
+        if (res.ok) return url;
+      } catch(e) {}
+      return null;
+    }
 
-async function check() {
-  clearInterval(recheckId);
-  clearInterval(cdId);
-  down.style.display   = "none";
-  frame.style.display  = "none";
-  splash.style.display = "flex";
-  splash.style.opacity = "1";
-  smsg.textContent     = "Connecting to Neon Metropolis...";
+    async function startFastConnect() {
+      // 1. Instant check cached node
+      try {
+        const cached = localStorage.getItem('neon_fast_url');
+        if (cached) {
+          const fast = await ping(cached);
+          if (fast) return redirect(fast);
+        }
+      } catch(e) {}
 
-  const statuses = await Promise.all(RUNNERS.map(r => fetchStatus(r)));
-  const now = Date.now();
-  const results = await Promise.all(
-    statuses.map(async (s) => {
-      if (!s || s.url === "offline" || !s.url) return { alive: false, url: null };
-      const fresh = (now - s.ts * 1000) < STALE_MS;
-      const alive = fresh && await ping(s.url);
-      return { alive, url: s.url };
-    })
-  );
+      // 2. Parallel race of live candidates
+      const racePromises = CANDIDATES.map(u => ping(u));
+      const results = await Promise.all(racePromises);
+      const alive = results.find(Boolean);
+      if (alive) return redirect(alive);
 
-  const live = results.filter(r => r.alive);
+      // 3. Fallback: Query live status feeds if tunnels cycled
+      document.getElementById('status-text').textContent = 'Connecting to fallback node...';
+      for (const feed of STATUS_REPOS) {
+        try {
+          const res = await fetch(feed + '?t=' + Date.now());
+          if (res.ok) {
+            const data = await res.json();
+            if (data && data.url && data.url.startsWith('https://')) {
+              const live = await ping(data.url);
+              if (live) return redirect(live);
+            }
+          }
+        } catch(e) {}
+      }
 
-  if (!live.length) {
-    splash.style.display = "none";
-    down.style.display   = "flex";
-    startCd(10);
-    return;
-  }
+      document.getElementById('status-text').textContent = 'Reconnecting in 2s...';
+      setTimeout(startFastConnect, 2000);
+    }
 
-  // Sticky session: stick to same runner node for consistent local storage & session
-  let pick = null;
-  const savedRunnerUrl = sessionStorage.getItem("neon_active_runner");
-  if (savedRunnerUrl && live.find(r => r.url === savedRunnerUrl)) {
-    pick = live.find(r => r.url === savedRunnerUrl);
-  } else {
-    pick = live[Math.floor(Math.random() * live.length)];
-  }
-  sessionStorage.setItem("neon_active_runner", pick.url);
-  activeUrl = pick.url;
-
-  smsg.textContent = "Entering the Underworld...";
-  frame.src = activeUrl;
-  frame.style.display = "block";
-
-  // Hide splash smoothly
-  setTimeout(() => {
-    splash.style.opacity = "0";
-    setTimeout(() => { splash.style.display = "none"; }, 500);
-  }, 1000);
-
-  frame.onload = () => {
-    splash.style.opacity = "0";
-    setTimeout(() => { splash.style.display = "none"; }, 500);
-  };
-
-  recheckId = setInterval(silentCheck, RECHECK);
-}
-
-async function silentCheck() {
-  if (activeUrl && await ping(activeUrl)) return;
-  check();
-}
-
-function startCd(s) {
-  cdsEl.textContent = s;
-  cdId = setInterval(() => {
-    cdsEl.textContent = --s;
-    if (s <= 0) { clearInterval(cdId); check(); }
-  }, 1000);
-}
-
-check();
-</script>
+    startFastConnect();
+  </script>
 </body>
 </html>
