@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795084996140,
+    "lastLoginAt": 1795085057462,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 65,
+      "food": 63,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -703,7 +703,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "90344c421e046755e5334168f30ea6e8ba9e58c6f538478a432d170fd2070da1",
-      "lastSaveTimestamp": 1795084997441,
+      "lastSaveTimestamp": 1795085058652,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -711,7 +711,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795084996135
+    "lastSaveAt": 1795085057462
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
@@ -1379,7 +1379,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795085053180,
+    "lastLoginAt": 1795085053693,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1987,23 +1987,11 @@
         "lastDailyRoyaltyClaimTimestamp": 0,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
-        "totalRecruits": 1,
-        "networkTotalCitizens": 1,
+        "totalRecruits": 0,
+        "networkTotalCitizens": 0,
         "unclaimedCommissionGreen": 0,
         "lifetimeCommissionGreen": 0,
-        "recruits": [
-          {
-            "id": "usr_44861f741ad920d4",
-            "name": "Dhruv",
-            "email": "d8r21v@gmail.com",
-            "joinedAt": 1794996362058,
-            "level": 99,
-            "tier": 1,
-            "dailyGameplayEarned": 100,
-            "totalGeneratedGreen": 50,
-            "lastActive": "Active Operative"
-          }
-        ],
+        "recruits": [],
         "claimedMilestones": []
       },
       "arsonStats": {
