@@ -4,71 +4,191 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Neon Metropolis | High-Speed Gateway</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #040806;
+      background: #030705;
       color: #10b981;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Courier New', monospace;
       height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 20px;
+      padding: 24px;
+      overflow: hidden;
+      user-select: none;
     }
-    .core {
-      width: 60px;
-      height: 60px;
-      border: 3px solid rgba(16, 185, 129, 0.15);
+
+    /* Ambient Bioluminescent Background Glow */
+    .bg-glow {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(3, 7, 5, 0) 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
+      animation: pulseGlow 3s ease-in-out infinite alternate;
+    }
+    @keyframes pulseGlow {
+      0% { opacity: 0.6; transform: translate(-50%, -50%) scale(0.9); }
+      100% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+    }
+
+    /* Glowing Core Orb */
+    .core-container {
+      position: relative;
+      width: 88px;
+      height: 88px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .core-ring {
+      position: absolute;
+      inset: 0;
+      border: 3px solid rgba(16, 185, 129, 0.2);
       border-top-color: #10b981;
       border-radius: 50%;
-      animation: spin 0.6s linear infinite;
-      margin-bottom: 20px;
+      animation: spin 0.8s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    }
+    .core-inner {
+      font-size: 38px;
+      animation: bounce 1.8s ease-in-out infinite;
+      filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.8));
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-    h1 {
-      font-size: 22px;
-      font-weight: 900;
-      letter-spacing: -0.5px;
-      color: #ffffff;
-      margin-bottom: 8px;
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
     }
-    p {
-      font-size: 13px;
-      color: #6ee7b7;
-      font-family: monospace;
+
+    /* Branding Typography */
+    h1 {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      text-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+    }
+    .tagline {
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: #34d399;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 28px;
+      opacity: 0.85;
+    }
+
+    /* Progress Bar */
+    .progress-box {
+      width: 100%;
+      max-width: 280px;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 12px;
+      padding: 3px;
+      margin-bottom: 14px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(16, 185, 129, 0.05);
+    }
+    .progress-fill {
+      height: 7px;
+      background: linear-gradient(90deg, #059669, #10b981, #34d399);
+      border-radius: 8px;
+      width: 15%;
+      transition: width 0.3s ease-out;
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
+    }
+
+    /* Status Readout */
+    .status-text {
+      font-size: 11px;
+      font-family: 'Courier New', monospace;
+      color: #a7f3d0;
+      letter-spacing: 0.5px;
+      min-height: 18px;
+    }
+    .telemetry {
+      margin-top: 18px;
+      font-size: 10px;
+      color: #065f46;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
   </style>
 </head>
 <body>
-  <div class="core"></div>
+  <div class="bg-glow"></div>
+
+  <div class="core-container">
+    <div class="core-ring"></div>
+    <div class="core-inner">🌿</div>
+  </div>
+
   <h1>NEON METROPOLIS</h1>
-  <p id="status-text">Entering high-speed cluster...</p>
+  <div class="tagline">Underworld RPG Mesh</div>
+
+  <div class="progress-box">
+    <div id="p-bar" class="progress-fill"></div>
+  </div>
+
+  <div id="status" class="status-text">> Initializing Quantum Uplink...</div>
+  <div class="telemetry">⚡ Cluster Protocol v2.2 | Multi-Node Mesh</div>
 
   <script>
-    const CANDIDATES = [
-      "https://meaning-gallery-establishment-volunteer.trycloudflare.com",
-      "https://printable-therapy-servers-nerve.trycloudflare.com",
-      "https://romantic-moscow-investigators-funeral.trycloudflare.com"
-    ];
-    const STATUS_REPOS = [
-      "https://raw.githubusercontent.com/pocomon9/green/main/status.json",
-      "https://raw.githubusercontent.com/sifihub/green/main/status.json"
-    ];
-
-    function redirect(url) {
-      try { localStorage.setItem('neon_fast_url', url); } catch(e) {}
-      const target = url + window.location.search;
-      window.location.replace(target);
+    // Expand Telegram WebApp immediately
+    if (window.Telegram && window.Telegram.WebApp) {
+      try {
+        window.Telegram.WebApp.ready();
+        window.Telegram.WebApp.expand();
+      } catch(e) {}
     }
 
-    async function ping(url) {
+    const CANDIDATES = [
+      "https://contacted-prediction-sometimes-pioneer.trycloudflare.com",
+      "https://pressure-adequate-pool-parish.trycloudflare.com",
+      "https://november-urw-looking-identifying.trycloudflare.com"
+    ];
+
+    const STATUS_FEEDS = [
+      "https://raw.githubusercontent.com/pocomon9/green/main/status.json",
+      "https://raw.githubusercontent.com/sifihub/green/main/status.json",
+      "https://raw.githubusercontent.com/analyse99km/green/main/status.json"
+    ];
+
+    const bar = document.getElementById('p-bar');
+    const statusText = document.getElementById('status');
+
+    function setProgress(pct, text) {
+      if (bar) bar.style.width = pct + '%';
+      if (statusText && text) statusText.textContent = text;
+    }
+
+    function redirect(url) {
+      setProgress(100, '> Node Connected! Entering City...');
+      try { localStorage.setItem('neon_fast_url', url); } catch(e) {}
+      setTimeout(() => {
+        const target = url + window.location.search;
+        window.location.replace(target);
+      }, 150);
+    }
+
+    async function ping(url, timeoutMs = 800) {
       if (!url || !url.startsWith('https://')) return null;
       try {
         const ctrl = new AbortController();
-        const tid = setTimeout(() => ctrl.abort(), 1600);
+        const tid = setTimeout(() => ctrl.abort(), timeoutMs);
         const res = await fetch(url + '/api/health', { signal: ctrl.signal });
         clearTimeout(tid);
         if (res.ok) return url;
@@ -77,38 +197,48 @@
     }
 
     async function startFastConnect() {
-      // 1. Instant check cached node
+      setProgress(30, '> Scanning High-Speed Nodes...');
+
+      // 1. Instant check cached node if valid
       try {
         const cached = localStorage.getItem('neon_fast_url');
         if (cached) {
-          const fast = await ping(cached);
+          const fast = await ping(cached, 600);
           if (fast) return redirect(fast);
         }
       } catch(e) {}
 
-      // 2. Parallel race of live candidates
-      const racePromises = CANDIDATES.map(u => ping(u));
-      const results = await Promise.all(racePromises);
+      setProgress(55, '> Racing Cluster Nodes in Parallel...');
+
+      // 2. Parallel race of live candidates with 900ms timeout
+      const candidatePings = CANDIDATES.map(u => ping(u, 900));
+      const results = await Promise.all(candidatePings);
       const alive = results.find(Boolean);
       if (alive) return redirect(alive);
 
-      // 3. Fallback: Query live status feeds if tunnels cycled
-      document.getElementById('status-text').textContent = 'Connecting to fallback node...';
-      for (const feed of STATUS_REPOS) {
+      // 3. Fallback: Query live status feeds in parallel
+      setProgress(75, '> Querying Live Cluster Feeds...');
+      const feedPromises = STATUS_FEEDS.map(async (feed) => {
         try {
           const res = await fetch(feed + '?t=' + Date.now());
           if (res.ok) {
             const data = await res.json();
-            if (data && data.url && data.url.startsWith('https://')) {
-              const live = await ping(data.url);
-              if (live) return redirect(live);
+            if (data && data.url) {
+              const live = await ping(data.url, 1200);
+              if (live) return live;
             }
           }
         } catch(e) {}
-      }
+        return null;
+      });
 
-      document.getElementById('status-text').textContent = 'Reconnecting in 2s...';
-      setTimeout(startFastConnect, 2000);
+      const feedResults = await Promise.all(feedPromises);
+      const fallbackAlive = feedResults.find(Boolean);
+      if (fallbackAlive) return redirect(fallbackAlive);
+
+      // 4. Retry loop
+      setProgress(90, '> Reconnecting to standby node...');
+      setTimeout(startFastConnect, 1500);
     }
 
     startFastConnect();
