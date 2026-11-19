@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795085117566,
+    "lastLoginAt": 1795085177389,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 62,
+      "food": 61,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -703,7 +703,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "90344c421e046755e5334168f30ea6e8ba9e58c6f538478a432d170fd2070da1",
-      "lastSaveTimestamp": 1795085119478,
+      "lastSaveTimestamp": 1795085178740,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -711,7 +711,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795085117566
+    "lastSaveAt": 1795085177389
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
@@ -1379,7 +1379,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795085113828,
+    "lastLoginAt": 1795085177340,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1959,7 +1959,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 395,
+      "dreamPoints": 407,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
@@ -1987,23 +1987,11 @@
         "lastDailyRoyaltyClaimTimestamp": 0,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
-        "totalRecruits": 1,
-        "networkTotalCitizens": 1,
-        "unclaimedCommissionGreen": 100,
-        "lifetimeCommissionGreen": 100,
-        "recruits": [
-          {
-            "id": "usr_44861f741ad920d4",
-            "name": "Dhruv",
-            "email": "d8r21v@gmail.com",
-            "joinedAt": 1794996362058,
-            "level": 99,
-            "tier": 1,
-            "dailyGameplayEarned": 100,
-            "totalGeneratedGreen": 50,
-            "lastActive": "Active Operative"
-          }
-        ],
+        "totalRecruits": 0,
+        "networkTotalCitizens": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
+        "recruits": [],
         "claimedMilestones": []
       },
       "arsonStats": {
@@ -2032,21 +2020,21 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 61,
+      "hospitalTimeRemainingSeconds": 59,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
-      "lastSaveTimestamp": 1795085113585,
+      "lastSaveTimestamp": 1795085178791,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
     "money": 495,
-    "sparks": 395,
+    "sparks": 407,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795085113828
+    "lastSaveAt": 1795085177335
   }
 }
