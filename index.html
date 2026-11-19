@@ -22,6 +22,23 @@
       user-select: none;
     }
 
+    /* Splash Screen Overlay */
+    #splash {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      background: #030705;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      overflow: hidden;
+      user-select: none;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
     /* Ambient Bioluminescent Background Glow */
     .bg-glow {
       position: absolute;
@@ -105,8 +122,8 @@
       height: 7px;
       background: linear-gradient(90deg, #059669, #10b981, #34d399);
       border-radius: 8px;
-      width: 15%;
-      transition: width 0.3s ease-out;
+      width: 35%;
+      transition: width 0.2s ease-out;
       box-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
     }
 
@@ -126,25 +143,45 @@
       letter-spacing: 1px;
       text-transform: uppercase;
     }
+
+    /* Fullscreen Game App Frame (Permanent Evergreen Shell) */
+    #game-frame {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      margin: 0;
+      padding: 0;
+      z-index: 10;
+      background: #030705;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <div class="bg-glow"></div>
+  <!-- Fullscreen Game App Frame (Player stays on pocomon9.github.io/green-status/ permanently) -->
+  <iframe id="game-frame" src="about:blank" allow="clipboard-read; clipboard-write; autoplay; fullscreen"></iframe>
 
-  <div class="core-container">
-    <div class="core-ring"></div>
-    <div class="core-inner">🌿</div>
+  <!-- Seamless Instant Splash / Preload Screen -->
+  <div id="splash">
+    <div class="bg-glow"></div>
+
+    <div class="core-container">
+      <div class="core-ring"></div>
+      <div class="core-inner">🌿</div>
+    </div>
+
+    <h1>NEON METROPOLIS</h1>
+    <div class="tagline">Underworld RPG Mesh</div>
+
+    <div class="progress-box">
+      <div id="p-bar" class="progress-fill"></div>
+    </div>
+
+    <div id="status" class="status-text">> Uplinking Quantum Network...</div>
+    <div class="telemetry">⚡ Evergreen Cluster Protocol v2.3</div>
   </div>
-
-  <h1>NEON METROPOLIS</h1>
-  <div class="tagline">Underworld RPG Mesh</div>
-
-  <div class="progress-box">
-    <div id="p-bar" class="progress-fill"></div>
-  </div>
-
-  <div id="status" class="status-text">> Initializing Quantum Uplink...</div>
-  <div class="telemetry">⚡ Cluster Protocol v2.2 | Multi-Node Mesh</div>
 
   <script>
     // Expand Telegram WebApp immediately
@@ -156,7 +193,7 @@
     }
 
     const CANDIDATES = [
-      "https://kenneth-consequence-artistic-moisture.trycloudflare.com",
+      "https://generations-submission-xml-socks.trycloudflare.com",
       "https://camcorder-cho-handmade-motivated.trycloudflare.com",
       "https://waiver-routers-folding-standards.trycloudflare.com"
     ];
@@ -169,20 +206,68 @@
 
     const bar = document.getElementById('p-bar');
     const statusText = document.getElementById('status');
+    const splash = document.getElementById('splash');
+    const frame = document.getElementById('game-frame');
 
     function setProgress(pct, text) {
       if (bar) bar.style.width = pct + '%';
       if (statusText && text) statusText.textContent = text;
     }
 
-    function redirect(url) {
-      setProgress(100, '> Node Connected! Entering City...');
-      try { localStorage.setItem('neon_fast_url', url); } catch(e) {}
-      setTimeout(() => {
-        const target = url + window.location.search;
-        window.location.replace(target);
-      }, 150);
+    function buildGameUrl(baseUrl) {
+      const params = new URLSearchParams(window.location.search);
+      try {
+        const saved = localStorage.getItem('metropolis_auth_user');
+        if (saved) {
+          const u = JSON.parse(saved);
+          if (u.email && !params.has('userEmail')) params.set('userEmail', u.email);
+          if (u.name && !params.has('userName')) params.set('userName', u.name);
+          if (u.isTelegram) params.set('isTelegram', '1');
+        }
+      } catch(e) {}
+
+      if (window.Telegram && window.Telegram.WebApp) {
+        const tg = window.Telegram.WebApp;
+        if (tg.initDataUnsafe && tg.initDataUnsafe.user && !params.has('tgUser')) {
+          params.set('tgUser', JSON.stringify(tg.initDataUnsafe.user));
+        }
+        if (tg.initDataUnsafe && tg.initDataUnsafe.start_param && !params.has('ref')) {
+          params.set('ref', tg.initDataUnsafe.start_param);
+        }
+      }
+      const sep = baseUrl.includes('?') ? '&' : '?';
+      const q = params.toString();
+      return q ? `${baseUrl}${sep}${q}` : baseUrl;
     }
+
+    // Dismiss splash instantly when game frame loads
+    let splashDismissed = false;
+    function dismissSplash() {
+      if (splashDismissed) return;
+      splashDismissed = true;
+      setProgress(100, '> Quantum Uplink Active! Entering City...');
+      setTimeout(() => {
+        if (splash) {
+          splash.style.opacity = '0';
+          setTimeout(() => splash.style.display = 'none', 400);
+        }
+      }, 80);
+    }
+
+    frame.addEventListener('load', () => {
+      if (frame.src && frame.src !== 'about:blank') {
+        dismissSplash();
+      }
+    });
+
+    // Cross-origin session sync: listen for session save events from game
+    window.addEventListener('message', (ev) => {
+      if (ev.data && ev.data.type === 'METROPOLIS_SESSION_SAVE' && ev.data.user) {
+        try {
+          localStorage.setItem('metropolis_auth_user', JSON.stringify(ev.data.user));
+        } catch(err) {}
+      }
+    });
 
     async function ping(url, timeoutMs = 800) {
       if (!url || !url.startsWith('https://')) return null;
@@ -196,35 +281,48 @@
       return null;
     }
 
-    async function startFastConnect() {
-      setProgress(30, '> Scanning High-Speed Nodes...');
+    async function mountGame(runnerUrl) {
+      try { localStorage.setItem('neon_fast_url', runnerUrl); } catch(e) {}
+      const targetUrl = buildGameUrl(runnerUrl);
+      if (frame.src !== targetUrl) {
+        frame.src = targetUrl;
+      }
+    }
 
-      // 1. Instant check cached node if valid
-      try {
-        const cached = localStorage.getItem('neon_fast_url');
-        if (cached) {
-          const fast = await ping(cached, 600);
-          if (fast) return redirect(fast);
-        }
-      } catch(e) {}
+    async function initEvergreenApp() {
+      // 1. INSTANT PRELOAD: Immediately mount cached or primary runner in 0ms!
+      const initialNode = localStorage.getItem('neon_fast_url') || CANDIDATES[0];
+      mountGame(initialNode);
+      setProgress(60, '> Syncing Underworld Syndicate...');
 
-      setProgress(55, '> Racing Cluster Nodes in Parallel...');
+      // Max 2.5s safeguard: dismiss splash regardless so player is never stuck
+      setTimeout(dismissSplash, 2500);
 
-      // 2. Parallel race of live candidates with 900ms timeout
-      const candidatePings = CANDIDATES.map(u => ping(u, 900));
+      // 2. Parallel background verification of initial node
+      const isAlive = await ping(initialNode, 700);
+      if (isAlive) {
+        setProgress(95, '> Connected to High-Speed Node...');
+        return;
+      }
+
+      // 3. Fallback: Rapid race of secondary candidates
+      setProgress(75, '> Re-routing to redundant cluster runner...');
+      const candidatePings = CANDIDATES.filter(u => u !== initialNode).map(u => ping(u, 900));
       const results = await Promise.all(candidatePings);
       const alive = results.find(Boolean);
-      if (alive) return redirect(alive);
+      if (alive) {
+        mountGame(alive);
+        return;
+      }
 
-      // 3. Fallback: Query live status feeds in parallel
-      setProgress(75, '> Querying Live Cluster Feeds...');
+      // 4. Fallback: Query live status feeds in parallel
       const feedPromises = STATUS_FEEDS.map(async (feed) => {
         try {
           const res = await fetch(feed + '?t=' + Date.now());
           if (res.ok) {
             const data = await res.json();
             if (data && data.url) {
-              const live = await ping(data.url, 1200);
+              const live = await ping(data.url, 1000);
               if (live) return live;
             }
           }
@@ -234,14 +332,12 @@
 
       const feedResults = await Promise.all(feedPromises);
       const fallbackAlive = feedResults.find(Boolean);
-      if (fallbackAlive) return redirect(fallbackAlive);
-
-      // 4. Retry loop
-      setProgress(90, '> Reconnecting to standby node...');
-      setTimeout(startFastConnect, 1500);
+      if (fallbackAlive) {
+        mountGame(fallbackAlive);
+      }
     }
 
-    startFastConnect();
+    initEvergreenApp();
   </script>
 </body>
 </html>
