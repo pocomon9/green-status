@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795069329904,
+    "lastLoginAt": 1795021102676,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 73,
+      "food": 81,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -601,21 +601,6 @@
           "quantity": 2,
           "upgradeLevel": 0,
           "isCloudItem": true
-        },
-        {
-          "id": "inv_sub_referral_mwn5vg5t",
-          "name": "Syndicate Welcome Baguette",
-          "description": "Handcrafted welcome meal: +30 Food, +10 Energy, +10 Happy.",
-          "category": "FOOD",
-          "rarity": "COMMON",
-          "price": 25,
-          "marketValue": 25,
-          "shopliftDifficulty": 10,
-          "foodRestore": 30,
-          "energyRestore": 10,
-          "happyRestore": 10,
-          "icon": "🥪",
-          "quantity": 1
         }
       ],
       "bazaarListings": [],
@@ -678,10 +663,9 @@
           1
         ],
         "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 1795069235788,
+        "lastDailyStipendClaimTimestamp": 0,
         "networkTotalCitizens": 1,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
-        "referredBy": "NEON-71F63E20"
+        "lastDailyRoyaltyClaimTimestamp": 1794997340493
       },
       "arsonStats": {
         "breaches": 1,
@@ -715,8 +699,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "61f16820799901ae6f40193389ea9713c499509b09378980d73aff3b3edd2cda",
-      "lastSaveTimestamp": 1795069329219,
+      "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
+      "lastSaveTimestamp": 1795021103105,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
@@ -724,7 +708,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795069329880
+    "lastSaveAt": 1795021102650
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
@@ -1994,27 +1978,15 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "totalRecruits": 1,
-        "unclaimedCommissionGreen": 100,
-        "lifetimeCommissionGreen": 100,
-        "recruits": [
-          {
-            "id": "usr_44861f741ad920d4",
-            "name": "Dhruv",
-            "email": "",
-            "joinedAt": 1795069232884,
-            "level": 1,
-            "tier": 1,
-            "dailyGameplayEarned": 150,
-            "totalGeneratedGreen": 15,
-            "lastActive": "Active today (Redeemed invite code)"
-          }
-        ],
+        "totalRecruits": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
+        "recruits": [],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 1
+        "networkTotalCitizens": 0
       },
       "arsonStats": {
         "breaches": 1,
