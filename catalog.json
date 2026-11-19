@@ -2,9 +2,9 @@
   "categories": [
     {
       "id": "SPORES",
-      "name": "Mini Spores & Fungi",
+      "name": "Mini Spores & Fungi Network",
       "icon": "🍄",
-      "badge": "Tier 1 - Resource Builders"
+      "badge": "Tier 1"
     },
     {
       "id": "FLORA",
@@ -41,6 +41,12 @@
       "name": "Roots & Subterranean",
       "icon": "⛏️",
       "badge": "Tier 7 - Deep Earth Aquifers"
+    },
+    {
+      "id": "TEST_ZONE",
+      "name": "Temporary District Section",
+      "icon": "🧪",
+      "badge": "Tier X"
     }
   ],
   "cards": [
