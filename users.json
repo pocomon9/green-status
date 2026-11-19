@@ -1392,7 +1392,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795072217560,
+    "lastLoginAt": 1795072236640,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1972,7 +1972,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 371,
+      "dreamPoints": 383,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
@@ -1994,27 +1994,15 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "totalRecruits": 1,
-        "unclaimedCommissionGreen": 100,
-        "lifetimeCommissionGreen": 100,
-        "recruits": [
-          {
-            "id": "usr_44861f741ad920d4",
-            "name": "Dhruv",
-            "email": "",
-            "joinedAt": 1795072230042,
-            "level": 1,
-            "tier": 1,
-            "dailyGameplayEarned": 150,
-            "totalGeneratedGreen": 15,
-            "lastActive": "Active today (Redeemed invite code)"
-          }
-        ],
+        "totalRecruits": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
+        "recruits": [],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 1
+        "networkTotalCitizens": 0
       },
       "arsonStats": {
         "breaches": 1,
@@ -2042,21 +2030,21 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 71,
+      "hospitalTimeRemainingSeconds": 51,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
-      "lastSaveTimestamp": 1795072216867,
+      "lastSaveTimestamp": 1795072235972,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
     "money": 495,
-    "sparks": 371,
+    "sparks": 383,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795072217544
+    "lastSaveAt": 1795072236640
   }
 }
