@@ -193,9 +193,9 @@
     }
 
     const CANDIDATES = [
-      "https://generations-submission-xml-socks.trycloudflare.com",
-      "https://camcorder-cho-handmade-motivated.trycloudflare.com",
-      "https://waiver-routers-folding-standards.trycloudflare.com"
+      "https://unfortunately-tonight-auckland-taxes.trycloudflare.com",
+      "https://monday-developer-lbs-rounds.trycloudflare.com",
+      "https://girlfriend-internet-phones-equity.trycloudflare.com"
     ];
 
     const STATUS_FEEDS = [
@@ -240,18 +240,17 @@
       return q ? `${baseUrl}${sep}${q}` : baseUrl;
     }
 
-    // Dismiss splash instantly when game frame loads
     let splashDismissed = false;
     function dismissSplash() {
       if (splashDismissed) return;
       splashDismissed = true;
-      setProgress(100, '> Quantum Uplink Active! Entering City...');
+      setProgress(100, '> Node Connected! Entering City...');
       setTimeout(() => {
         if (splash) {
           splash.style.opacity = '0';
-          setTimeout(() => splash.style.display = 'none', 400);
+          setTimeout(() => splash.style.display = 'none', 300);
         }
-      }, 80);
+      }, 50);
     }
 
     frame.addEventListener('load', () => {
@@ -260,7 +259,6 @@
       }
     });
 
-    // Cross-origin session sync: listen for session save events from game
     window.addEventListener('message', (ev) => {
       if (ev.data && ev.data.type === 'METROPOLIS_SESSION_SAVE' && ev.data.user) {
         try {
@@ -269,19 +267,25 @@
       }
     });
 
-    async function ping(url, timeoutMs = 800) {
-      if (!url || !url.startsWith('https://')) return null;
-      try {
+    function ping(url, timeoutMs = 900) {
+      if (!url || !url.startsWith('https://')) return Promise.reject();
+      return new Promise((resolve, reject) => {
         const ctrl = new AbortController();
-        const tid = setTimeout(() => ctrl.abort(), timeoutMs);
-        const res = await fetch(url + '/api/health', { signal: ctrl.signal });
-        clearTimeout(tid);
-        if (res.ok) return url;
-      } catch(e) {}
-      return null;
+        const tid = setTimeout(() => { ctrl.abort(); reject(); }, timeoutMs);
+        fetch(url + '/api/health', { signal: ctrl.signal, mode: 'cors' })
+          .then(res => {
+            clearTimeout(tid);
+            if (res.ok) resolve(url);
+            else reject();
+          })
+          .catch(() => {
+            clearTimeout(tid);
+            reject();
+          });
+      });
     }
 
-    async function mountGame(runnerUrl) {
+    function mountGame(runnerUrl) {
       try { localStorage.setItem('neon_fast_url', runnerUrl); } catch(e) {}
       const targetUrl = buildGameUrl(runnerUrl);
       if (frame.src !== targetUrl) {
@@ -290,51 +294,44 @@
     }
 
     async function initEvergreenApp() {
-      // 1. INSTANT PRELOAD: Immediately mount cached or primary runner in 0ms!
-      const initialNode = localStorage.getItem('neon_fast_url') || CANDIDATES[0];
-      mountGame(initialNode);
-      setProgress(60, '> Syncing Underworld Syndicate...');
+      setProgress(30, '> Racing High-Speed Nodes in Parallel...');
 
-      // Max 2.5s safeguard: dismiss splash regardless so player is never stuck
-      setTimeout(dismissSplash, 2500);
+      // 1. Instant Parallel Race: Ping all 3 candidates simultaneously!
+      try {
+        const fastest = await Promise.any(CANDIDATES.map(u => ping(u, 900)));
+        if (fastest) {
+          setProgress(85, '> Fastest Node Locked...');
+          mountGame(fastest);
+          return;
+        }
+      } catch(e) {}
 
-      // 2. Parallel background verification of initial node
-      const isAlive = await ping(initialNode, 700);
-      if (isAlive) {
-        setProgress(95, '> Connected to High-Speed Node...');
-        return;
-      }
-
-      // 3. Fallback: Rapid race of secondary candidates
-      setProgress(75, '> Re-routing to redundant cluster runner...');
-      const candidatePings = CANDIDATES.filter(u => u !== initialNode).map(u => ping(u, 900));
-      const results = await Promise.all(candidatePings);
-      const alive = results.find(Boolean);
-      if (alive) {
-        mountGame(alive);
-        return;
-      }
-
-      // 4. Fallback: Query live status feeds in parallel
-      const feedPromises = STATUS_FEEDS.map(async (feed) => {
-        try {
-          const res = await fetch(feed + '?t=' + Date.now());
-          if (res.ok) {
-            const data = await res.json();
-            if (data && data.url) {
-              const live = await ping(data.url, 1000);
-              if (live) return live;
+      // 2. Fallback: Query live status feeds in parallel
+      setProgress(60, '> Scanning Cluster Live Feeds...');
+      try {
+        const feedPromises = STATUS_FEEDS.map(async (feed) => {
+          try {
+            const res = await fetch(feed + '?t=' + Date.now());
+            if (res.ok) {
+              const data = await res.json();
+              if (data && data.url) {
+                return await ping(data.url, 1000);
+              }
             }
-          }
-        } catch(e) {}
-        return null;
-      });
+          } catch(err) {}
+          throw new Error();
+        });
+        const liveFeedUrl = await Promise.any(feedPromises);
+        if (liveFeedUrl) {
+          setProgress(90, '> Redundant Node Connected...');
+          mountGame(liveFeedUrl);
+          return;
+        }
+      } catch(e) {}
 
-      const feedResults = await Promise.all(feedPromises);
-      const fallbackAlive = feedResults.find(Boolean);
-      if (fallbackAlive) {
-        mountGame(fallbackAlive);
-      }
+      // 3. Fallback to primary candidate if all checks timed out
+      mountGame(CANDIDATES[0]);
+      setTimeout(dismissSplash, 1500);
     }
 
     initEvergreenApp();
