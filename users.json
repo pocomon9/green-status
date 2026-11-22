@@ -2030,42 +2030,5 @@
     "level": 1,
     "rank": "#1 Neon Operative",
     "lastSaveAt": 1795018642297
-  },
-  "tg_5129437631@telegram.neon": {
-    "userId": "usr_tg_5129437631",
-    "email": "tg_5129437631@telegram.neon",
-    "telegramId": 5129437631,
-    "name": "dm",
-    "username": "dmmenw",
-    "userReferralCode": "NEON-TG-5129437631",
-    "referredBy": null,
-    "createdAt": 1795348866587,
-    "lastLoginAt": 1795348866587,
-    "playerState": {
-      "name": "dm",
-      "money": 100,
-      "dreamPoints": 500,
-      "energy": 100,
-      "maxEnergy": 100,
-      "nerve": 15,
-      "maxNerve": 15,
-      "happy": 100,
-      "maxHappy": 100,
-      "life": 100,
-      "maxLife": 100,
-      "food": 100,
-      "level": 1,
-      "referrals": {
-        "referralCode": "NEON-TG-5129437631",
-        "referredBy": null,
-        "hasClaimedWelcomeBonus": true,
-        "recruits": [],
-        "totalRecruits": 0,
-        "networkTotalCitizens": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "claimedMilestones": []
-      }
-    }
   }
 }
