@@ -3484,14 +3484,14 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "GENESIS_METROPOLIS_HASH",
-      "lastSaveTimestamp": 1795511770409,
+      "lastSaveTimestamp": 1795511964394,
       "hasUnsavedActions": false
     },
     "money": 0,
     "sparks": 132,
     "level": 1,
     "rank": "#1 Green Recruit",
-    "lastSaveAt": 1795511771436,
-    "lastLoginAt": 1795511771436
+    "lastSaveAt": 1795511965991,
+    "lastLoginAt": 1795511965991
   }
 }
