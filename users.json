@@ -2671,7 +2671,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 204,
+      "dreamPoints": 210,
       "dreamMultiplier": 1,
       "totalTaps": 57,
       "tapStamina": 100,
@@ -2753,15 +2753,15 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "47f4360df981744dc7d8f35fcefafaf41a4410f0e4bebc6f64a5528de6ff1f34",
-      "lastSaveTimestamp": 1795511586412,
+      "lastSaveTimestamp": 1795511972114,
       "hasUnsavedActions": false
     },
     "money": 2000,
-    "sparks": 204,
+    "sparks": 210,
     "level": 1,
     "rank": "#1 Green Recruit",
-    "lastSaveAt": 1795511586965,
-    "lastLoginAt": 1795511587250
+    "lastSaveAt": 1795511973137,
+    "lastLoginAt": 1795511973137
   },
   "operative_227162@metropolis.neon": {
     "userId": "usr_green_init",
