@@ -2057,7 +2057,7 @@
       "missionCredits": 7,
       "life": 0,
       "maxLife": 100,
-      "energy": 12,
+      "energy": 13,
       "maxEnergy": 100,
       "nerve": 2,
       "maxNerve": 10,
@@ -2671,9 +2671,9 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 178,
+      "dreamPoints": 204,
       "dreamMultiplier": 1,
-      "totalTaps": 46,
+      "totalTaps": 57,
       "tapStamina": 100,
       "maxTapStamina": 100,
       "dreamCards": {
@@ -2753,14 +2753,14 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "47f4360df981744dc7d8f35fcefafaf41a4410f0e4bebc6f64a5528de6ff1f34",
-      "lastSaveTimestamp": 1795511545717,
+      "lastSaveTimestamp": 1795511586412,
       "hasUnsavedActions": false
     },
     "money": 2000,
-    "sparks": 178,
+    "sparks": 204,
     "level": 1,
     "rank": "#1 Green Recruit",
-    "lastSaveAt": 1795511546261,
-    "lastLoginAt": 1795511546261
+    "lastSaveAt": 1795511586965,
+    "lastLoginAt": 1795511586965
   }
 }
