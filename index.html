@@ -181,6 +181,9 @@
 
     <div id="status" class="status-text">> Uplinking Quantum Network...</div>
     <div class="telemetry">⚡ Evergreen Cluster Protocol v2.3</div>
+    <a id="direct-link" href="#" target="_blank" style="display:none; margin-top: 16px; font-size: 11px; color: #34d399; text-decoration: underline; font-family: monospace; z-index: 100; cursor: pointer; padding: 6px 12px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: 8px;">
+      ↗ Direct Underworld Link (Click if iframe blocked)
+    </a>
   </div>
 
   <script>
@@ -279,11 +282,11 @@
       return new Promise((resolve, reject) => {
         const ctrl = new AbortController();
         const tid = setTimeout(() => { ctrl.abort(); reject(); }, timeoutMs);
-        fetch(url + '/api/health', { signal: ctrl.signal, mode: 'cors' })
-          .then(res => {
+        // mode: 'no-cors' succeeds without requiring CORS headers from third-party origin
+        fetch(url + '/api/health', { signal: ctrl.signal, mode: 'no-cors' })
+          .then(() => {
             clearTimeout(tid);
-            if (res.ok) resolve(url);
-            else reject();
+            resolve(url);
           })
           .catch(() => {
             clearTimeout(tid);
@@ -295,6 +298,11 @@
     function mountGame(runnerUrl) {
       try { localStorage.setItem('neon_fast_url', runnerUrl); } catch(e) {}
       const targetUrl = buildGameUrl(runnerUrl);
+      const directA = document.getElementById('direct-link');
+      if (directA) {
+        directA.href = targetUrl;
+        directA.style.display = 'inline-block';
+      }
       if (frame) {
         frame.src = targetUrl;
         setTimeout(dismissSplash, 2500);
