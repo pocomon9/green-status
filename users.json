@@ -2051,10 +2051,10 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 0,
+      "money": 500,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 0,
+      "missionCredits": 2,
       "life": 0,
       "maxLife": 100,
       "energy": 1,
@@ -2513,7 +2513,7 @@
           "rewardCredits": 2,
           "rewardCash": 500,
           "completed": true,
-          "claimed": false,
+          "claimed": true,
           "icon": "🌱"
         },
         {
@@ -2671,7 +2671,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 29,
+      "dreamPoints": 79,
       "dreamMultiplier": 1,
       "totalTaps": 14,
       "tapStamina": 96,
@@ -2701,7 +2701,7 @@
       ],
       "bodyAugmentations": [],
       "settledReceiptIds": [],
-      "greenTokens": 0,
+      "greenTokens": 5,
       "dailyStreak": 1,
       "lastStreakClaimTimestamp": 0,
       "canClaimDailyStreak": true,
@@ -2751,15 +2751,15 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "GENESIS_METROPOLIS_HASH",
-      "lastSaveTimestamp": 1795511465885,
+      "stateHash": "43288d9d1fbb22976496e4c75a35b25c40920098ddcf5ca49e7f976c63d18afe",
+      "lastSaveTimestamp": 1795511471500,
       "hasUnsavedActions": false
     },
-    "money": 0,
-    "sparks": 29,
+    "money": 500,
+    "sparks": 79,
     "level": 1,
     "rank": "#1 Green Recruit",
-    "lastSaveAt": 1795511466578,
-    "lastLoginAt": 1795511466578
+    "lastSaveAt": 1795511472082,
+    "lastLoginAt": 1795511472082
   }
 }
