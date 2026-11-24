@@ -181,9 +181,6 @@
 
     <div id="status" class="status-text">> Uplinking Quantum Network...</div>
     <div class="telemetry">⚡ Evergreen Cluster Protocol v2.3</div>
-    <a id="direct-link" href="#" target="_blank" style="display:none; margin-top: 16px; font-size: 11px; color: #34d399; text-decoration: underline; font-family: monospace; z-index: 100; cursor: pointer; padding: 6px 12px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: 8px;">
-      ↗ Direct Underworld Link (Click if iframe blocked)
-    </a>
   </div>
 
   <script>
@@ -196,9 +193,9 @@
     }
 
     const CANDIDATES = [
-      "https://occupation-showcase-indicated-dinner.trycloudflare.com",
-      "https://however-hepatitis-oriental-customise.trycloudflare.com",
-      "https://figure-editors-roles-invest.trycloudflare.com"
+      "https://rapid-varied-std-aggregate.trycloudflare.com",
+      "https://stars-online-guides-obtained.trycloudflare.com",
+      "https://distance-aircraft-single-jessica.trycloudflare.com"
     ];
 
     const STATUS_FEEDS = [
@@ -282,11 +279,11 @@
       return new Promise((resolve, reject) => {
         const ctrl = new AbortController();
         const tid = setTimeout(() => { ctrl.abort(); reject(); }, timeoutMs);
-        // mode: 'no-cors' succeeds without requiring CORS headers from third-party origin
-        fetch(url + '/api/health', { signal: ctrl.signal, mode: 'no-cors' })
-          .then(() => {
+        fetch(url + '/api/health', { signal: ctrl.signal })
+          .then(res => {
             clearTimeout(tid);
-            resolve(url);
+            if (res.ok) resolve(url);
+            else reject();
           })
           .catch(() => {
             clearTimeout(tid);
@@ -298,16 +295,9 @@
     function mountGame(runnerUrl) {
       try { localStorage.setItem('neon_fast_url', runnerUrl); } catch(e) {}
       const targetUrl = buildGameUrl(runnerUrl);
-      const directA = document.getElementById('direct-link');
-      if (directA) {
-        directA.href = targetUrl;
-        directA.style.display = 'inline-block';
-      }
       if (frame) {
         frame.src = targetUrl;
         setTimeout(dismissSplash, 2500);
-      } else {
-        window.location.replace(targetUrl);
       }
     }
 
@@ -344,7 +334,7 @@
         }
       } catch(err) {}
 
-      // If all nodes temporarily unreachable, retry smoothly
+      // If cluster nodes are synchronizing, retry smoothly
       setProgress(40, '> Synchronizing cluster nodes, retrying...');
       setTimeout(initEvergreenApp, 2000);
     }
