@@ -300,58 +300,50 @@
       }
     }
 
-    async function initEvergreenApp() {
-      // 0. Instant Cache Check: If last active runner is healthy, connect in <450ms
+    function initEvergreenApp() {
+      // 1. Instant 0ms Pre-Mount: Start downloading & displaying game instantly!
+      let initialNode = CANDIDATES[0];
       try {
         const cached = localStorage.getItem('neon_fast_url');
         if (cached && (cached.startsWith('https://') || cached.includes('.trycloudflare.com'))) {
-          const fastPing = await ping(cached, 450);
-          if (fastPing) {
-            setProgress(90, '> Ultra-Fast Cache Hit! Entering City...');
-            mountGame(fastPing);
-            return;
-          }
+          initialNode = cached;
         }
       } catch(e) {}
 
-      setProgress(30, '> Racing High-Speed Nodes in Parallel...');
+      mountGame(initialNode);
+      setProgress(85, '> Entering Neon Metropolis...');
 
-      // 1. Instant Parallel Race: Ping all 3 candidates simultaneously!
-      try {
-        const fastest = await Promise.any(CANDIDATES.map(u => ping(u, 900)));
-        if (fastest) {
-          setProgress(85, '> Fastest Node Locked...');
-          mountGame(fastest);
-          return;
-        }
-      } catch(e) {}
-
-      // 2. Fallback: Query live status feeds in parallel
-      setProgress(60, '> Scanning Cluster Live Feeds...');
-      try {
-        const feedPromises = STATUS_FEEDS.map(async (feed) => {
+      // 2. Parallel background verification: If current node is healthy, dismiss splash immediately!
+      // If it fails, seamlessly switch to the fastest active backup runner node.
+      ping(initialNode, 1600)
+        .then(() => {
+          dismissSplash();
+        })
+        .catch(async () => {
+          const backups = CANDIDATES.filter(c => c !== initialNode);
           try {
-            const res = await fetch(feed + '?t=' + Date.now());
-            if (res.ok) {
-              const data = await res.json();
-              if (data && data.url) {
-                return await ping(data.url, 1000);
-              }
+            const fastestBackup = await Promise.any(backups.map(u => ping(u, 1800)));
+            if (fastestBackup) {
+              setProgress(90, '> Connecting redundant high-speed node...');
+              mountGame(fastestBackup);
             }
-          } catch(err) {}
-          throw new Error();
+          } catch(err) {
+            try {
+              const feedPromises = STATUS_FEEDS.map(async (feed) => {
+                const res = await fetch(feed + '?t=' + Date.now());
+                if (res.ok) {
+                  const data = await res.json();
+                  if (data && data.url && data.url !== 'offline') {
+                    return await ping(data.url, 1500);
+                  }
+                }
+                throw new Error();
+              });
+              const feedNode = await Promise.any(feedPromises);
+              if (feedNode) mountGame(feedNode);
+            } catch(e2) {}
+          }
         });
-        const liveFeedUrl = await Promise.any(feedPromises);
-        if (liveFeedUrl) {
-          setProgress(90, '> Redundant Node Connected...');
-          mountGame(liveFeedUrl);
-          return;
-        }
-      } catch(e) {}
-
-      // 3. Fallback to primary candidate if all checks timed out
-      mountGame(CANDIDATES[0]);
-      setTimeout(dismissSplash, 1500);
     }
 
     initEvergreenApp();
