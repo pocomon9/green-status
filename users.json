@@ -2051,10 +2051,10 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 1000,
+      "money": 2000,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 2,
+      "missionCredits": 7,
       "life": 0,
       "maxLife": 100,
       "energy": 12,
@@ -2524,13 +2524,13 @@
           "category": "STORY",
           "reqType": "CARD_UPGRADE",
           "targetCount": 1,
-          "currentCount": 0,
+          "currentCount": 1,
           "rewardGreen": 10,
           "rewardSparks": 100,
           "rewardCredits": 5,
           "rewardCash": 1000,
-          "completed": false,
-          "claimed": false,
+          "completed": true,
+          "claimed": true,
           "icon": "🍄"
         },
         {
@@ -2671,10 +2671,10 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 153,
+      "dreamPoints": 178,
       "dreamMultiplier": 1,
       "totalTaps": 46,
-      "tapStamina": 99,
+      "tapStamina": 100,
       "maxTapStamina": 100,
       "dreamCards": {
         "card_photosynthesis": 0,
@@ -2693,7 +2693,8 @@
         "card_sacred_grove": 0,
         "card_genetic_synthesizer": 0,
         "card_yggdrasil_uplink": 0,
-        "card_quantum_chloroplast": 0
+        "card_quantum_chloroplast": 0,
+        "card_mycelial_network": 1
       },
       "activeTapperSkinId": "tree_sprout",
       "unlockedTapperSkins": [
@@ -2701,7 +2702,7 @@
       ],
       "bodyAugmentations": [],
       "settledReceiptIds": [],
-      "greenTokens": 10,
+      "greenTokens": 20,
       "dailyStreak": 2,
       "lastStreakClaimTimestamp": 1795511477153,
       "canClaimDailyStreak": false,
@@ -2751,15 +2752,15 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "43288d9d1fbb22976496e4c75a35b25c40920098ddcf5ca49e7f976c63d18afe",
-      "lastSaveTimestamp": 1795511525879,
+      "stateHash": "47f4360df981744dc7d8f35fcefafaf41a4410f0e4bebc6f64a5528de6ff1f34",
+      "lastSaveTimestamp": 1795511545717,
       "hasUnsavedActions": false
     },
-    "money": 1000,
-    "sparks": 153,
+    "money": 2000,
+    "sparks": 178,
     "level": 1,
     "rank": "#1 Green Recruit",
-    "lastSaveAt": 1795511526427,
-    "lastLoginAt": 1795511526427
+    "lastSaveAt": 1795511546261,
+    "lastLoginAt": 1795511546261
   }
 }
