@@ -193,9 +193,9 @@
     }
 
     const CANDIDATES = [
+      "https://occupation-showcase-indicated-dinner.trycloudflare.com",
       "https://however-hepatitis-oriental-customise.trycloudflare.com",
-      "https://figure-editors-roles-invest.trycloudflare.com",
-      "https://vinyl-pasta-could-col.trycloudflare.com"
+      "https://figure-editors-roles-invest.trycloudflare.com"
     ];
 
     const STATUS_FEEDS = [
@@ -264,6 +264,9 @@
     });
 
     window.addEventListener('message', (ev) => {
+      if (ev.data && ev.data.type === 'METROPOLIS_READY') {
+        dismissSplash();
+      }
       if (ev.data && ev.data.type === 'METROPOLIS_SESSION_SAVE' && ev.data.user) {
         try {
           localStorage.setItem('metropolis_auth_user', JSON.stringify(ev.data.user));
@@ -271,7 +274,7 @@
       }
     });
 
-    function ping(url, timeoutMs = 2000) {
+    function ping(url, timeoutMs = 2500) {
       if (!url || !url.startsWith('https://')) return Promise.reject();
       return new Promise((resolve, reject) => {
         const ctrl = new AbortController();
@@ -294,56 +297,48 @@
       const targetUrl = buildGameUrl(runnerUrl);
       if (frame) {
         frame.src = targetUrl;
-        setTimeout(dismissSplash, 2000);
+        setTimeout(dismissSplash, 2500);
       } else {
         window.location.replace(targetUrl);
       }
     }
 
-    function initEvergreenApp() {
-      // 1. Instant 0ms Pre-Mount: Start downloading & displaying game instantly!
-      let initialNode = CANDIDATES[0];
+    async function initEvergreenApp() {
+      setProgress(50, '> Uplinking Quantum Network...');
+
+      let candidates = [...CANDIDATES];
       try {
         const cached = localStorage.getItem('neon_fast_url');
-        if (cached && (cached.startsWith('https://') || cached.includes('.trycloudflare.com'))) {
-          initialNode = cached;
-        }
+        if (cached && cached.startsWith('https://')) candidates.unshift(cached);
       } catch(e) {}
+      candidates = Array.from(new Set(candidates));
 
-      mountGame(initialNode);
-      setProgress(85, '> Entering Neon Metropolis...');
-
-      // 2. Parallel background verification: If current node is healthy, dismiss splash immediately!
-      // If it fails, seamlessly switch to the fastest active backup runner node.
-      ping(initialNode, 1600)
-        .then(() => {
-          dismissSplash();
-        })
-        .catch(async () => {
-          const backups = CANDIDATES.filter(c => c !== initialNode);
-          try {
-            const fastestBackup = await Promise.any(backups.map(u => ping(u, 1800)));
-            if (fastestBackup) {
-              setProgress(90, '> Connecting redundant high-speed node...');
-              mountGame(fastestBackup);
+      const pingPromises = candidates.map(url => ping(url, 2500));
+      const feedPromises = STATUS_FEEDS.map(async (feed) => {
+        try {
+          const res = await fetch(feed + '?t=' + Date.now());
+          if (res.ok) {
+            const data = await res.json();
+            if (data && data.url && data.url.startsWith('https://') && data.url !== 'offline') {
+              return await ping(data.url, 2500);
             }
-          } catch(err) {
-            try {
-              const feedPromises = STATUS_FEEDS.map(async (feed) => {
-                const res = await fetch(feed + '?t=' + Date.now());
-                if (res.ok) {
-                  const data = await res.json();
-                  if (data && data.url && data.url !== 'offline') {
-                    return await ping(data.url, 1500);
-                  }
-                }
-                throw new Error();
-              });
-              const feedNode = await Promise.any(feedPromises);
-              if (feedNode) mountGame(feedNode);
-            } catch(e2) {}
           }
-        });
+        } catch(e) {}
+        throw new Error();
+      });
+
+      try {
+        const fastestNode = await Promise.any([...pingPromises, ...feedPromises]);
+        if (fastestNode) {
+          setProgress(85, '> Entering Neon Metropolis...');
+          mountGame(fastestNode);
+          return;
+        }
+      } catch(err) {}
+
+      // If all nodes temporarily unreachable, retry smoothly
+      setProgress(40, '> Synchronizing cluster nodes, retrying...');
+      setTimeout(initEvergreenApp, 2000);
     }
 
     initEvergreenApp();
