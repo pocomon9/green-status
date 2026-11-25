@@ -6,9 +6,9 @@
     "salt": "293a8e5ffb3b4e9818031c082e86538a",
     "passwordHash": "61a89a9d8685a6f07851c69776933b152a220b125c27e095f173a1bcac2d7210ce8c23a582e403c4b332bed47c3c0e61f66fd3b3238ac8efeb334b9d9169739c",
     "userReferralCode": "NEON-44861F74",
-    "referredBy": null,
+    "referredBy": "Dhruv11",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795021102676,
+    "lastLoginAt": 1795612245839,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 81,
+      "food": 74,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -601,6 +601,21 @@
           "quantity": 2,
           "upgradeLevel": 0,
           "isCloudItem": true
+        },
+        {
+          "id": "inv_sub_referral_mww50c3c",
+          "name": "Syndicate Welcome Baguette",
+          "description": "Handcrafted welcome meal: +30 Food, +10 Energy, +10 Happy.",
+          "category": "FOOD",
+          "rarity": "COMMON",
+          "price": 25,
+          "marketValue": 25,
+          "shopliftDifficulty": 10,
+          "foodRestore": 30,
+          "energyRestore": 10,
+          "happyRestore": 10,
+          "icon": "🥪",
+          "quantity": 1
         }
       ],
       "bazaarListings": [],
@@ -643,7 +658,14 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-44861F74",
+        "referredBy": "Dhruv11",
+        "hasClaimedWelcomeBonus": true,
+        "lastDailyStipendClaimTimestamp": 1795611977871,
+        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
+        "dailyGameplayContribution": 0,
+        "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 1,
+        "networkTotalCitizens": 1,
         "unclaimedCommissionGreen": 100,
         "lifetimeCommissionGreen": 100,
         "recruits": [
@@ -661,11 +683,7 @@
         ],
         "claimedMilestones": [
           1
-        ],
-        "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 0,
-        "networkTotalCitizens": 1,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493
+        ]
       },
       "arsonStats": {
         "breaches": 1,
@@ -699,16 +717,19 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795021103105,
+      "stateHash": "f28a5848b1f4ef72206d08daf94be3f88c65db255fd9987ac94aaf2a66854169",
+      "lastSaveTimestamp": 1795612245104,
       "hasUnsavedActions": false,
-      "isAwakened": false
+      "isAwakened": false,
+      "lastDailyMissionsDate": "2026-11-25",
+      "lastWeeklyMissionsWeek": "2026-W48",
+      "lastMonthlyMissionsMonth": "2026-11"
     },
     "level": 99,
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795021102650
+    "lastSaveAt": 1795612245839
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
@@ -2000,11 +2021,22 @@
         "lastDailyRoyaltyClaimTimestamp": 0,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
-        "totalRecruits": 7,
-        "networkTotalCitizens": 7,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 700,
+        "totalRecruits": 8,
+        "networkTotalCitizens": 8,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 800,
         "recruits": [
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "d8r21v@gmail.com",
+            "joinedAt": 1794996362058,
+            "level": 99,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 50,
+            "lastActive": "Active Operative"
+          },
           {
             "id": "rec_1795611685750_k1o6",
             "name": "Echo-Agent #3091",
