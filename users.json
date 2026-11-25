@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795625249868,
+    "lastLoginAt": 1795625255843,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -25,7 +25,7 @@
       "money": 9.999999999e+259,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 0,
+      "missionCredits": 5,
       "life": 100,
       "maxLife": 100,
       "energy": 100,
@@ -481,7 +481,7 @@
           "reqType": "CRIME",
           "targetCount": 1,
           "currentCount": 1,
-          "claimed": false
+          "claimed": true
         },
         {
           "id": "msn_2",
@@ -1074,11 +1074,13 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "d91de9479a36ba37939ad89ffe1f4dc187be8be8da5a73170df8db614e35abe0",
-      "lastSaveTimestamp": 1795625249868,
+      "stateHash": "2871f3c06be9a1c9eef9bc569c9fed0590270eb442bb9d7d3e0d90039d226110",
+      "lastSaveTimestamp": 1795625255843,
       "hasUnsavedActions": false,
       "isAwakened": false,
-      "claimedMissionIds": [],
+      "claimedMissionIds": [
+        "msn_1"
+      ],
       "dailyComboProgress": {
         "date": "",
         "upgradedCardIds": [],
@@ -1093,7 +1095,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795625249868
+    "lastSaveAt": 1795625255843
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
