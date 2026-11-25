@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": "Dhruv11",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795612253114,
+    "lastLoginAt": 1795612263874,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -661,13 +661,13 @@
         "referredBy": "Dhruv11",
         "hasClaimedWelcomeBonus": true,
         "lastDailyStipendClaimTimestamp": 1795611977871,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
+        "lastDailyRoyaltyClaimTimestamp": 1795612263319,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 1,
         "networkTotalCitizens": 1,
         "unclaimedCommissionGreen": 100,
-        "lifetimeCommissionGreen": 100,
+        "lifetimeCommissionGreen": 115,
         "recruits": [
           {
             "id": "usr_e7cc880df8118651",
@@ -676,9 +676,9 @@
             "joinedAt": 1794997114345,
             "level": 1,
             "tier": 1,
-            "dailyGameplayEarned": 150,
-            "totalGeneratedGreen": 15,
-            "lastActive": "Active today (Syndicate recruit)"
+            "dailyGameplayEarned": 192,
+            "totalGeneratedGreen": 30,
+            "lastActive": "Active today (Daily gameplay verified)"
           }
         ],
         "claimedMilestones": [
@@ -717,8 +717,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "f28a5848b1f4ef72206d08daf94be3f88c65db255fd9987ac94aaf2a66854169",
-      "lastSaveTimestamp": 1795612252452,
+      "stateHash": "40f5fc6082632fbbbd2df5ab3d7bc909b765e80a10c143ed317a4adaf5041f94",
+      "lastSaveTimestamp": 1795612263325,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -729,7 +729,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795612253114
+    "lastSaveAt": 1795612263874
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
