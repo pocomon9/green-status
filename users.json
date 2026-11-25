@@ -6,9 +6,9 @@
     "salt": "293a8e5ffb3b4e9818031c082e86538a",
     "passwordHash": "61a89a9d8685a6f07851c69776933b152a220b125c27e095f173a1bcac2d7210ce8c23a582e403c4b332bed47c3c0e61f66fd3b3238ac8efeb334b9d9169739c",
     "userReferralCode": "NEON-44861F74",
-    "referredBy": null,
+    "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795616185597,
+    "lastLoginAt": 1795616186770,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -994,8 +994,8 @@
       },
       "referrals": {
         "referralCode": "NEON-44861F74",
-        "referredBy": null,
-        "hasClaimedWelcomeBonus": false,
+        "referredBy": "NEON-71F63E20",
+        "hasClaimedWelcomeBonus": true,
         "lastDailyStipendClaimTimestamp": 0,
         "lastDailyRoyaltyClaimTimestamp": 1795616184985,
         "dailyGameplayContribution": 0,
@@ -1053,8 +1053,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "8514a8a6804bc7f96d7cd456ac44300e12a452016a833d94e4623593ca6ad01b",
-      "lastSaveTimestamp": 1795616184995,
+      "stateHash": "681d9f522847e9464126a05cd4eb503456525efecb417afc26b0ac7a5ba63066",
+      "lastSaveTimestamp": 1795616185795,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -1065,7 +1065,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795616185597
+    "lastSaveAt": 1795616186317
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
@@ -2348,15 +2348,27 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
-        "totalRecruits": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "recruits": [],
+        "totalRecruits": 1,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "recruits": [
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "d8r21v@gmail.com",
+            "joinedAt": 1795616188178,
+            "level": 1,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 50,
+            "lastActive": "Active today (Code Redeem)"
+          }
+        ],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 0
+        "networkTotalCitizens": 1
       },
       "arsonStats": {
         "breaches": 1,
