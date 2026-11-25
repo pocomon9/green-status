@@ -6,7 +6,7 @@
     "salt": "293a8e5ffb3b4e9818031c082e86538a",
     "passwordHash": "61a89a9d8685a6f07851c69776933b152a220b125c27e095f173a1bcac2d7210ce8c23a582e403c4b332bed47c3c0e61f66fd3b3238ac8efeb334b9d9169739c",
     "userReferralCode": "NEON-44861F74",
-    "referredBy": null,
+    "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
     "lastLoginAt": 1795625198436,
     "playerState": {
@@ -781,11 +781,11 @@
         "claimedMilestones": [
           1
         ],
-        "hasClaimedWelcomeBonus": false,
+        "hasClaimedWelcomeBonus": true,
         "lastDailyStipendClaimTimestamp": 0,
         "networkTotalCitizens": 2,
         "lastDailyRoyaltyClaimTimestamp": 1794997340493,
-        "referredBy": null,
+        "referredBy": "NEON-71F63E20",
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0
       },
@@ -837,7 +837,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795625198436
+    "lastSaveAt": 1795625232073
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
@@ -1467,13 +1467,24 @@
             "dailyGameplayEarned": 150,
             "totalGeneratedGreen": 50,
             "lastActive": "Active Operative"
+          },
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "d8r21v@gmail.com",
+            "joinedAt": 1794996362058,
+            "level": 99,
+            "tier": 2,
+            "dailyGameplayEarned": 100,
+            "totalGeneratedGreen": 20,
+            "lastActive": "Tier 2 Operative"
           }
         ],
         "claimedMilestones": [],
         "referredBy": "NEON-44861F74",
         "hasClaimedWelcomeBonus": true,
         "lastDailyStipendClaimTimestamp": 1794997190833,
-        "networkTotalCitizens": 1,
+        "networkTotalCitizens": 2,
         "lastDailyRoyaltyClaimTimestamp": 0
       },
       "arsonStats": {
@@ -2517,11 +2528,34 @@
         "lastDailyRoyaltyClaimTimestamp": 0,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
-        "totalRecruits": 0,
-        "networkTotalCitizens": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "recruits": [],
+        "totalRecruits": 1,
+        "networkTotalCitizens": 2,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "recruits": [
+          {
+            "id": "usr_44861f741ad920d4",
+            "name": "Dhruv",
+            "email": "d8r21v@gmail.com",
+            "joinedAt": 1794996362058,
+            "level": 99,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 50,
+            "lastActive": "Active Operative"
+          },
+          {
+            "id": "usr_e7cc880df8118651",
+            "name": "Dhruv",
+            "email": "dhruv2424@outlook.com",
+            "joinedAt": 1794997114345,
+            "level": 1,
+            "tier": 2,
+            "dailyGameplayEarned": 100,
+            "totalGeneratedGreen": 20,
+            "lastActive": "Tier 2 Operative"
+          }
+        ],
         "claimedMilestones": []
       },
       "arsonStats": {
