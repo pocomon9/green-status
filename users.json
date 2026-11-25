@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795625290576,
+    "lastLoginAt": 1795625291212,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1810,7 +1810,7 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 4845,
+      "money": 4945,
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 5,
@@ -2739,7 +2739,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 413,
+      "dreamPoints": 463,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
@@ -2816,7 +2816,9 @@
             "lastActive": "Tier 2 Operative"
           }
         ],
-        "claimedMilestones": []
+        "claimedMilestones": [
+          1
+        ]
       },
       "arsonStats": {
         "breaches": 1,
@@ -2850,19 +2852,19 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "054a3bf3b64cd42cf8a107c5f86f1baf5bce11e07dd42043cb4f73a5a0ac804e",
-      "lastSaveTimestamp": 1795625290576,
+      "stateHash": "c62ecdaf151f5f7601af6aeff0cbbede9b5714d4ae77ebe62551dabd997c822b",
+      "lastSaveTimestamp": 1795625291212,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
       "lastWeeklyMissionsWeek": "2026-W48",
       "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 4845,
-    "sparks": 413,
+    "money": 4945,
+    "sparks": 463,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795625290576
+    "lastSaveAt": 1795625291212
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
