@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795611680862,
+    "lastLoginAt": 1795611682393,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -2000,11 +2000,44 @@
         "lastDailyRoyaltyClaimTimestamp": 0,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
-        "totalRecruits": 2,
-        "networkTotalCitizens": 2,
-        "unclaimedCommissionGreen": 200,
-        "lifetimeCommissionGreen": 200,
+        "totalRecruits": 5,
+        "networkTotalCitizens": 5,
+        "unclaimedCommissionGreen": 500,
+        "lifetimeCommissionGreen": 500,
         "recruits": [
+          {
+            "id": "rec_1795611681401_0u9g",
+            "name": "Ghost-Operative #5684",
+            "email": "ghost_operative__5684@neon.city",
+            "joinedAt": 1795611681401,
+            "level": 4,
+            "tier": 1,
+            "dailyGameplayEarned": 269,
+            "totalGeneratedGreen": 100,
+            "lastActive": "Active today (Syndicate Operations)"
+          },
+          {
+            "id": "rec_1795611681189_a1pe",
+            "name": "Grid-Phantom #6140",
+            "email": "grid_phantom__6140@neon.city",
+            "joinedAt": 1795611681189,
+            "level": 3,
+            "tier": 1,
+            "dailyGameplayEarned": 167,
+            "totalGeneratedGreen": 100,
+            "lastActive": "Active today (Syndicate Operations)"
+          },
+          {
+            "id": "rec_1795611680984_2nm9",
+            "name": "Vector-Nine #4128",
+            "email": "vector_nine__4128@neon.city",
+            "joinedAt": 1795611680984,
+            "level": 2,
+            "tier": 1,
+            "dailyGameplayEarned": 278,
+            "totalGeneratedGreen": 100,
+            "lastActive": "Active today (Syndicate Operations)"
+          },
           {
             "id": "rec_1795611680066_uks7",
             "name": "Echo-Agent #7535",
@@ -2056,14 +2089,14 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 95,
+      "hospitalTimeRemainingSeconds": 94,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "177c1ab1e22c48b3f50bf1a382e3b322769e0db836f12418932439ebb6a2d7d4",
-      "lastSaveTimestamp": 1795611680167,
+      "stateHash": "a09c25dc3c8dae06c06d05d93896f488a333c0ff6a3ef640cf257461e8e0263d",
+      "lastSaveTimestamp": 1795611681504,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -2074,6 +2107,6 @@
     "sparks": 353,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795611680862
+    "lastSaveAt": 1795611682393
   }
 }
