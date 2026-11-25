@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": null,
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795021102676,
+    "lastLoginAt": 1795625198436,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -521,6 +521,108 @@
           "targetCount": 5,
           "currentCount": 4,
           "claimed": false
+        },
+        {
+          "id": "story_first_spark",
+          "title": "The First Spark",
+          "contractor": "Botanical Overseer",
+          "description": "Tap the green mint leaf 10 times to awaken your bio-synthetic implant.",
+          "category": "STORY",
+          "reqType": "TAP",
+          "targetCount": 10,
+          "currentCount": 0,
+          "rewardGreen": 5,
+          "rewardSparks": 50,
+          "rewardCredits": 2,
+          "rewardCash": 500,
+          "completed": false,
+          "claimed": false,
+          "icon": "🌱"
+        },
+        {
+          "id": "story_first_spore_card",
+          "title": "Expanding The Mycelium",
+          "contractor": "Spore Colony Council",
+          "description": "Purchase your first card in the Cards Store to start generating passive profit per second.",
+          "category": "STORY",
+          "reqType": "CARD_UPGRADE",
+          "targetCount": 1,
+          "currentCount": 0,
+          "rewardGreen": 10,
+          "rewardSparks": 100,
+          "rewardCredits": 5,
+          "rewardCash": 1000,
+          "completed": false,
+          "claimed": false,
+          "icon": "🍄"
+        },
+        {
+          "id": "story_first_crime",
+          "title": "Street Intelligence",
+          "contractor": "Fixer Vance",
+          "description": "Navigate to Metropolis (Home) and execute your first Search for Cash crime.",
+          "category": "STORY",
+          "reqType": "CRIME",
+          "targetCount": 1,
+          "currentCount": 0,
+          "rewardGreen": 10,
+          "rewardSparks": 0,
+          "rewardCredits": 5,
+          "rewardCash": 2500,
+          "completed": false,
+          "claimed": false,
+          "icon": "💰"
+        },
+        {
+          "id": "story_tree_evolve",
+          "title": "Botanical Transmutation",
+          "contractor": "Botanical Overseer",
+          "description": "Evolve your plant organism from Chlorophyll Sprout to Peppermint Shrub in the Plants menu.",
+          "category": "STORY",
+          "reqType": "TREE_EVOLVE",
+          "targetCount": 1,
+          "currentCount": 0,
+          "rewardGreen": 25,
+          "rewardSparks": 250,
+          "rewardCredits": 10,
+          "rewardCash": 5000,
+          "completed": false,
+          "claimed": false,
+          "icon": "🌿"
+        },
+        {
+          "id": "story_first_workout",
+          "title": "Iron Fortification",
+          "contractor": "Gym Master Jax",
+          "description": "Train at the Iron Haven Gym to increase your Strength or Defense.",
+          "category": "STORY",
+          "reqType": "TRAIN",
+          "targetCount": 1,
+          "currentCount": 0,
+          "rewardGreen": 10,
+          "rewardSparks": 0,
+          "rewardCredits": 5,
+          "rewardCash": 2000,
+          "completed": false,
+          "claimed": false,
+          "icon": "🏋️"
+        },
+        {
+          "id": "story_casino_spin",
+          "title": "Lady Luck In The Neon Mist",
+          "contractor": "Syndicate Boss Duke",
+          "description": "Visit the Underworld Casino and spin the Slots or European Roulette wheel.",
+          "category": "STORY",
+          "reqType": "CASINO",
+          "targetCount": 1,
+          "currentCount": 0,
+          "rewardGreen": 20,
+          "rewardSparks": 200,
+          "rewardCredits": 10,
+          "rewardCash": 5000,
+          "completed": false,
+          "claimed": false,
+          "icon": "🎰"
         }
       ],
       "properties": [
@@ -632,7 +734,9 @@
         "card_baobab": 6,
         "card_genetic_synthesizer": 5,
         "card_redwood": 2,
-        "card_quantum_chloroplast": 7
+        "card_quantum_chloroplast": 7,
+        "card_cordyceps": 0,
+        "card_yggdrasil_uplink": 0
       },
       "activeTapperSkinId": "tree_oak",
       "unlockedTapperSkins": [
@@ -681,7 +785,9 @@
         "lastDailyStipendClaimTimestamp": 0,
         "networkTotalCitizens": 2,
         "lastDailyRoyaltyClaimTimestamp": 1794997340493,
-        "referredBy": null
+        "referredBy": null,
+        "dailyGameplayContribution": 0,
+        "pendingDailyRoyaltyGreen": 0
       },
       "arsonStats": {
         "breaches": 1,
@@ -716,16 +822,22 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795021102650,
+      "lastSaveTimestamp": 1795625198436,
       "hasUnsavedActions": false,
       "isAwakened": false,
-      "claimedMissionIds": []
+      "claimedMissionIds": [],
+      "dailyComboProgress": {
+        "date": "",
+        "upgradedCardIds": [],
+        "claimed": false
+      },
+      "lastNewspaperRationTimestamp": 0
     },
     "level": 99,
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795021102650
+    "lastSaveAt": 1795625198436
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
