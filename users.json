@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795611616706,
+    "lastLoginAt": 1795611644812,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1403,10 +1403,10 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 495,
+      "money": 995,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 0,
+      "missionCredits": 5,
       "life": 100,
       "maxLife": 100,
       "energy": 100,
@@ -1415,7 +1415,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 3,
+      "food": 1,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -1861,7 +1861,8 @@
           "completed": true,
           "reqType": "CRIME",
           "targetCount": 1,
-          "currentCount": 1
+          "currentCount": 1,
+          "claimed": true
         },
         {
           "id": "msn_2",
@@ -1969,7 +1970,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 329,
+      "dreamPoints": 341,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
@@ -1993,7 +1994,7 @@
         "referralCode": "NEON-71F63E20",
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": true,
-        "lastDailyStipendClaimTimestamp": 1794998792414,
+        "lastDailyStipendClaimTimestamp": 0,
         "lastDailyRoyaltyClaimTimestamp": 0,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
@@ -2036,18 +2037,18 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "54882ea4abf313a1c99352afa541c873116e4fbb267ca948a93f85d17343c2b7",
-      "lastSaveTimestamp": 1795611616036,
+      "stateHash": "705eee197ed2c9a8835e524d42fba6f6e3c3139e71ea7372912cb8c5853e7576",
+      "lastSaveTimestamp": 1795611644211,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
       "lastWeeklyMissionsWeek": "2026-W48",
       "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 495,
-    "sparks": 329,
+    "money": 995,
+    "sparks": 341,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795611616706
+    "lastSaveAt": 1795611644812
   }
 }
