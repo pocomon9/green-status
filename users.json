@@ -480,7 +480,8 @@
           "completed": true,
           "reqType": "CRIME",
           "targetCount": 1,
-          "currentCount": 1
+          "currentCount": 1,
+          "claimed": false
         },
         {
           "id": "msn_2",
@@ -492,7 +493,8 @@
           "completed": true,
           "reqType": "STAT",
           "targetCount": 30,
-          "currentCount": 34
+          "currentCount": 34,
+          "claimed": false
         },
         {
           "id": "msn_3",
@@ -504,7 +506,8 @@
           "completed": true,
           "reqType": "BUY",
           "targetCount": 1,
-          "currentCount": 1
+          "currentCount": 1,
+          "claimed": false
         },
         {
           "id": "msn_4",
@@ -516,7 +519,8 @@
           "completed": false,
           "reqType": "LEVEL",
           "targetCount": 5,
-          "currentCount": 4
+          "currentCount": 4,
+          "claimed": false
         }
       ],
       "properties": [
@@ -665,7 +669,8 @@
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 0,
         "networkTotalCitizens": 1,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493
+        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
+        "referredBy": null
       },
       "arsonStats": {
         "breaches": 1,
@@ -700,9 +705,10 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "c9b5c4a4a848ce1e02dad8800dd1c57e7b1aac08b2bba4b54e0dff788c1c9b1d",
-      "lastSaveTimestamp": 1795021103105,
+      "lastSaveTimestamp": 1795021102650,
       "hasUnsavedActions": false,
-      "isAwakened": false
+      "isAwakened": false,
+      "claimedMissionIds": []
     },
     "level": 99,
     "money": 9.999999999e+259,
@@ -1194,7 +1200,8 @@
           "completed": true,
           "reqType": "CRIME",
           "targetCount": 1,
-          "currentCount": 1
+          "currentCount": 1,
+          "claimed": false
         },
         {
           "id": "msn_2",
@@ -1206,7 +1213,8 @@
           "completed": true,
           "reqType": "STAT",
           "targetCount": 30,
-          "currentCount": 34
+          "currentCount": 34,
+          "claimed": false
         },
         {
           "id": "msn_3",
@@ -1218,7 +1226,8 @@
           "completed": true,
           "reqType": "BUY",
           "targetCount": 1,
-          "currentCount": 1
+          "currentCount": 1,
+          "claimed": false
         },
         {
           "id": "msn_4",
@@ -1230,7 +1239,8 @@
           "completed": false,
           "reqType": "LEVEL",
           "targetCount": 5,
-          "currentCount": 4
+          "currentCount": 4,
+          "claimed": false
         }
       ],
       "properties": [
@@ -1338,9 +1348,10 @@
         ],
         "claimedMilestones": [],
         "referredBy": "NEON-44861F74",
-        "hasClaimedWelcomeBonus": false,
+        "hasClaimedWelcomeBonus": true,
         "lastDailyStipendClaimTimestamp": 1794997190833,
-        "networkTotalCitizens": 1
+        "networkTotalCitizens": 1,
+        "lastDailyRoyaltyClaimTimestamp": 0
       },
       "arsonStats": {
         "breaches": 1,
@@ -1377,8 +1388,10 @@
       "stateHash": "GENESIS_METROPOLIS_HASH",
       "lastSaveTimestamp": 1794998965862,
       "hasUnsavedActions": false,
-      "isAwakened": false
-    }
+      "isAwakened": false,
+      "claimedMissionIds": []
+    },
+    "lastSaveAt": 1794998965862
   },
   "dhruv19240@gmail.com": {
     "userId": "usr_71f63e2038a30959",
@@ -1852,6 +1865,58 @@
       ],
       "missions": [
         {
+          "id": "msn_1",
+          "title": "Getting Started in the Underworld",
+          "contractor": "Fixer Vance",
+          "description": "Execute your first Search for Cash crime to prove you can navigate the streets.",
+          "rewardCredits": 5,
+          "rewardCash": 500,
+          "completed": true,
+          "reqType": "CRIME",
+          "targetCount": 1,
+          "currentCount": 1,
+          "claimed": false
+        },
+        {
+          "id": "msn_2",
+          "title": "Combat Dummy Bashing",
+          "contractor": "Fixer Vance",
+          "description": "Train at the gym until your Strength reaches at least 30.",
+          "rewardCredits": 5,
+          "rewardCash": 1200,
+          "completed": true,
+          "reqType": "STAT",
+          "targetCount": 30,
+          "currentCount": 34,
+          "claimed": false
+        },
+        {
+          "id": "msn_3",
+          "title": "Exploring the Municipal Sectors",
+          "contractor": "Fixer Vance",
+          "description": "Visit the City Hall and inspect commercial business deeds.",
+          "rewardCredits": 5,
+          "rewardCash": 2500,
+          "completed": true,
+          "reqType": "BUY",
+          "targetCount": 1,
+          "currentCount": 1,
+          "claimed": false
+        },
+        {
+          "id": "msn_4",
+          "title": "High-Level Syndicate Heist",
+          "contractor": "Syndicate Boss Duke",
+          "description": "Reach Level 5 and execute 10 successful crimes to earn executive respect.",
+          "rewardCredits": 10,
+          "rewardCash": 15000,
+          "completed": false,
+          "reqType": "LEVEL",
+          "targetCount": 5,
+          "currentCount": 4,
+          "claimed": false
+        },
+        {
           "id": "story_first_spark",
           "title": "The First Spark",
           "contractor": "Botanical Overseer",
@@ -1952,58 +2017,6 @@
           "completed": false,
           "claimed": false,
           "icon": "🎰"
-        },
-        {
-          "id": "msn_1",
-          "title": "Getting Started in the Underworld",
-          "contractor": "Fixer Vance",
-          "description": "Execute your first Search for Cash crime to prove you can navigate the streets.",
-          "rewardCredits": 5,
-          "rewardCash": 500,
-          "completed": true,
-          "reqType": "CRIME",
-          "targetCount": 1,
-          "currentCount": 1,
-          "claimed": false
-        },
-        {
-          "id": "msn_2",
-          "title": "Combat Dummy Bashing",
-          "contractor": "Fixer Vance",
-          "description": "Train at the gym until your Strength reaches at least 30.",
-          "rewardCredits": 5,
-          "rewardCash": 1200,
-          "completed": true,
-          "reqType": "STAT",
-          "targetCount": 30,
-          "currentCount": 34,
-          "claimed": false
-        },
-        {
-          "id": "msn_3",
-          "title": "Exploring the Municipal Sectors",
-          "contractor": "Fixer Vance",
-          "description": "Visit the City Hall and inspect commercial business deeds.",
-          "rewardCredits": 5,
-          "rewardCash": 2500,
-          "completed": true,
-          "reqType": "BUY",
-          "targetCount": 1,
-          "currentCount": 1,
-          "claimed": false
-        },
-        {
-          "id": "msn_4",
-          "title": "High-Level Syndicate Heist",
-          "contractor": "Syndicate Boss Duke",
-          "description": "Reach Level 5 and execute 10 successful crimes to earn executive respect.",
-          "rewardCredits": 10,
-          "rewardCash": 15000,
-          "completed": false,
-          "reqType": "LEVEL",
-          "targetCount": 5,
-          "currentCount": 4,
-          "claimed": false
         }
       ],
       "claimedMissionIds": [],
@@ -2150,7 +2163,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "688f7a695b3b2e464b1526c2dfb07402cc1528b5c1329cf3320a9a49252f5032",
-      "lastSaveTimestamp": 1795616295258,
+      "lastSaveTimestamp": 1795616295907,
       "hasUnsavedActions": false,
       "isAwakened": false
     },
