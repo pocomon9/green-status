@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795611671172,
+    "lastLoginAt": 1795018642302,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1403,11 +1403,11 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 4745,
+      "money": 495,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 15,
-      "life": 15,
+      "missionCredits": 0,
+      "life": 100,
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
@@ -1415,7 +1415,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 0,
+      "food": 3,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -1861,8 +1861,7 @@
           "completed": true,
           "reqType": "CRIME",
           "targetCount": 1,
-          "currentCount": 1,
-          "claimed": true
+          "currentCount": 1
         },
         {
           "id": "msn_2",
@@ -1874,8 +1873,7 @@
           "completed": true,
           "reqType": "STAT",
           "targetCount": 30,
-          "currentCount": 34,
-          "claimed": true
+          "currentCount": 34
         },
         {
           "id": "msn_3",
@@ -1887,8 +1885,7 @@
           "completed": true,
           "reqType": "BUY",
           "targetCount": 1,
-          "currentCount": 1,
-          "claimed": true
+          "currentCount": 1
         },
         {
           "id": "msn_4",
@@ -1972,7 +1969,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 353,
+      "dreamPoints": 329,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
@@ -1994,30 +1991,15 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
+        "totalRecruits": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
+        "recruits": [],
+        "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": true,
-        "lastDailyStipendClaimTimestamp": 1795611663366,
-        "lastDailyRoyaltyClaimTimestamp": 0,
-        "dailyGameplayContribution": 0,
-        "pendingDailyRoyaltyGreen": 0,
-        "totalRecruits": 1,
-        "networkTotalCitizens": 1,
-        "unclaimedCommissionGreen": 100,
-        "lifetimeCommissionGreen": 100,
-        "recruits": [
-          {
-            "id": "rec_1795611670503_s82t",
-            "name": "Shadow-Runner #8906",
-            "email": "shadow_runner__8906@neon.city",
-            "joinedAt": 1795611670503,
-            "level": 8,
-            "tier": 1,
-            "dailyGameplayEarned": 294,
-            "totalGeneratedGreen": 100,
-            "lastActive": "Active today (Syndicate Operations)"
-          }
-        ],
-        "claimedMilestones": []
+        "lastDailyStipendClaimTimestamp": 1794998792414,
+        "networkTotalCitizens": 0
       },
       "arsonStats": {
         "breaches": 1,
@@ -2045,24 +2027,21 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 104,
+      "hospitalTimeRemainingSeconds": 0,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "54223685fd6614fc6920d743cfafcf3690a9dadae2c446991cc908e60dca925e",
-      "lastSaveTimestamp": 1795611670604,
+      "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
+      "lastSaveTimestamp": 1795018642846,
       "hasUnsavedActions": false,
-      "isAwakened": false,
-      "lastDailyMissionsDate": "2026-11-25",
-      "lastWeeklyMissionsWeek": "2026-W48",
-      "lastMonthlyMissionsMonth": "2026-11"
+      "isAwakened": false
     },
-    "money": 4745,
-    "sparks": 353,
+    "money": 495,
+    "sparks": 329,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795611671172
+    "lastSaveAt": 1795018642297
   }
 }
