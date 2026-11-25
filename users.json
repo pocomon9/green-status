@@ -2969,10 +2969,10 @@
     "userReferralCode": "NEON-10001",
     "referredBy": null,
     "createdAt": 1795626479132,
-    "lastSaveAt": 1795626479132,
-    "lastLoginAt": 1795626479132,
+    "lastSaveAt": 1795626487323,
+    "lastLoginAt": 1795626487323,
     "money": 0,
-    "sparks": 0,
+    "sparks": 6,
     "level": 1,
     "rank": "#1 Green Recruit",
     "playerState": {
@@ -3444,7 +3444,7 @@
           "category": "STORY",
           "reqType": "TAP",
           "targetCount": 10,
-          "currentCount": 0,
+          "currentCount": 3,
           "rewardGreen": 5,
           "rewardSparks": 50,
           "rewardCredits": 2,
@@ -3609,10 +3609,10 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 0,
+      "dreamPoints": 6,
       "dreamMultiplier": 1,
-      "totalTaps": 0,
-      "tapStamina": 100,
+      "totalTaps": 3,
+      "tapStamina": 97,
       "maxTapStamina": 100,
       "dreamCards": {
         "card_photosynthesis": 0,
@@ -3662,7 +3662,8 @@
         "unclaimedCommissionGreen": 0,
         "lifetimeCommissionGreen": 0,
         "recruits": [],
-        "claimedMilestones": []
+        "claimedMilestones": [],
+        "referredBy": null
       },
       "arsonStats": {
         "breaches": 1,
@@ -3696,8 +3697,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "GENESIS_METROPOLIS_HASH",
-      "lastSaveTimestamp": 1795626479676,
+      "stateHash": "5b2f38e64b35aef328244d0857b2eea98c2aa19cf5bc6aa1984f8899c09dd28f",
+      "lastSaveTimestamp": 1795626487323,
       "hasUnsavedActions": false
     }
   }
