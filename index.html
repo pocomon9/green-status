@@ -193,9 +193,9 @@
     }
 
     const CANDIDATES = [
-      "https://saver-heroes-year-corrections.trycloudflare.com",
-      "https://contrast-promote-inkjet-gotta.trycloudflare.com",
-      "https://soundtrack-wedding-sterling-sudden.trycloudflare.com"
+      "https://james-dept-william-throat.trycloudflare.com",
+      "https://intend-reduction-responsible-closing.trycloudflare.com",
+      "https://roller-wear-mysql-iso.trycloudflare.com"
     ];
 
     const STATUS_FEEDS = [
@@ -222,7 +222,17 @@
           const u = JSON.parse(saved);
           if (u.email && !params.has('userEmail')) params.set('userEmail', u.email);
           if (u.name && !params.has('userName')) params.set('userName', u.name);
+          if (u.referredBy && !params.has('referredBy')) params.set('referredBy', u.referredBy);
           if (u.isTelegram) params.set('isTelegram', '1');
+        }
+        const savedSponsor = localStorage.getItem('metropolis_user_referred_by');
+        if (savedSponsor && !params.has('referredBy')) params.set('referredBy', savedSponsor);
+        const savedClaimed = localStorage.getItem('metropolis_claimed_missions');
+        if (savedClaimed) {
+          const arr = JSON.parse(savedClaimed);
+          if (Array.isArray(arr) && arr.length > 0 && !params.has('claimedMissions')) {
+            params.set('claimedMissions', arr.join(','));
+          }
         }
       } catch(e) {}
 
@@ -269,7 +279,22 @@
       }
       if (ev.data && ev.data.type === 'METROPOLIS_SESSION_SAVE' && ev.data.user) {
         try {
-          localStorage.setItem('metropolis_auth_user', JSON.stringify(ev.data.user));
+          const prev = JSON.parse(localStorage.getItem('metropolis_auth_user') || '{}');
+          const merged = { ...prev, ...ev.data.user };
+          if (!merged.referredBy && prev.referredBy) merged.referredBy = prev.referredBy;
+          localStorage.setItem('metropolis_auth_user', JSON.stringify(merged));
+        } catch(err) {}
+      }
+      if (ev.data && ev.data.type === 'METROPOLIS_PERSIST_LEDGER') {
+        try {
+          if (Array.isArray(ev.data.claimedMissionIds) && ev.data.claimedMissionIds.length > 0) {
+            const prevIds = JSON.parse(localStorage.getItem('metropolis_claimed_missions') || '[]');
+            const nextIds = Array.from(new Set([...prevIds, ...ev.data.claimedMissionIds]));
+            localStorage.setItem('metropolis_claimed_missions', JSON.stringify(nextIds));
+          }
+          if (ev.data.referredBy) {
+            localStorage.setItem('metropolis_user_referred_by', String(ev.data.referredBy));
+          }
         } catch(err) {}
       }
     });
