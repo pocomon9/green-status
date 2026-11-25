@@ -347,8 +347,7 @@
         if (!res.ok) throw new Error();
         const json = await res.json();
         if (json && json.content) {
-          const data = JSON.parse(atob(json.content.replace(/
-/g, '')));
+          const data = JSON.parse(atob(json.content.replace(/\s+/g, '')));
           if (data && data.url && data.url.startsWith('https://') && data.url !== 'offline') {
             return await ping(data.url, 4500);
           }
