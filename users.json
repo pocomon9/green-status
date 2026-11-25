@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795625240734,
+    "lastLoginAt": 1795625242111,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -1035,7 +1035,7 @@
           1
         ],
         "hasClaimedWelcomeBonus": true,
-        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyStipendClaimTimestamp": 1795625240998,
         "networkTotalCitizens": 2,
         "lastDailyRoyaltyClaimTimestamp": 1794997340493,
         "referredBy": "NEON-71F63E20",
@@ -1074,8 +1074,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "047f50bbfc087bdb386476487020714aed111a77427919f2e9fab16261436580",
-      "lastSaveTimestamp": 1795625240734,
+      "stateHash": "4b182c871f42e8829877958dc243ce6d6a8ee4977ac77e6426a0c961e9e050ca",
+      "lastSaveTimestamp": 1795625242111,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "claimedMissionIds": [],
@@ -1093,7 +1093,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795625240734
+    "lastSaveAt": 1795625242111
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
