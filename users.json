@@ -2969,8 +2969,8 @@
     "userReferralCode": "NEON-10001",
     "referredBy": null,
     "createdAt": 1795626479132,
-    "lastSaveAt": 1795627199143,
-    "lastLoginAt": 1795627199143,
+    "lastSaveAt": 1795627259117,
+    "lastLoginAt": 1795627259117,
     "money": 500,
     "sparks": 21,
     "level": 1,
@@ -3936,7 +3936,7 @@
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
       "stateHash": "a351a70bdb7934f071e079eb10da9b52c875a6aba8482cd1185f332aa4060167",
-      "lastSaveTimestamp": 1795627199143,
+      "lastSaveTimestamp": 1795627259117,
       "hasUnsavedActions": false,
       "hasCustomId": true
     }
