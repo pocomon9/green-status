@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795596295643,
+    "lastLoginAt": 1795596298032,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1403,10 +1403,10 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 995,
+      "money": 4695,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 5,
+      "missionCredits": 15,
       "life": 100,
       "maxLife": 100,
       "energy": 100,
@@ -1874,7 +1874,8 @@
           "completed": true,
           "reqType": "STAT",
           "targetCount": 30,
-          "currentCount": 34
+          "currentCount": 34,
+          "claimed": true
         },
         {
           "id": "msn_3",
@@ -1886,7 +1887,8 @@
           "completed": true,
           "reqType": "BUY",
           "targetCount": 1,
-          "currentCount": 1
+          "currentCount": 1,
+          "claimed": true
         },
         {
           "id": "msn_4",
@@ -2037,18 +2039,18 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "5ea07f9f50c3398cf236c6a8c3962242a492b201c385cea811cd9a4714d6d239",
-      "lastSaveTimestamp": 1795596295122,
+      "stateHash": "d2e564fd59c01b3f4a4922e9c38877cf3982fb378919c2ec3acd5c8423b5bff1",
+      "lastSaveTimestamp": 1795596297343,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
       "lastWeeklyMissionsWeek": "2026-W48",
       "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 995,
+    "money": 4695,
     "sparks": 337,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795596295643
+    "lastSaveAt": 1795596298032
   }
 }
