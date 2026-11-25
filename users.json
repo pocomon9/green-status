@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795611683827,
+    "lastLoginAt": 1795611685394,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -2072,6 +2072,17 @@
             "lastActive": "Active today (Syndicate Operations)"
           },
           {
+            "id": "rec_1795611682724_5qlk",
+            "name": "Krypton-Fox #8629",
+            "email": "krypton_fox__8629@neon.city",
+            "joinedAt": 1795611682724,
+            "level": 5,
+            "tier": 1,
+            "dailyGameplayEarned": 311,
+            "totalGeneratedGreen": 100,
+            "lastActive": "Active today (Syndicate Operations)"
+          },
+          {
             "id": "rec_1795611681982_khwk",
             "name": "Matrix-Scout #5367",
             "email": "matrix_scout__5367@neon.city",
@@ -2079,17 +2090,6 @@
             "level": 7,
             "tier": 1,
             "dailyGameplayEarned": 254,
-            "totalGeneratedGreen": 100,
-            "lastActive": "Active today (Syndicate Operations)"
-          },
-          {
-            "id": "rec_1795611681786_iutr",
-            "name": "Matrix-Scout #1088",
-            "email": "matrix_scout__1088@neon.city",
-            "joinedAt": 1795611681786,
-            "level": 3,
-            "tier": 1,
-            "dailyGameplayEarned": 302,
             "totalGeneratedGreen": 100,
             "lastActive": "Active today (Syndicate Operations)"
           }
@@ -2128,8 +2128,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "c8ca80ec50d0789afbc6580221ed5bfb4aa2c76a3a53b328ec3aadf96f6676e3",
-      "lastSaveTimestamp": 1795611682275,
+      "stateHash": "046d37f4874e078312676ed908c98ca8732ae9e5f35f9835bf53294c9676ba33",
+      "lastSaveTimestamp": 1795611682982,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -2140,6 +2140,6 @@
     "sparks": 353,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795611683827
+    "lastSaveAt": 1795611685394
   }
 }
