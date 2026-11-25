@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795625243616,
+    "lastLoginAt": 1795625244487,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -34,7 +34,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 80,
+      "food": 79,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -1006,7 +1006,7 @@
         "referralCode": "NEON-44861F74",
         "totalRecruits": 2,
         "unclaimedCommissionGreen": 100,
-        "lifetimeCommissionGreen": 100,
+        "lifetimeCommissionGreen": 123,
         "recruits": [
           {
             "id": "usr_e7cc880df8118651",
@@ -1015,9 +1015,9 @@
             "joinedAt": 1794997114345,
             "level": 1,
             "tier": 1,
-            "dailyGameplayEarned": 150,
-            "totalGeneratedGreen": 15,
-            "lastActive": "Active today (Syndicate recruit)"
+            "dailyGameplayEarned": 141,
+            "totalGeneratedGreen": 30,
+            "lastActive": "Active today (Daily gameplay verified)"
           },
           {
             "id": "usr_71f63e2038a30959",
@@ -1026,9 +1026,9 @@
             "joinedAt": 1794998780043,
             "level": 1,
             "tier": 2,
-            "dailyGameplayEarned": 100,
-            "totalGeneratedGreen": 20,
-            "lastActive": "Tier 2 Operative"
+            "dailyGameplayEarned": 91,
+            "totalGeneratedGreen": 24,
+            "lastActive": "Active today (Daily gameplay verified)"
           }
         ],
         "claimedMilestones": [
@@ -1037,7 +1037,7 @@
         "hasClaimedWelcomeBonus": true,
         "lastDailyStipendClaimTimestamp": 1795625240998,
         "networkTotalCitizens": 2,
-        "lastDailyRoyaltyClaimTimestamp": 1794997340493,
+        "lastDailyRoyaltyClaimTimestamp": 1795625243400,
         "referredBy": "NEON-71F63E20",
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0
@@ -1074,8 +1074,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "2191f12f8741809440bf6d454d1f8aee1e1857958028d5d8ab231659a23bd7de",
-      "lastSaveTimestamp": 1795625243616,
+      "stateHash": "3724b5e0211da7aa859ba71a002f9826a5b75ffd7ee2b27e5e5a06423f3dfed5",
+      "lastSaveTimestamp": 1795625244487,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "claimedMissionIds": [],
@@ -1093,7 +1093,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795625243616
+    "lastSaveAt": 1795625244487
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
