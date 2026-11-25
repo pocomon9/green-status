@@ -8,7 +8,7 @@
     "userReferralCode": "NEON-44861F74",
     "referredBy": "NEON-71F63E20",
     "createdAt": 1794996362058,
-    "lastLoginAt": 1795616186770,
+    "lastLoginAt": 1795616189697,
     "playerState": {
       "id": "usr_44861f741ad920d4",
       "name": "Dhruv",
@@ -946,6 +946,21 @@
           "quantity": 2,
           "upgradeLevel": 0,
           "isCloudItem": true
+        },
+        {
+          "id": "inv_sub_referral_mww7ilol",
+          "name": "Syndicate Welcome Baguette",
+          "description": "Handcrafted welcome meal: +30 Food, +10 Energy, +10 Happy.",
+          "category": "FOOD",
+          "rarity": "COMMON",
+          "price": 25,
+          "marketValue": 25,
+          "shopliftDifficulty": 10,
+          "foodRestore": 30,
+          "energyRestore": 10,
+          "happyRestore": 10,
+          "icon": "🥪",
+          "quantity": 1
         }
       ],
       "bazaarListings": [],
@@ -996,7 +1011,7 @@
         "referralCode": "NEON-44861F74",
         "referredBy": "NEON-71F63E20",
         "hasClaimedWelcomeBonus": true,
-        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyStipendClaimTimestamp": 1795616188320,
         "lastDailyRoyaltyClaimTimestamp": 1795616184985,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
@@ -1053,8 +1068,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "681d9f522847e9464126a05cd4eb503456525efecb417afc26b0ac7a5ba63066",
-      "lastSaveTimestamp": 1795616185795,
+      "stateHash": "cce0e765c4412562a2871d6c56ef6c9cbc42dbe9ca7ca41b0d6ddc8c78d01af4",
+      "lastSaveTimestamp": 1795616189134,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -1065,7 +1080,7 @@
     "money": 9.999999999e+259,
     "sparks": 1e+171,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795616186317
+    "lastSaveAt": 1795616189697
   },
   "dhruv2424@outlook.com": {
     "email": "dhruv2424@outlook.com",
