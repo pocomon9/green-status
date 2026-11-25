@@ -1413,7 +1413,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795625145265,
+    "lastLoginAt": 1795625152249,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1430,7 +1430,7 @@
       "money": 4745,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 15,
+      "missionCredits": 5,
       "life": 15,
       "maxLife": 100,
       "energy": 100,
@@ -2336,7 +2336,21 @@
         }
       ],
       "currentPropertyId": "prop_apt",
-      "inventory": [],
+      "inventory": [
+        {
+          "id": "item_stim",
+          "name": "Military Adrenaline Auto-Injector",
+          "description": "Syndicate stim: Instantly restores +50 Energy and +30 Happy.",
+          "category": "FOOD",
+          "price": 0,
+          "marketValue": 12000,
+          "shopliftDifficulty": 90,
+          "energyRestore": 50,
+          "happyRestore": 30,
+          "icon": "💉",
+          "quantity": 1
+        }
+      ],
       "bazaarListings": [],
       "bazaarTillCash": 0,
       "dailyWheelSpinsAvailable": 1,
@@ -2424,14 +2438,14 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 59,
+      "hospitalTimeRemainingSeconds": 52,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "ba9a99e93f60c5f4f04b1322727422ad4b922a24226402ed12746b454a3d9423",
-      "lastSaveTimestamp": 1795625145265,
+      "stateHash": "76b1f123744e54b4845044aad439595b83ace3a271dd2a7b84c3b390107e0b09",
+      "lastSaveTimestamp": 1795625152249,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -2442,7 +2456,7 @@
     "sparks": 371,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795625145265
+    "lastSaveAt": 1795625152249
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
