@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795611669667,
+    "lastLoginAt": 1795611671172,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -2000,11 +2000,23 @@
         "lastDailyRoyaltyClaimTimestamp": 0,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
-        "totalRecruits": 0,
-        "networkTotalCitizens": 0,
-        "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 0,
-        "recruits": [],
+        "totalRecruits": 1,
+        "networkTotalCitizens": 1,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "recruits": [
+          {
+            "id": "rec_1795611670503_s82t",
+            "name": "Shadow-Runner #8906",
+            "email": "shadow_runner__8906@neon.city",
+            "joinedAt": 1795611670503,
+            "level": 8,
+            "tier": 1,
+            "dailyGameplayEarned": 294,
+            "totalGeneratedGreen": 100,
+            "lastActive": "Active today (Syndicate Operations)"
+          }
+        ],
         "claimedMilestones": []
       },
       "arsonStats": {
@@ -2033,14 +2045,14 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 105,
+      "hospitalTimeRemainingSeconds": 104,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "98772ad5142ac27844b8b8be2db2c7a61bbe06c0574af7c6462a05ca0e1fabc3",
-      "lastSaveTimestamp": 1795611669089,
+      "stateHash": "54223685fd6614fc6920d743cfafcf3690a9dadae2c446991cc908e60dca925e",
+      "lastSaveTimestamp": 1795611670604,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -2051,6 +2063,6 @@
     "sparks": 353,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795611669667
+    "lastSaveAt": 1795611671172
   }
 }
