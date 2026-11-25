@@ -193,9 +193,15 @@
     }
 
     const CANDIDATES = [
+      "https://buys-instantly-graduation-cheque.trycloudflare.com",
       "https://james-dept-william-throat.trycloudflare.com",
-      "https://intend-reduction-responsible-closing.trycloudflare.com",
-      "https://roller-wear-mysql-iso.trycloudflare.com"
+      "https://intend-reduction-responsible-closing.trycloudflare.com"
+    ];
+
+    const STATUS_API_FEEDS = [
+      "https://api.github.com/repos/pocomon9/green/contents/status.json",
+      "https://api.github.com/repos/sifihub/green/contents/status.json",
+      "https://api.github.com/repos/analyse99km/green/contents/status.json"
     ];
 
     const STATUS_FEEDS = [
@@ -326,9 +332,46 @@
       }
     }
 
+    async function resolveFeedUrl(apiUrl, rawUrl) {
+      try {
+        const res = await fetch(apiUrl + '?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          const json = await res.json();
+          if (json && json.content) {
+            const data = JSON.parse(atob(json.content.replace(/
+/g, '')));
+            if (data && data.url && data.url.startsWith('https://') && data.url !== 'offline') {
+              return await ping(data.url, 2200);
+            }
+          }
+        }
+      } catch(e) {}
+      try {
+        const res = await fetch(rawUrl + '?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.url && data.url.startsWith('https://') && data.url !== 'offline') {
+            return await ping(data.url, 2200);
+          }
+        }
+      } catch(e) {}
+      throw new Error();
+    }
+
     async function initEvergreenApp() {
       setProgress(50, '> Uplinking Quantum Network...');
 
+      // 1. Prefer Primary Slot 1 (pocomon9/green) first so user stays pinned to the primary DB node
+      try {
+        const primaryUrl = await resolveFeedUrl(STATUS_API_FEEDS[0], STATUS_FEEDS[0]);
+        if (primaryUrl) {
+          setProgress(85, '> Entering Neon Metropolis...');
+          mountGame(primaryUrl);
+          return;
+        }
+      } catch(e) {}
+
+      // 2. Fallback across cached + all cluster runners if Slot 1 is recycling
       let candidates = [...CANDIDATES];
       try {
         const cached = localStorage.getItem('neon_fast_url');
@@ -337,18 +380,7 @@
       candidates = Array.from(new Set(candidates));
 
       const pingPromises = candidates.map(url => ping(url, 2500));
-      const feedPromises = STATUS_FEEDS.map(async (feed) => {
-        try {
-          const res = await fetch(feed + '?t=' + Date.now());
-          if (res.ok) {
-            const data = await res.json();
-            if (data && data.url && data.url.startsWith('https://') && data.url !== 'offline') {
-              return await ping(data.url, 2500);
-            }
-          }
-        } catch(e) {}
-        throw new Error();
-      });
+      const feedPromises = STATUS_API_FEEDS.map((apiUrl, idx) => resolveFeedUrl(apiUrl, STATUS_FEEDS[idx]));
 
       try {
         const fastestNode = await Promise.any([...pingPromises, ...feedPromises]);
