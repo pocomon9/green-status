@@ -2208,6 +2208,38 @@
         "networkTotalCitizens": 0,
         "unclaimedCommissionGreen": 0,
         "lifetimeCommissionGreen": 0,
+        "claimedMilestones": [],
+        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyRoyaltyClaimTimestamp": 0
+      },
+      "dreamCards": {},
+      "lastSaveTimestamp": 1795624420267
+    }
+  },
+  "qa_recruit_e2e@neon.city": {
+    "userId": "usr_06c4ce6eab910290",
+    "email": "qa_recruit_e2e@neon.city",
+    "name": "QARecruit",
+    "salt": "dcc6cc7158b465102020dd58542644aa",
+    "passwordHash": "a2bbb0acb697a881d02cc7663dd105d7aabbebb9c7e4178e362392e7b80630a76e939c36e8489a47e8312c9cc631202ee5aa6b4cfd35e77919874782ffcfd37d",
+    "userReferralCode": "NEON-06C4CE6E",
+    "referredBy": null,
+    "createdAt": 1795624422314,
+    "lastLoginAt": 1795624422314,
+    "lastSaveAt": 1795624422314,
+    "playerState": {
+      "id": "usr_06c4ce6eab910290",
+      "name": "QARecruit",
+      "claimedMissionIds": [],
+      "referrals": {
+        "referralCode": "NEON-06C4CE6E",
+        "referredBy": null,
+        "hasClaimedWelcomeBonus": false,
+        "recruits": [],
+        "totalRecruits": 0,
+        "networkTotalCitizens": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
         "claimedMilestones": []
       }
     }
