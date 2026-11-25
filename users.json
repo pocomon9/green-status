@@ -661,6 +661,17 @@
             "dailyGameplayEarned": 150,
             "totalGeneratedGreen": 15,
             "lastActive": "Active today (Syndicate recruit)"
+          },
+          {
+            "id": "usr_71f63e2038a30959",
+            "name": "Dhruv11",
+            "email": "dhruv19240@gmail.com",
+            "joinedAt": 1794998780043,
+            "level": 1,
+            "tier": 2,
+            "dailyGameplayEarned": 100,
+            "totalGeneratedGreen": 20,
+            "lastActive": "Tier 2 Operative"
           }
         ],
         "claimedMilestones": [
@@ -668,7 +679,7 @@
         ],
         "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 0,
-        "networkTotalCitizens": 1,
+        "networkTotalCitizens": 2,
         "lastDailyRoyaltyClaimTimestamp": 1794997340493,
         "referredBy": null
       },
@@ -2172,5 +2183,33 @@
     "level": 1,
     "rank": "#1 Neon Operative",
     "lastSaveAt": 1795616295907
+  },
+  "qa_recruiter_e2e@neon.city": {
+    "userId": "usr_6d0028a927ff78d2",
+    "email": "qa_recruiter_e2e@neon.city",
+    "name": "QARecruiter",
+    "salt": "30063bf1663baab63074acfcb660c32b",
+    "passwordHash": "d85dbf47a38c552d7b81bf68e88d0b5ad17ab8c738d0c280c9245a9f391ead189c9750e177c27fdd8f14c57efbdc5bcd3214890bf4578290b520360a236ddb68",
+    "userReferralCode": "NEON-6D0028A9",
+    "referredBy": null,
+    "createdAt": 1795624420267,
+    "lastLoginAt": 1795624420267,
+    "lastSaveAt": 1795624420267,
+    "playerState": {
+      "id": "usr_6d0028a927ff78d2",
+      "name": "QARecruiter",
+      "claimedMissionIds": [],
+      "referrals": {
+        "referralCode": "NEON-6D0028A9",
+        "referredBy": null,
+        "hasClaimedWelcomeBonus": false,
+        "recruits": [],
+        "totalRecruits": 0,
+        "networkTotalCitizens": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
+        "claimedMilestones": []
+      }
+    }
   }
 }
