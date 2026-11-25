@@ -2225,12 +2225,15 @@
     "userReferralCode": "NEON-06C4CE6E",
     "referredBy": null,
     "createdAt": 1795624422314,
-    "lastLoginAt": 1795624422314,
-    "lastSaveAt": 1795624422314,
+    "lastLoginAt": 1795624425062,
+    "lastSaveAt": 1795624425062,
     "playerState": {
       "id": "usr_06c4ce6eab910290",
       "name": "QARecruit",
-      "claimedMissionIds": [],
+      "claimedMissionIds": [
+        "story_first_spark",
+        "msn_1"
+      ],
       "referrals": {
         "referralCode": "NEON-06C4CE6E",
         "referredBy": null,
@@ -2240,8 +2243,29 @@
         "networkTotalCitizens": 0,
         "unclaimedCommissionGreen": 0,
         "lifetimeCommissionGreen": 0,
-        "claimedMilestones": []
-      }
+        "claimedMilestones": [],
+        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyRoyaltyClaimTimestamp": 0
+      },
+      "missions": [
+        {
+          "id": "story_first_spark",
+          "category": "STORY",
+          "currentCount": 10,
+          "targetCount": 10,
+          "completed": true,
+          "claimed": true
+        },
+        {
+          "id": "msn_1",
+          "currentCount": 1,
+          "targetCount": 1,
+          "completed": true,
+          "claimed": true
+        }
+      ],
+      "dreamCards": {},
+      "lastSaveTimestamp": 1795624425062
     }
   }
 }
