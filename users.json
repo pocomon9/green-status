@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795596283075,
+    "lastLoginAt": 1795596295643,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1403,10 +1403,10 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 495,
+      "money": 995,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 0,
+      "missionCredits": 5,
       "life": 100,
       "maxLife": 100,
       "energy": 100,
@@ -1861,7 +1861,8 @@
           "completed": true,
           "reqType": "CRIME",
           "targetCount": 1,
-          "currentCount": 1
+          "currentCount": 1,
+          "claimed": true
         },
         {
           "id": "msn_2",
@@ -1969,10 +1970,10 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 329,
+      "dreamPoints": 337,
       "dreamMultiplier": 1,
-      "totalTaps": 49,
-      "tapStamina": 100,
+      "totalTaps": 55,
+      "tapStamina": 94,
       "maxTapStamina": 100,
       "dreamCards": {
         "card_photosynthesis": 1,
@@ -1991,15 +1992,18 @@
       "canClaimDailyStreak": false,
       "referrals": {
         "referralCode": "NEON-71F63E20",
+        "referredBy": "NEON-E7CC880D",
+        "hasClaimedWelcomeBonus": true,
+        "lastDailyStipendClaimTimestamp": 1794998792414,
+        "lastDailyRoyaltyClaimTimestamp": 0,
+        "dailyGameplayContribution": 0,
+        "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 0,
+        "networkTotalCitizens": 0,
         "unclaimedCommissionGreen": 0,
         "lifetimeCommissionGreen": 0,
         "recruits": [],
-        "claimedMilestones": [],
-        "referredBy": "NEON-E7CC880D",
-        "hasClaimedWelcomeBonus": false,
-        "lastDailyStipendClaimTimestamp": 1794998792414,
-        "networkTotalCitizens": 0
+        "claimedMilestones": []
       },
       "arsonStats": {
         "breaches": 1,
@@ -2033,15 +2037,18 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "e60bbc5b3a2278fc67913ae8779d90efc79b8a792b71ab4ed5e613930f5089eb",
-      "lastSaveTimestamp": 1795018642846,
+      "stateHash": "5ea07f9f50c3398cf236c6a8c3962242a492b201c385cea811cd9a4714d6d239",
+      "lastSaveTimestamp": 1795596295122,
       "hasUnsavedActions": false,
-      "isAwakened": false
+      "isAwakened": false,
+      "lastDailyMissionsDate": "2026-11-25",
+      "lastWeeklyMissionsWeek": "2026-W48",
+      "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 495,
-    "sparks": 329,
+    "money": 995,
+    "sparks": 337,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795596283075
+    "lastSaveAt": 1795596295643
   }
 }
