@@ -1997,7 +1997,7 @@
         "recruits": [],
         "claimedMilestones": [],
         "referredBy": "NEON-E7CC880D",
-        "hasClaimedWelcomeBonus": true,
+        "hasClaimedWelcomeBonus": false,
         "lastDailyStipendClaimTimestamp": 1794998792414,
         "networkTotalCitizens": 0
       },
