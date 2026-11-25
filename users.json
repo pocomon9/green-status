@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795611685394,
+    "lastLoginAt": 1795611687073,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -2006,24 +2006,24 @@
         "lifetimeCommissionGreen": 600,
         "recruits": [
           {
-            "id": "rec_1795611682174_mzhu",
-            "name": "Grid-Phantom #8041",
-            "email": "grid_phantom__8041@neon.city",
-            "joinedAt": 1795611682174,
-            "level": 2,
+            "id": "rec_1795611682724_5qlk",
+            "name": "Krypton-Fox #8629",
+            "email": "krypton_fox__8629@neon.city",
+            "joinedAt": 1795611682724,
+            "level": 5,
             "tier": 1,
-            "dailyGameplayEarned": 318,
+            "dailyGameplayEarned": 311,
             "totalGeneratedGreen": 100,
             "lastActive": "Active today (Syndicate Operations)"
           },
           {
-            "id": "rec_1795611681401_0u9g",
-            "name": "Ghost-Operative #5684",
-            "email": "ghost_operative__5684@neon.city",
-            "joinedAt": 1795611681401,
-            "level": 4,
+            "id": "rec_1795611681982_khwk",
+            "name": "Matrix-Scout #5367",
+            "email": "matrix_scout__5367@neon.city",
+            "joinedAt": 1795611681982,
+            "level": 7,
             "tier": 1,
-            "dailyGameplayEarned": 269,
+            "dailyGameplayEarned": 254,
             "totalGeneratedGreen": 100,
             "lastActive": "Active today (Syndicate Operations)"
           },
@@ -2072,24 +2072,24 @@
             "lastActive": "Active today (Syndicate Operations)"
           },
           {
-            "id": "rec_1795611682724_5qlk",
-            "name": "Krypton-Fox #8629",
-            "email": "krypton_fox__8629@neon.city",
-            "joinedAt": 1795611682724,
-            "level": 5,
+            "id": "rec_1795611682549_88xu",
+            "name": "Quantum-Rogue #4785",
+            "email": "quantum_rogue__4785@neon.city",
+            "joinedAt": 1795611682549,
+            "level": 8,
             "tier": 1,
-            "dailyGameplayEarned": 311,
+            "dailyGameplayEarned": 222,
             "totalGeneratedGreen": 100,
             "lastActive": "Active today (Syndicate Operations)"
           },
           {
-            "id": "rec_1795611681982_khwk",
-            "name": "Matrix-Scout #5367",
-            "email": "matrix_scout__5367@neon.city",
-            "joinedAt": 1795611681982,
-            "level": 7,
+            "id": "rec_1795611681786_iutr",
+            "name": "Matrix-Scout #1088",
+            "email": "matrix_scout__1088@neon.city",
+            "joinedAt": 1795611681786,
+            "level": 3,
             "tier": 1,
-            "dailyGameplayEarned": 254,
+            "dailyGameplayEarned": 302,
             "totalGeneratedGreen": 100,
             "lastActive": "Active today (Syndicate Operations)"
           }
@@ -2128,8 +2128,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "046d37f4874e078312676ed908c98ca8732ae9e5f35f9835bf53294c9676ba33",
-      "lastSaveTimestamp": 1795611682982,
+      "stateHash": "1041dc8020cecbfbc7c0573b1766e1159e2c6273e9ab9f265ea529f54cd6f060",
+      "lastSaveTimestamp": 1795611684152,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -2140,6 +2140,6 @@
     "sparks": 353,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795611685394
+    "lastSaveAt": 1795611687073
   }
 }
