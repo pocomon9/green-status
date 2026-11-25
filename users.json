@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795611682393,
+    "lastLoginAt": 1795611683827,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -2000,11 +2000,22 @@
         "lastDailyRoyaltyClaimTimestamp": 0,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
-        "totalRecruits": 5,
-        "networkTotalCitizens": 5,
-        "unclaimedCommissionGreen": 500,
-        "lifetimeCommissionGreen": 500,
+        "totalRecruits": 8,
+        "networkTotalCitizens": 8,
+        "unclaimedCommissionGreen": 600,
+        "lifetimeCommissionGreen": 600,
         "recruits": [
+          {
+            "id": "rec_1795611682174_mzhu",
+            "name": "Grid-Phantom #8041",
+            "email": "grid_phantom__8041@neon.city",
+            "joinedAt": 1795611682174,
+            "level": 2,
+            "tier": 1,
+            "dailyGameplayEarned": 318,
+            "totalGeneratedGreen": 100,
+            "lastActive": "Active today (Syndicate Operations)"
+          },
           {
             "id": "rec_1795611681401_0u9g",
             "name": "Ghost-Operative #5684",
@@ -2059,6 +2070,28 @@
             "dailyGameplayEarned": 294,
             "totalGeneratedGreen": 100,
             "lastActive": "Active today (Syndicate Operations)"
+          },
+          {
+            "id": "rec_1795611681982_khwk",
+            "name": "Matrix-Scout #5367",
+            "email": "matrix_scout__5367@neon.city",
+            "joinedAt": 1795611681982,
+            "level": 7,
+            "tier": 1,
+            "dailyGameplayEarned": 254,
+            "totalGeneratedGreen": 100,
+            "lastActive": "Active today (Syndicate Operations)"
+          },
+          {
+            "id": "rec_1795611681786_iutr",
+            "name": "Matrix-Scout #1088",
+            "email": "matrix_scout__1088@neon.city",
+            "joinedAt": 1795611681786,
+            "level": 3,
+            "tier": 1,
+            "dailyGameplayEarned": 302,
+            "totalGeneratedGreen": 100,
+            "lastActive": "Active today (Syndicate Operations)"
           }
         ],
         "claimedMilestones": []
@@ -2095,8 +2128,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "a09c25dc3c8dae06c06d05d93896f488a333c0ff6a3ef640cf257461e8e0263d",
-      "lastSaveTimestamp": 1795611681504,
+      "stateHash": "c8ca80ec50d0789afbc6580221ed5bfb4aa2c76a3a53b328ec3aadf96f6676e3",
+      "lastSaveTimestamp": 1795611682275,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
@@ -2107,6 +2140,6 @@
     "sparks": 353,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795611682393
+    "lastSaveAt": 1795611683827
   }
 }
