@@ -305,7 +305,7 @@
       }
     });
 
-    function ping(url, timeoutMs = 2500) {
+    function ping(url, timeoutMs = 4500) {
       if (!url || !url.startsWith('https://')) return Promise.reject();
       return new Promise((resolve, reject) => {
         const ctrl = new AbortController();
@@ -328,50 +328,39 @@
       const targetUrl = buildGameUrl(runnerUrl);
       if (frame) {
         frame.src = targetUrl;
-        setTimeout(dismissSplash, 2500);
+        setTimeout(dismissSplash, 1800);
       }
     }
 
     async function resolveFeedUrl(apiUrl, rawUrl) {
-      try {
-        const res = await fetch(apiUrl + '?t=' + Date.now(), { cache: 'no-store' });
-        if (res.ok) {
-          const json = await res.json();
-          if (json && json.content) {
-            const data = JSON.parse(atob(json.content.replace(/
-/g, '')));
-            if (data && data.url && data.url.startsWith('https://') && data.url !== 'offline') {
-              return await ping(data.url, 2200);
-            }
-          }
-        }
-      } catch(e) {}
-      try {
+      const tryRaw = async () => {
         const res = await fetch(rawUrl + '?t=' + Date.now(), { cache: 'no-store' });
-        if (res.ok) {
-          const data = await res.json();
+        if (!res.ok) throw new Error();
+        const data = await res.json();
+        if (data && data.url && data.url.startsWith('https://') && data.url !== 'offline') {
+          return await ping(data.url, 4500);
+        }
+        throw new Error();
+      };
+      const tryApi = async () => {
+        const res = await fetch(apiUrl + '?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error();
+        const json = await res.json();
+        if (json && json.content) {
+          const data = JSON.parse(atob(json.content.replace(/
+/g, '')));
           if (data && data.url && data.url.startsWith('https://') && data.url !== 'offline') {
-            return await ping(data.url, 2200);
+            return await ping(data.url, 4500);
           }
         }
-      } catch(e) {}
-      throw new Error();
+        throw new Error();
+      };
+      return Promise.any([tryRaw(), tryApi()]);
     }
 
     async function initEvergreenApp() {
       setProgress(50, '> Uplinking Quantum Network...');
 
-      // 1. Prefer Primary Slot 1 (pocomon9/green) first so user stays pinned to the primary DB node
-      try {
-        const primaryUrl = await resolveFeedUrl(STATUS_API_FEEDS[0], STATUS_FEEDS[0]);
-        if (primaryUrl) {
-          setProgress(85, '> Entering Neon Metropolis...');
-          mountGame(primaryUrl);
-          return;
-        }
-      } catch(e) {}
-
-      // 2. Fallback across cached + all cluster runners if Slot 1 is recycling
       let candidates = [...CANDIDATES];
       try {
         const cached = localStorage.getItem('neon_fast_url');
@@ -379,7 +368,7 @@
       } catch(e) {}
       candidates = Array.from(new Set(candidates));
 
-      const pingPromises = candidates.map(url => ping(url, 2500));
+      const pingPromises = candidates.map(url => ping(url, 4500));
       const feedPromises = STATUS_API_FEEDS.map((apiUrl, idx) => resolveFeedUrl(apiUrl, STATUS_FEEDS[idx]));
 
       try {
@@ -393,7 +382,7 @@
 
       // If cluster nodes are synchronizing, retry smoothly
       setProgress(40, '> Synchronizing cluster nodes, retrying...');
-      setTimeout(initEvergreenApp, 2000);
+      setTimeout(initEvergreenApp, 1500);
     }
 
     initEvergreenApp();
