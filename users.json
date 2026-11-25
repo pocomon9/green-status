@@ -1389,7 +1389,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795611692342,
+    "lastLoginAt": 1795611702354,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1399,11 +1399,11 @@
       "level": 1,
       "xp": 0,
       "xpNeeded": 100,
-      "unallocatedStatPoints": 0,
+      "unallocatedStatPoints": 1,
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 5445,
+      "money": 6645,
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 15,
@@ -1972,7 +1972,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 353,
+      "dreamPoints": 859,
       "dreamMultiplier": 1,
       "totalTaps": 49,
       "tapStamina": 100,
@@ -2083,7 +2083,9 @@
             "lastActive": "Active today (Syndicate Operations)"
           }
         ],
-        "claimedMilestones": []
+        "claimedMilestones": [
+          5
+        ]
       },
       "arsonStats": {
         "breaches": 1,
@@ -2111,24 +2113,24 @@
         "isJoined": true
       },
       "jailTimeRemainingSeconds": 0,
-      "hospitalTimeRemainingSeconds": 88,
+      "hospitalTimeRemainingSeconds": 79,
       "currentBailAmount": 0,
       "lastCrimeReason": "",
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "4f9c0b3667ab7f172b65e1216ac7c98f8bb63bba4c220cc16b37b9b5c9e56873",
-      "lastSaveTimestamp": 1795611691693,
+      "stateHash": "8c8bc8264af5f933a3c0847faf0ca0b7d5a2de7f212f72da5bc0df19fc8477f5",
+      "lastSaveTimestamp": 1795611701759,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-25",
       "lastWeeklyMissionsWeek": "2026-W48",
       "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 5445,
-    "sparks": 353,
+    "money": 6645,
+    "sparks": 859,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795611692342
+    "lastSaveAt": 1795611702354
   }
 }
