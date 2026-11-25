@@ -594,7 +594,7 @@
           "price": 500,
           "marketValue": 400,
           "description": "throw box",
-          "icon": "\ud83d\udce6",
+          "icon": "📦",
           "damage": 60,
           "accuracy": 20,
           "shopliftDifficulty": 40,
@@ -1942,7 +1942,7 @@
           "rewardCash": 500,
           "completed": false,
           "claimed": false,
-          "icon": "\ud83c\udf31"
+          "icon": "🌱"
         },
         {
           "id": "story_first_spore_card",
@@ -1959,7 +1959,7 @@
           "rewardCash": 1000,
           "completed": false,
           "claimed": false,
-          "icon": "\ud83c\udf44"
+          "icon": "🍄"
         },
         {
           "id": "story_first_crime",
@@ -1976,7 +1976,7 @@
           "rewardCash": 2500,
           "completed": false,
           "claimed": false,
-          "icon": "\ud83d\udcb0"
+          "icon": "💰"
         },
         {
           "id": "story_tree_evolve",
@@ -1993,7 +1993,7 @@
           "rewardCash": 5000,
           "completed": false,
           "claimed": false,
-          "icon": "\ud83c\udf3f"
+          "icon": "🌿"
         },
         {
           "id": "story_first_workout",
@@ -2010,7 +2010,7 @@
           "rewardCash": 2000,
           "completed": false,
           "claimed": false,
-          "icon": "\ud83c\udfcb\ufe0f"
+          "icon": "🏋️"
         },
         {
           "id": "story_casino_spin",
@@ -2027,7 +2027,7 @@
           "rewardCash": 5000,
           "completed": false,
           "claimed": false,
-          "icon": "\ud83c\udfb0"
+          "icon": "🎰"
         }
       ],
       "claimedMissionIds": [],
@@ -2183,5 +2183,101 @@
     "level": 1,
     "rank": "#1 Neon Operative",
     "lastSaveAt": 1795616295907
+  },
+  "qa_recruiter_e2e@neon.city": {
+    "userId": "usr_6d0028a927ff78d2",
+    "email": "qa_recruiter_e2e@neon.city",
+    "name": "QARecruiter",
+    "salt": "30063bf1663baab63074acfcb660c32b",
+    "passwordHash": "d85dbf47a38c552d7b81bf68e88d0b5ad17ab8c738d0c280c9245a9f391ead189c9750e177c27fdd8f14c57efbdc5bcd3214890bf4578290b520360a236ddb68",
+    "userReferralCode": "NEON-6D0028A9",
+    "referredBy": null,
+    "createdAt": 1795624420267,
+    "lastLoginAt": 1795624420267,
+    "lastSaveAt": 1795624420267,
+    "playerState": {
+      "id": "usr_6d0028a927ff78d2",
+      "name": "QARecruiter",
+      "claimedMissionIds": [],
+      "referrals": {
+        "referralCode": "NEON-6D0028A9",
+        "referredBy": null,
+        "hasClaimedWelcomeBonus": false,
+        "recruits": [
+          {
+            "id": "usr_06c4ce6eab910290",
+            "name": "QARecruit",
+            "email": "qa_recruit_e2e@neon.city",
+            "joinedAt": 1795624422314,
+            "level": 1,
+            "tier": 1,
+            "dailyGameplayEarned": 150,
+            "totalGeneratedGreen": 50,
+            "lastActive": "Active Operative"
+          }
+        ],
+        "totalRecruits": 1,
+        "networkTotalCitizens": 1,
+        "unclaimedCommissionGreen": 100,
+        "lifetimeCommissionGreen": 100,
+        "claimedMilestones": [],
+        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyRoyaltyClaimTimestamp": 0
+      },
+      "dreamCards": {},
+      "lastSaveTimestamp": 1795624420267
+    }
+  },
+  "qa_recruit_e2e@neon.city": {
+    "userId": "usr_06c4ce6eab910290",
+    "email": "qa_recruit_e2e@neon.city",
+    "name": "QARecruit",
+    "salt": "dcc6cc7158b465102020dd58542644aa",
+    "passwordHash": "a2bbb0acb697a881d02cc7663dd105d7aabbebb9c7e4178e362392e7b80630a76e939c36e8489a47e8312c9cc631202ee5aa6b4cfd35e77919874782ffcfd37d",
+    "userReferralCode": "NEON-06C4CE6E",
+    "referredBy": "NEON-6D0028A9",
+    "createdAt": 1795624422314,
+    "lastLoginAt": 1795624432506,
+    "lastSaveAt": 1795624432506,
+    "playerState": {
+      "id": "usr_06c4ce6eab910290",
+      "name": "QARecruit",
+      "claimedMissionIds": [
+        "story_first_spark",
+        "msn_1"
+      ],
+      "referrals": {
+        "referralCode": "NEON-06C4CE6E",
+        "referredBy": "NEON-6D0028A9",
+        "hasClaimedWelcomeBonus": true,
+        "recruits": [],
+        "totalRecruits": 0,
+        "networkTotalCitizens": 0,
+        "unclaimedCommissionGreen": 0,
+        "lifetimeCommissionGreen": 0,
+        "claimedMilestones": [],
+        "lastDailyStipendClaimTimestamp": 0,
+        "lastDailyRoyaltyClaimTimestamp": 0
+      },
+      "missions": [
+        {
+          "id": "story_first_spark",
+          "category": "STORY",
+          "currentCount": 10,
+          "targetCount": 10,
+          "completed": true,
+          "claimed": true
+        },
+        {
+          "id": "msn_1",
+          "currentCount": 1,
+          "targetCount": 1,
+          "completed": true,
+          "claimed": true
+        }
+      ],
+      "dreamCards": {},
+      "lastSaveTimestamp": 1795624432506
+    }
   }
 }
