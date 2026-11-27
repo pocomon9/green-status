@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795775207044,
+    "lastLoginAt": 1795775211106,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1804,13 +1804,13 @@
       "role": "CITIZEN",
       "rank": "#1 Neon Operative",
       "level": 1,
-      "xp": 100,
+      "xp": 125,
       "xpNeeded": 100,
       "unallocatedStatPoints": 0,
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 7311,
+      "money": 7436,
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 22,
@@ -1818,7 +1818,7 @@
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
-      "nerve": 2,
+      "nerve": 0,
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
@@ -1838,7 +1838,7 @@
         "endurance": 5
       },
       "criminalSkills": {
-        "searchForCash": 1.48,
+        "searchForCash": 1.6,
         "shoplifting": 1,
         "graffiti": 1,
         "bootlegging": 0,
@@ -1850,8 +1850,8 @@
         "arson": 0
       },
       "criminalRecord": {
-        "totalOffenses": 4,
-        "theft": 4,
+        "totalOffenses": 5,
+        "theft": 5,
         "vandalism": 0,
         "counterfeiting": 0,
         "fraud": 0,
@@ -2840,6 +2840,18 @@
           "shopliftDifficulty": 30,
           "icon": "⚡",
           "quantity": 1
+        },
+        {
+          "id": "loot_crowbar_mwyu6zf7",
+          "name": "Heavy Steel Crowbar",
+          "description": "Hardened steel bar used to force open deadbolts.",
+          "category": "TOOL",
+          "price": 320,
+          "marketValue": 320,
+          "shopliftDifficulty": 30,
+          "icon": "🔨",
+          "quantity": 1,
+          "perkDescription": "+10% Burglary success rate"
         }
       ],
       "bazaarListings": [],
@@ -2962,19 +2974,19 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "09cef6c2bd02c90edf738f4333b199bc02e53d131baa07fa54cf9e1216d95633",
-      "lastSaveTimestamp": 1795775207044,
+      "stateHash": "3975c3c69c14b3f67bf6a2317770cbc3f887ae1eed45656a495ae5a0cceafab1",
+      "lastSaveTimestamp": 1795775211106,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-27",
       "lastWeeklyMissionsWeek": "2026-W48",
       "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 7311,
+    "money": 7436,
     "sparks": 1016,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795775207044
+    "lastSaveAt": 1795775211106
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
