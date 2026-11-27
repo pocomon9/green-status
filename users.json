@@ -3992,8 +3992,8 @@
     "userReferralCode": "NEON-10001",
     "referredBy": null,
     "createdAt": 1795769637163,
-    "lastSaveAt": 1795769637163,
-    "lastLoginAt": 1795769637163,
+    "lastSaveAt": 1795769637466,
+    "lastLoginAt": 1795769637466,
     "money": 750,
     "sparks": 65,
     "level": 1,
@@ -4923,7 +4923,8 @@
         "unclaimedCommissionGreen": 0,
         "lifetimeCommissionGreen": 0,
         "recruits": [],
-        "claimedMilestones": []
+        "claimedMilestones": [],
+        "referredBy": null
       },
       "arsonStats": {
         "breaches": 1,
@@ -4957,8 +4958,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "bee2ac061215cead439158f521846bddda60f41736082a01b6cf3ee5ac47f06c",
-      "lastSaveTimestamp": 1795769637163,
+      "stateHash": "ea4c6bbe546da8cec5861574c3866838e694f795d9f6b05bacd49e3ccd0a2cda",
+      "lastSaveTimestamp": 1795769637466,
       "hasUnsavedActions": false,
       "lastDailyMissionsDate": "2026-11-27",
       "lastWeeklyMissionsWeek": "2026-W48",
