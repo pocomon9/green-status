@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795775099735,
+    "lastLoginAt": 1795775100423,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -2939,8 +2939,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "eadff5314075994854114b3814f236814aed9d39811b846b18bcd3e29b3e5bd5",
-      "lastSaveTimestamp": 1795775099735,
+      "stateHash": "e5b8a77915a9347d75a446c04cd2c5817600df618ee2f6f8efb6ceabb34c29c3",
+      "lastSaveTimestamp": 1795775100423,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-27",
@@ -2951,7 +2951,7 @@
     "sparks": 1143,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795775099735
+    "lastSaveAt": 1795775100423
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
