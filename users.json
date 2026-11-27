@@ -3992,10 +3992,10 @@
     "userReferralCode": "NEON-10001",
     "referredBy": null,
     "createdAt": 1795769637163,
-    "lastSaveAt": 1795769677758,
-    "lastLoginAt": 1795769677758,
-    "money": 1250,
-    "sparks": 1425,
+    "lastSaveAt": 1795769678926,
+    "lastLoginAt": 1795769678926,
+    "money": 2250,
+    "sparks": 1575,
     "level": 1,
     "rank": "#1 Green Recruit",
     "playerState": {
@@ -4011,10 +4011,10 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 1250,
+      "money": 2250,
       "bankMoney": 0,
       "points": 0,
-      "missionCredits": 2,
+      "missionCredits": 7,
       "life": 100,
       "maxLife": 100,
       "energy": 100,
@@ -4575,7 +4575,7 @@
           "rewardCredits": 5,
           "rewardCash": 1000,
           "completed": true,
-          "claimed": false,
+          "claimed": true,
           "icon": "🌿"
         },
         {
@@ -4801,7 +4801,8 @@
         }
       ],
       "claimedMissionIds": [
-        "story_first_spark"
+        "story_first_spark",
+        "daily_tap_50_2026-11-27"
       ],
       "properties": [
         {
@@ -4872,7 +4873,7 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 1425,
+      "dreamPoints": 1575,
       "dreamMultiplier": 1,
       "totalTaps": 120,
       "tapStamina": 10,
@@ -4903,7 +4904,7 @@
       ],
       "bodyAugmentations": [],
       "settledReceiptIds": [],
-      "greenTokens": 10,
+      "greenTokens": 20,
       "dailyStreak": 2,
       "lastStreakClaimTimestamp": 1795769635235,
       "canClaimDailyStreak": false,
@@ -4960,8 +4961,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "93b52f889740f3b95927069c7330a70362e3a7120c665fb1d551b8a8d5480cd8",
-      "lastSaveTimestamp": 1795769677758,
+      "stateHash": "44b6b4b569495d6cb8a9cf64a40686832e1d4757486ab67fe5a331d265084e4f",
+      "lastSaveTimestamp": 1795769678926,
       "hasUnsavedActions": false,
       "lastDailyMissionsDate": "2026-11-27",
       "lastWeeklyMissionsWeek": "2026-W48",
