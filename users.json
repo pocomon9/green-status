@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795775162167,
+    "lastLoginAt": 1795775164106,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1822,7 +1822,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 33,
+      "food": 34,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -2814,10 +2814,10 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 953,
+      "dreamPoints": 932,
       "dreamMultiplier": 1,
       "totalTaps": 125,
-      "tapStamina": 94,
+      "tapStamina": 84,
       "maxTapStamina": 100,
       "dreamCards": {
         "card_photosynthesis": 3,
@@ -2929,8 +2929,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "6cb5ddfa0cb84f6cbe82859c4fb8025be2f2c921242e059b2730c6e46a05a570",
-      "lastSaveTimestamp": 1795775162167,
+      "stateHash": "e84e17c3f3880d8b815ad40f75ed65a92009aa0da34cd8ba8fa7868def1ac86c",
+      "lastSaveTimestamp": 1795775164106,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-27",
@@ -2938,10 +2938,10 @@
       "lastMonthlyMissionsMonth": "2026-11"
     },
     "money": 10068,
-    "sparks": 953,
+    "sparks": 932,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795775162167
+    "lastSaveAt": 1795775164106
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
