@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795775112934,
+    "lastLoginAt": 1795775113993,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -2522,7 +2522,7 @@
           "category": "WEEKLY",
           "reqType": "CARD_UPGRADE",
           "targetCount": 8,
-          "currentCount": 1,
+          "currentCount": 3,
           "rewardGreen": 75,
           "rewardSparks": 5000,
           "rewardCredits": 25,
@@ -2607,7 +2607,7 @@
           "category": "MONTHLY",
           "reqType": "CARD_UPGRADE",
           "targetCount": 25,
-          "currentCount": 1,
+          "currentCount": 3,
           "rewardGreen": 500,
           "rewardSparks": 35000,
           "rewardCredits": 100,
@@ -2826,16 +2826,16 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 1000,
+      "dreamPoints": 516,
       "dreamMultiplier": 1,
       "totalTaps": 125,
       "tapStamina": 54,
       "maxTapStamina": 100,
       "dreamCards": {
-        "card_photosynthesis": 1,
+        "card_photosynthesis": 2,
         "card_mycelium": 2,
         "card_mycelial_network": 1,
-        "card_spore_chamber": 0,
+        "card_spore_chamber": 1,
         "card_bioluminescent_algae": 0,
         "card_cordyceps": 0,
         "card_greenhouse": 0,
@@ -2864,7 +2864,9 @@
       "lastNewspaperRationTimestamp": 0,
       "dailyComboProgress": {
         "date": "2026-11-27",
-        "upgradedCardIds": [],
+        "upgradedCardIds": [
+          "card_spore_chamber"
+        ],
         "claimed": false
       },
       "referrals": {
@@ -2939,8 +2941,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "d5def86dff31cbcedc1a4a8fbe6ddae7be1984869db18f12e9b9b0761b16ec69",
-      "lastSaveTimestamp": 1795775112934,
+      "stateHash": "64ba8cab2acacadf2315eef084445238839e2711e07f1a4ce1669cd781da527a",
+      "lastSaveTimestamp": 1795775113993,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-27",
@@ -2948,10 +2950,10 @@
       "lastMonthlyMissionsMonth": "2026-11"
     },
     "money": 6568,
-    "sparks": 1000,
+    "sparks": 516,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795775112934
+    "lastSaveAt": 1795775113993
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
