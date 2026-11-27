@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795775146450,
+    "lastLoginAt": 1795775162167,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1822,7 +1822,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 14,
+      "food": 33,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -2808,30 +2808,16 @@
         }
       ],
       "currentPropertyId": "prop_apt",
-      "inventory": [
-        {
-          "id": "item_stim",
-          "name": "Military Adrenaline Auto-Injector",
-          "description": "Syndicate stim: Instantly restores +50 Energy and +30 Happy.",
-          "category": "FOOD",
-          "price": 0,
-          "marketValue": 12000,
-          "shopliftDifficulty": 90,
-          "energyRestore": 50,
-          "happyRestore": 30,
-          "icon": "💉",
-          "quantity": 1
-        }
-      ],
+      "inventory": [],
       "bazaarListings": [],
       "bazaarTillCash": 0,
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 932,
+      "dreamPoints": 953,
       "dreamMultiplier": 1,
       "totalTaps": 125,
-      "tapStamina": 84,
+      "tapStamina": 94,
       "maxTapStamina": 100,
       "dreamCards": {
         "card_photosynthesis": 3,
@@ -2943,8 +2929,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "190d8e9fcec4ca6467c37293b4d121bb8bf54c9c22d15ad83270fa767ea3b772",
-      "lastSaveTimestamp": 1795775146450,
+      "stateHash": "6cb5ddfa0cb84f6cbe82859c4fb8025be2f2c921242e059b2730c6e46a05a570",
+      "lastSaveTimestamp": 1795775162167,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-27",
@@ -2952,10 +2938,10 @@
       "lastMonthlyMissionsMonth": "2026-11"
     },
     "money": 10068,
-    "sparks": 932,
+    "sparks": 953,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795775146450
+    "lastSaveAt": 1795775162167
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
