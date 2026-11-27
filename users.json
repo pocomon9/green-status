@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795775192643,
+    "lastLoginAt": 1795775196668,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1804,13 +1804,13 @@
       "role": "CITIZEN",
       "rank": "#1 Neon Operative",
       "level": 1,
-      "xp": 25,
+      "xp": 50,
       "xpNeeded": 100,
       "unallocatedStatPoints": 0,
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 6974,
+      "money": 7131,
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 22,
@@ -1818,7 +1818,7 @@
       "maxLife": 100,
       "energy": 100,
       "maxEnergy": 100,
-      "nerve": 8,
+      "nerve": 6,
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
@@ -1838,7 +1838,7 @@
         "endurance": 5
       },
       "criminalSkills": {
-        "searchForCash": 1.12,
+        "searchForCash": 1.24,
         "shoplifting": 1,
         "graffiti": 1,
         "bootlegging": 0,
@@ -1850,8 +1850,8 @@
         "arson": 0
       },
       "criminalRecord": {
-        "totalOffenses": 1,
-        "theft": 1,
+        "totalOffenses": 2,
+        "theft": 2,
         "vandalism": 0,
         "counterfeiting": 0,
         "fraud": 0,
@@ -2951,19 +2951,19 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "7ee8a9082685d3aa8f2897a7ab8ceeace1617ed351d6f06afd3445f0ac81c003",
-      "lastSaveTimestamp": 1795775192643,
+      "stateHash": "a00078903de76c731f69c58db27cf936476704481b0488eb7b55207a1d83daa7",
+      "lastSaveTimestamp": 1795775196668,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-27",
       "lastWeeklyMissionsWeek": "2026-W48",
       "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 6974,
+    "money": 7131,
     "sparks": 995,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795775192643
+    "lastSaveAt": 1795775196668
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
