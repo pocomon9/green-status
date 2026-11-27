@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795775164106,
+    "lastLoginAt": 1795775179284,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1810,7 +1810,7 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 10068,
+      "money": 6868,
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 22,
@@ -1822,7 +1822,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 34,
+      "food": 32,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -2808,16 +2808,38 @@
         }
       ],
       "currentPropertyId": "prop_apt",
-      "inventory": [],
+      "inventory": [
+        {
+          "id": "item_pistol",
+          "name": "Glock 19 (9mm Silenced)",
+          "description": "Tactical sidearm with suppressor.",
+          "category": "WEAPON",
+          "price": 3200,
+          "marketValue": 3100,
+          "shopliftDifficulty": 65,
+          "icon": "🔫",
+          "quantity": 1,
+          "damage": 61.51,
+          "accuracy": 55.23,
+          "statBonus": {
+            "strength": 25,
+            "speed": 10
+          },
+          "forgePrice": 450,
+          "forgeSparksPrice": 60,
+          "forgeDamageBonus": 8.5,
+          "forgeAccuracyBonus": 3
+        }
+      ],
       "bazaarListings": [],
       "bazaarTillCash": 0,
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 932,
+      "dreamPoints": 974,
       "dreamMultiplier": 1,
       "totalTaps": 125,
-      "tapStamina": 84,
+      "tapStamina": 100,
       "maxTapStamina": 100,
       "dreamCards": {
         "card_photosynthesis": 3,
@@ -2929,19 +2951,19 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "e84e17c3f3880d8b815ad40f75ed65a92009aa0da34cd8ba8fa7868def1ac86c",
-      "lastSaveTimestamp": 1795775164106,
+      "stateHash": "a1cd9b03dca73c681f69212f72622622aa76df84f7c2a14bdfd9694fbdac14dc",
+      "lastSaveTimestamp": 1795775179284,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-27",
       "lastWeeklyMissionsWeek": "2026-W48",
       "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 10068,
-    "sparks": 932,
+    "money": 6868,
+    "sparks": 974,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795775164106
+    "lastSaveAt": 1795775179284
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
