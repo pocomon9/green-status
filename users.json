@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795846571162,
+    "lastLoginAt": 1795846581941,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -1810,7 +1810,7 @@
       "ageDays": 1,
       "maritalStatus": "Single",
       "networth": 150,
-      "money": 8436,
+      "money": 8460,
       "bankMoney": 0,
       "points": 0,
       "missionCredits": 27,
@@ -1822,7 +1822,7 @@
       "maxNerve": 10,
       "happy": 100,
       "maxHappy": 100,
-      "food": 24,
+      "food": 23,
       "maxFood": 100,
       "chain": 0,
       "maxChain": 10,
@@ -3030,10 +3030,10 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 548,
+      "dreamPoints": 570,
       "dreamMultiplier": 1,
       "totalTaps": 207,
-      "tapStamina": 60,
+      "tapStamina": 70,
       "maxTapStamina": 100,
       "dreamCards": {
         "card_photosynthesis": 4,
@@ -3077,13 +3077,13 @@
         "referredBy": "NEON-E7CC880D",
         "hasClaimedWelcomeBonus": true,
         "lastDailyStipendClaimTimestamp": 1795616245430,
-        "lastDailyRoyaltyClaimTimestamp": 1795625327174,
+        "lastDailyRoyaltyClaimTimestamp": 1795846578649,
         "dailyGameplayContribution": 0,
         "pendingDailyRoyaltyGreen": 0,
         "totalRecruits": 1,
         "networkTotalCitizens": 2,
         "unclaimedCommissionGreen": 0,
-        "lifetimeCommissionGreen": 123,
+        "lifetimeCommissionGreen": 147,
         "recruits": [
           {
             "id": "usr_44861f741ad920d4",
@@ -3092,8 +3092,8 @@
             "joinedAt": 1794996362058,
             "level": 99,
             "tier": 1,
-            "dailyGameplayEarned": 154,
-            "totalGeneratedGreen": 65,
+            "dailyGameplayEarned": 226,
+            "totalGeneratedGreen": 80,
             "lastActive": "Active today (Daily gameplay verified)"
           },
           {
@@ -3103,8 +3103,8 @@
             "joinedAt": 1794997114345,
             "level": 1,
             "tier": 2,
-            "dailyGameplayEarned": 228,
-            "totalGeneratedGreen": 24,
+            "dailyGameplayEarned": 159,
+            "totalGeneratedGreen": 33,
             "lastActive": "Active today (Daily gameplay verified)"
           }
         ],
@@ -3144,19 +3144,19 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "5be19ea31ed5f829cd1ec992f30558c723911d32a5dbb77d7363a3d271ff2398",
-      "lastSaveTimestamp": 1795846571162,
+      "stateHash": "fcdca534939a6e8f4703d641037aac853d6ec68f6872bbf07ece16e3d30aae21",
+      "lastSaveTimestamp": 1795846581941,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-28",
       "lastWeeklyMissionsWeek": "2026-W49",
       "lastMonthlyMissionsMonth": "2026-11"
     },
-    "money": 8436,
-    "sparks": 548,
+    "money": 8460,
+    "sparks": 570,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795846571162
+    "lastSaveAt": 1795846581941
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
