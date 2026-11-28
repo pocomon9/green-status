@@ -1796,7 +1796,7 @@
     "userReferralCode": "NEON-71F63E20",
     "referredBy": "NEON-E7CC880D",
     "createdAt": 1794998780043,
-    "lastLoginAt": 1795846549320,
+    "lastLoginAt": 1795846554452,
     "playerState": {
       "id": "usr_71f63e2038a30959",
       "name": "Dhruv11",
@@ -2607,7 +2607,7 @@
           "category": "MONTHLY",
           "reqType": "CARD_UPGRADE",
           "targetCount": 25,
-          "currentCount": 4,
+          "currentCount": 5,
           "rewardGreen": 500,
           "rewardSparks": 35000,
           "rewardCredits": 100,
@@ -2760,12 +2760,12 @@
           "category": "DAILY",
           "reqType": "CARD_UPGRADE",
           "targetCount": 1,
-          "currentCount": 0,
+          "currentCount": 1,
           "rewardGreen": 15,
           "rewardSparks": 300,
           "rewardCredits": 5,
           "rewardCash": 2500,
-          "completed": false,
+          "completed": true,
           "claimed": false,
           "icon": "🃏"
         },
@@ -2845,7 +2845,7 @@
           "category": "WEEKLY",
           "reqType": "CARD_UPGRADE",
           "targetCount": 8,
-          "currentCount": 0,
+          "currentCount": 1,
           "rewardGreen": 75,
           "rewardSparks": 5000,
           "rewardCredits": 25,
@@ -3030,13 +3030,13 @@
       "dailyWheelSpinsAvailable": 1,
       "lastWheelSpinTimestamp": 0,
       "soundEnabled": true,
-      "dreamPoints": 1588,
+      "dreamPoints": 1526,
       "dreamMultiplier": 1,
       "totalTaps": 207,
       "tapStamina": 50,
       "maxTapStamina": 100,
       "dreamCards": {
-        "card_photosynthesis": 3,
+        "card_photosynthesis": 4,
         "card_mycelium": 2,
         "card_mycelial_network": 1,
         "card_spore_chamber": 1,
@@ -3067,10 +3067,8 @@
       "canClaimDailyStreak": false,
       "lastNewspaperRationTimestamp": 0,
       "dailyComboProgress": {
-        "date": "2026-11-27",
-        "upgradedCardIds": [
-          "card_spore_chamber"
-        ],
+        "date": "2026-11-28",
+        "upgradedCardIds": [],
         "claimed": false
       },
       "referrals": {
@@ -3145,8 +3143,8 @@
       "totalFinesPaid": 0,
       "isSleeping": false,
       "sleepRemainingSeconds": 0,
-      "stateHash": "209a4625e91e5891519f69d0522e7c25c129eadcc4bcc58e414d85e0255938a5",
-      "lastSaveTimestamp": 1795846549320,
+      "stateHash": "6971e56bceccacb3da2a22d5346874e3103c43d20cb5379f5ebc54a11c2d5e50",
+      "lastSaveTimestamp": 1795846554452,
       "hasUnsavedActions": false,
       "isAwakened": false,
       "lastDailyMissionsDate": "2026-11-28",
@@ -3154,10 +3152,10 @@
       "lastMonthlyMissionsMonth": "2026-11"
     },
     "money": 8436,
-    "sparks": 1588,
+    "sparks": 1526,
     "level": 1,
     "rank": "#1 Neon Operative",
-    "lastSaveAt": 1795846549320
+    "lastSaveAt": 1795846554452
   },
   "qa_recruiter_e2e@neon.city": {
     "userId": "usr_6d0028a927ff78d2",
